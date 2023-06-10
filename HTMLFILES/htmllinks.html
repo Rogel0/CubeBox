@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<header>
+
+</header>
+<body>
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Links</span></h1>
+			   <a class="w-left w-btn" href="htmlcss.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmllinkscolor.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">Links are found in nearly all web pages. Links allow users to click their way from page to page.</p><br>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>HTML Links - Hyperlinks</h2>
+			<p class="col-paragraph">HTML links are hyperlinks.</p><br>
+			<p class="col-paragraph">You can click on a link and jump to another document.</p><br>
+			<p class="col-paragraph">When you move the mouse over a link, the mouse arrow will turn into a little hand.</p><br>
+		</div>
+		<div class="wrap-column1">
+			<p class="w-note"><strong>Note:</strong>A link does not have to be text. A link can be an image or any other HTML element!</p><br>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>HTML Links - Syntax</h2>
+			<p class="col-paragraph">The HTML <strong class="attributecolor">&lt;a&gt;</strong> tag defines a hyperlink. It has the following syntax:</p><br>
+		</div>
+		<div class="w-example">
+			<div class="example"></div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a  href="url">link text
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">The most important attribute of the <strong class="attributecolor">&lt;a&gt;</strong> element is the <strong class="attributecolor">href</strong> attribute, which indicates the link's destination.</p><br>
+			<p class="col-paragraph">The link text is the part that will be visible to the reader.</p><br>
+			<p class="col-paragraph">Clicking on the link text, will send the reader to the specified URL address.</p><br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">This example shows how to create a link to W3Schools.com:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a  href="https://www.w3schools.com/"
+					<span class="tagcolor">&gt;</span>
+					Visit W3Schools.com!
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">By default, links will appear as follows in all browsers:</p>
+			<ul class="bullet-container">
+				<li class="bullet">An unvisited link is underlined and blue</li>
+				<li class="bullet">A visited link is underlined and purple</li>
+				<li class="bullet">An active link is underlined and red</li>
+			</ul>
+		</div>
+		<div class="wrap-column1">
+			<p class="w-note"><strong>Note:</strong>Links can of course be styled with CSS, to get another look!</p><br>
+		</div>
+
+		<div class="wrap-column1">
+			<p class="col-paragraph">By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+			<p class="col-paragraph">The <strong class="attributecolor">target</strong> attribute specifies where to open the linked document.</p>
+			<p class="col-paragraph">The <strong class="attributecolor">target</strong> attribute can have one of the following values:</p>
+			<ul class="bullet-container">
+				<li class="bullet"><strong class="attributecolor">_self</strong> - Default. Opens the document in the same window/tab as it was clicked</li>
+				<li class="bullet"><strong class="attributecolor">_blank</strong> - Opens the document in a new window or tab</li>
+				<li class="bullet"><strong class="attributecolor">_parent</strong> - Opens the document in the parent frame</li>
+				<li class="bullet"><strong class="attributecolor">_top</strong> - Opens the document in the full body of the window</li>
+			</ul>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">Use target="_blank" to open the linked document in a new browser window or tab:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a  href="https://www.w3schools.com/" target="_blank"
+					<span class="tagcolor">&gt;</span>
+					Visit W3Schools.com!
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>Absolute URLs vs. Relative URLs</h2>
+			<p class="col-paragraph">Both examples above are using an <strong>absolute URL </strong>(a full web address) in the <span class="attributecolor">href</span> attribute.</p><br>
+			<p class="col-paragraph">A local link (a link to a page within the same website) is specified with a <strong>relative URL</strong> (without the "https://www" part):</p><br>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">Use target="_blank" to open the linked document in a new browser window or tab:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					h1 
+					<span class="tagcolor">&gt;</span>
+					Absolute URLs
+					<span class="tagcolor">&lt;</span>
+					/h1
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					p 
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					a  href="https://www.w3.org/"
+					<span class="tagcolor">&gt;</span>
+					W3C
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					p 
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					a  href="https://www.google.com/"
+					<span class="tagcolor">&gt;</span>
+					Google
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+
+					<span class="tagcolor">&lt;</span>
+					h1 
+					<span class="tagcolor">&gt;</span>
+					Relative URLs
+					<span class="tagcolor">&lt;</span>
+					/h1
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					p 
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					a  href="html_images.asp"
+					<span class="tagcolor">&gt;</span>
+					HTML Images
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					p 
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					a  href="/css/default.asp"
+					<span class="tagcolor">&gt;</span>
+					CSS Tutorial
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>HTML Links - Use an Image as a Link</h2>
+			<p class="col-paragraph">To use an image as a link, just put the <strong class="attributecolor">&lt;img&gt;</strong> tag inside the <strong class="attributecolor">&lt;a&gt;</strong> tag:</p>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="default.asp"
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>Link to an Email Address</h2>
+			<p class="col-paragraph"> Use <strong class="attributecolor">&lt;mailto:&gt;</strong> inside the <strong class="attributecolor">&lt;href&gt;</strong> attribute to create a link that opens the user's email program (to let them send a new email):</p>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="mailto:someone@example.com"
+					<span class="tagcolor">&gt;</span>
+					Send email
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>Button as a Link</h2>
+			<p class="col-paragraph"> To use an HTML button as a link, you have to add some JavaScript code.</p>
+			<p class="col-paragraph">JavaScript allows you to specify what happens at certain events, such as a click of a button:</p>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					button onclick="document.location='default.asp'"
+					<span class="tagcolor">&gt;</span>
+					HTML Tutorial
+					<span class="tagcolor">&lt;</span>
+					/button
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>Link Titles</h2>
+			<p class="col-paragraph"> The &lt;title&gt; attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"
+					<span class="tagcolor">&gt;</span>
+					Visit our HTML Tutorial
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>More on Absolute URLs and Relative URLs</h2>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">Use a full URL to link to a web page:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="https://www.w3schools.com/html/default.asp"
+					<span class="tagcolor">&gt;</span>
+					HTML Tutorial
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">Link to a page located in the html folder on the current web site: </p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="/html/default.asp"
+					<span class="tagcolor">&gt;</span>
+					HTML Tutorial
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">Link to a page located in the same folder as the current page:  </p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="default.asp"
+					<span class="tagcolor">&gt;</span>
+					HTML Tutorial
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmlcss.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmllinkscolor.html">Next ❯</a>
+		</div>
+
+		<hr>
+	</div>
+	
+</body>
+
+<footer></footer>
+
+
+<script src="../source/burger.js"></script>
+</html>

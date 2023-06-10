@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<header>
+
+</header>
+
+<body>
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Styles - CSS</span></h1>
+			   <a class="w-left w-btn" href="htmlhsl.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmllinks.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">CSS stands for Cascading Style Sheets.</p><br>
+            <p class="intro">CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p><br>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>What is CSS?</h2>
+			<p class="col-paragraph">Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p><br>
+			<p class="col-paragraph">With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p><br>
+		</div>
+		<div class="wrap-column1">
+			<p class="w-note"><strong>Note:</strong>The word <strong>cascading</strong> means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!</p><br>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>Using CSS</h2>
+			<p class="col-paragraph">CSS can be added to HTML documents in 3 ways:</p><br>
+			<ul class="bullet-container">
+				<li class="bullet"><strong>Inline</strong> - by using the <strong>style</strong> attribute inside HTML elements</li>
+				<li class="bullet"><strong>Internal</strong> - by using a <strong>&lt;style&gt;</strong> element in the <strong>&lt;head&gt;</strong> section</li>
+				<li class="bullet"><strong>External</strong> - by using a <strong>&lt;link&gt;</strong> element to link to an external CSS file</li>
+			</ul>
+			<p class="col-paragraph">The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.</p><br>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>Inline CSS</h2>
+			<p class="c0l-paragraph">An inline CSS is used to apply a unique style to a single HTML element.</p>
+			<p class="c0l-paragraph">An inline CSS uses the <strong>style </strong> attribute of an HTML element.</p>
+			<p class="c0l-paragraph">The following example sets the text color of the &lt;h1&gt; element to blue, and the text color of the &lt;p&gt; element to red:</p>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					h1 style="color:blue;"
+					<span class="tagcolor">&gt;</span>
+					A Blue Heading
+					<span class="tagcolor">&lt;</span>
+					/h1
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					p style="color:red;"
+					<span class="tagcolor">&gt;</span>
+					A red paragraph.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>Internal CSS</h2>
+			<p class="c0l-paragraph">An internal CSS is used to define a style for a single HTML page.</p>
+			<p class="c0l-paragraph">An internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
+			<p class="c0l-paragraph">The following example sets the text color of ALL the &lt;h1&gt; elements (on that page) to blue, and the text color of ALL the &lt;p&gt; elements to red. In addition, the page will be displayed with a "powderblue" background color:</p>
+		</div>
+		<div class="wrap-column1">
+				<div class="w-example">
+					<h3 class="example">Example</h3>
+					<div class="w-code">
+						<span class="tagnamecolor">
+							<span class="tagcolor">&lt;</span> 
+							   !DOCTYPE
+							<span class="attributecolor"> html</span>
+							<span class="tagcolor">&gt;</span>
+						
+						  <br> 
+						  <span class="tagnamecolor">
+							<span class="tagcolor">&lt;</span> 
+							html 
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<span class="tagcolor">&lt;</span> 
+							head
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<span class="tagcolor">&lt;</span> 
+							style 
+							<span class="tagcolor">&gt;</span>
+							<br>
+							body {background-color: powderblue;} <br>
+							h1   {color: blue;} <br>
+                            p    {color: red;}
+						  </span>
+						  <br>
+		
+						  <span class="tagnamecolor">
+							<span class="tagcolor">&lt;</span>
+							/style
+							<span class="tagcolor">&gt;</span>
+							<span class="tagcolor">&lt;</span>
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<span class="tagcolor">&lt;</span>
+							/head
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<span class="tagcolor">&lt;</span> 
+							body
+							<span class="tagcolor">&gt;</span>
+							<br>
+					
+							<span class="tagcolor">&lt;</span>
+							h1
+							<span class="tagcolor">&gt;</span>
+							This is a Heading
+							<span class="tagcolor">&lt;</span>
+							/h1
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<span class="tagcolor">&lt;</span>
+							p
+							<span class="tagcolor">&gt;</span>
+							This is a paragraph
+							<span class="tagcolor">&lt;</span>
+							/p
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<br>
+							<span class="tagnamecolor">
+								<span class="tagcolor">&lt;</span>
+								/body
+								<span class="tagcolor">&gt;</span>
+								<br>
+								<span class="tagcolor">&lt;</span>
+								/html
+								<span class="tagcolor">&gt;</span>
+			
+							</span>
+		
+						</span>
+		
+		
+					</div>
+				</div>
+		
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>External CSS</h2>
+			<p class="c0l-paragraph">An external style sheet is used to define the style for many HTML pages.</p>
+			<p class="c0l-paragraph">To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page:</p>
+		</div>
+		<div class="wrap-column1">
+				<div class="w-example">
+					<h3 class="example">Example</h3>
+					<div class="w-code">
+						<span class="tagnamecolor">
+							<span class="tagcolor">&lt;</span> 
+							   !DOCTYPE
+							<span class="attributecolor"> html</span>
+							<span class="tagcolor">&gt;</span>
+						
+						  <br> 
+						  <span class="tagnamecolor">
+							<span class="tagcolor">&lt;</span> 
+							html 
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<span class="tagcolor">&lt;</span> 
+							head
+							<span class="tagcolor">&gt;</span>
+							<br>
+							
+							<span class="tagcolor">&lt;</span> 
+							link rel="stylesheet" href="styles.css"
+							<span class="tagcolor">&gt;</span>
+						  </span>
+		
+						  <span class="tagnamecolor">
+							<br>
+							<span class="tagcolor">&lt;</span>
+							/head
+							<span class="tagcolor">&gt;</span>
+							<br><br>
+							<span class="tagcolor">&lt;</span> 
+							body
+							<span class="tagcolor">&gt;</span>
+							<br>
+					
+							<span class="tagcolor">&lt;</span>
+							h1
+							<span class="tagcolor">&gt;</span>
+							This is a Heading
+							<span class="tagcolor">&lt;</span>
+							/h1
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<span class="tagcolor">&lt;</span>
+							p
+							<span class="tagcolor">&gt;</span>
+							This is a paragraph
+							<span class="tagcolor">&lt;</span>
+							/p
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<br>
+							<span class="tagnamecolor">
+								<span class="tagcolor">&lt;</span>
+								/body
+								<span class="tagcolor">&gt;</span>
+								<br>
+								<span class="tagcolor">&lt;</span>
+								/html
+								<span class="tagcolor">&gt;</span>
+			
+							</span>
+		
+						</span>
+		
+		
+					</div>
+				</div>
+		
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="c0l-paragraph">The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</p>
+			<p class="c0l-paragraph">Here is what the "styles.css" file looks like:</p>
+		</div>
+		<div class="w-example">
+			<div class="example">"styles.css":</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor"></span>
+					body &#123;<br>
+					<span class="tagcolor"></span>
+					background-color: powderblue;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+					<span class="tagcolor"></span>
+					h1 &#123;<br>
+					<span class="tagcolor"></span>
+					color: blue;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+					<span class="tagcolor"></span>
+					p &#123;<br>
+					<span class="tagcolor"></span>
+					color: red;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+					<span class="tagcolor"></span>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="w-note"><Strong>Tip:</Strong>With an external style sheet, you can change the look of an entire web site, by changing one file!</p>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>CSS Colors, Fonts and Sizes</h2>
+			<p class="c0l-paragraph">Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.</p>
+			<p class="c0l-paragraph">The CSS <strong class="attributecolor">color</strong> property defines the text color to be used.</p>
+			<p class="c0l-paragraph">The CSS <strong class="attributecolor">font-family</strong> property defines the font to be used.</p>
+			<p class="c0l-paragraph">The CSS <strong class="attributecolor">font-size</strong> property defines the text size to be used.</p>
+		</div>
+		<div class="wrap-column1">
+			<div class="w-example">
+				<h3 class="example">Example</h3>
+				<div class="w-code">
+					<span class="tagnamecolor">
+						<span class="tagcolor">&lt;</span> 
+						   !DOCTYPE
+						<span class="attributecolor"> html</span>
+						<span class="tagcolor">&gt;</span>
+					
+					  <br> 
+					  <span class="tagnamecolor">
+						<span class="tagcolor">&lt;</span> 
+						html 
+						<span class="tagcolor">&gt;</span>
+						<br>
+						<span class="tagcolor">&lt;</span> 
+						head
+						<span class="tagcolor">&gt;</span>
+						<br>
+						<span class="tagcolor">&lt;</span> 
+						style
+						<span class="tagcolor">&gt;</span>
+						<br>
+						<span class="tagcolor"></span>
+						h1 &#123;<br>
+						<span class="tagcolor"></span>
+						color: blue;<br>
+						font-family: verdana;<br>
+						font-size: 300%;<br>
+						<span class="tagcolor"></span>
+						&#125;<br>
+						<span class="tagcolor"></span>
+						p &#123;<br>
+						<span class="tagcolor"></span>
+						color: red;<br>
+						font-family: courier;<br>
+						font-size: 160%;<br>
+						<span class="tagcolor"></span>
+						&#125;<br>
+						<span class="tagcolor"></span>
+						
+					<span class="tagnamecolor">
+						<br>
+						<span class="tagcolor">&lt;</span> 
+						/style
+						<span class="tagcolor">&gt;</span>
+						<br>
+						<span class="tagcolor">&lt;</span>
+						/head
+						<span class="tagcolor">&gt;</span>
+						<br><br>
+						<span class="tagcolor">&lt;</span> 
+						body
+						<span class="tagcolor">&gt;</span>
+						<br>
+				
+						<span class="tagcolor">&lt;</span>
+						h1
+						<span class="tagcolor">&gt;</span>
+						This is a Heading
+						<span class="tagcolor">&lt;</span>
+						/h1
+						<span class="tagcolor">&gt;</span>
+						<br>
+						<span class="tagcolor">&lt;</span>
+						p
+						<span class="tagcolor">&gt;</span>
+						This is a paragraph
+						<span class="tagcolor">&lt;</span>
+						/p
+						<span class="tagcolor">&gt;</span>
+						<br>
+						<br>
+						<span class="tagnamecolor">
+							<span class="tagcolor">&lt;</span>
+							/body
+							<span class="tagcolor">&gt;</span>
+							<br>
+							<span class="tagcolor">&lt;</span>
+							/html
+							<span class="tagcolor">&gt;</span>
+		
+						</span>
+	
+					</span>
+	
+	
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="wrap-column1">
+			<h2>CSS Border</h2>
+			<p class="col-paragraph">The CSS <strong class="attributecolor">border</strong> property defines a border around an HTML element.</p><br>
+		</div>
+		<div class="wrap-column1">
+			<p class="w-note"><strong>Tip:</strong>You can define a border for nearly all HTML elements.</p><br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">Use of CSS border property: </p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor"></span>
+					p &#123;<br>
+					<span class="tagcolor"></span>
+					border: 2px solid powderblue;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+					<span class="tagcolor"></span>
+				</span>
+			</div>
+		</div>
+	
+		<div class="wrap-column1">
+			<h2>CSS Padding</h2>
+			<p class="col-paragraph">The CSS <strong class="attributecolor">Padding</strong> property defines a padding (space) between the text and the border.</p><br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">Use of CSS border and padding properties:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor"></span>
+					p &#123;<br>
+					<span class="tagcolor"></span>
+					border: 2px solid powderblue;<br>
+					padding: 30px;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+					<span class="tagcolor"></span>
+				</span>
+			</div>
+		</div>
+	
+		<div class="wrap-column1">
+			<h2>CSS Margin</h2>
+			<p class="col-paragraph">The CSS <strong class="attributecolor">marging</strong> property defines a margin (space) outside the border.</p><br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">Use of CSS border and margin properties:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor"></span>
+					p &#123;<br>
+					<span class="tagcolor"></span>
+					border: 2px solid powderblue;<br>
+					margin: 50px;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+					<span class="tagcolor"></span>
+				</span>
+			</div>
+		</div>
+	
+		<div class="wrap-column1">
+			<h2>Link to External CSS</h2>
+			<p class="col-paragraph">External style sheets can be referenced with a full URL or with a path relative to the current web page.</p><br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">This example uses a full URL to link to a style sheet:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+	
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">This example links to a style sheet located in the html folder on the current web site: </p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					link rel="stylesheet" href="/html/styles.css"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+	
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">This example links to a style sheet located in the same folder as the current page: </p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					link rel="stylesheet" href="styles.css
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+	
+	
+		<div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmlhsl.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmllinks.html">Next ❯</a>
+		</div>
+	
+	
+
+
+	</div>
+
+	
+</body>
+
+<footer>
+
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

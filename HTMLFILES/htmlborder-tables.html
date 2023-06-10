@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Tables Borders</span></h1>
+			   <a class="w-left w-btn" href="htmltables.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlsizes-tables.html">Next ❯</a>
+		</div>
+         <hr>
+		<div class="wrap-column1">
+            <p class="intro">
+                HTML tables can have borders of different styles and shapes.
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>How To Add a Border</h2>
+            <br>
+            <p class="intro">
+                When you add a border to a table, you also add borders around each table cell:
+            </p>
+            <div class="table-container">
+                <table class="table1 table">
+                    <tbody>
+                        <tr class="tr">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="tr">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="tr">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <p class="intro">
+                To add a border, use the CSS <span class="attributecolor-bg">border</span>
+                property on <span class="attributecolor-bg">table</span>, <span class="attributecolor-bg">th</span>,
+                and <span class="attributecolor-bg">td</span> elements:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="cssselector">
+                    table, th, td  
+                    <span class="cssdelimiter"> {</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cssproperty">border</span>
+                    <span class="cssdelimiter">:</span>
+                    <span class="cssvalue">1px solid black</span>
+                    <span class="cssdelimiter">;</span>
+                    <br>
+                    <span class="cssdelimiter">}</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+		    </div>
+        </div>
+        <br>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Collapsed Table Borders</h2>
+            <br>
+            <p class="intro">To avoid having double borders like in the example above, set the css
+                <span class="attributecolor-bg">border-collapse</span> property to <span class="attributecolor-bg">collapse</span>.
+            </p>
+            <br>
+            <p class="intro">This will make the borders collapse into a single border:</p>
+
+            <div class="table-container">
+                <table class="table2 table">
+                    <tbody>
+                        <tr class="tr">
+                            <td class="td">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="tr">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="tr">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="cssselector">
+                    table, th, td  
+                    <span class="cssdelimiter"> {</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cssproperty">border</span>
+                    <span class="cssdelimiter">:</span>
+                    <span class="cssvalue">1px solid black</span>
+                    <span class="cssdelimiter">;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cssproperty">border-collapse</span>
+                    <span class="cssdelimiter">:</span>
+                    <span class="cssvalue">collapse</span>
+                    <span class="cssdelimiter">;</span>
+                    <br>
+                    <span class="cssdelimiter">}</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+		    </div>
+        </div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="htmlpagetitle.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlborder-tables.html">Next ❯</a>
+	    </div>
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

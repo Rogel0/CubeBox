@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<header>
+
+</header>
+<body>
+    
+    <div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">&lt;picture&gt; Element</span></h1>
+			   <a class="w-left w-btn" href="htmlbgimages.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlfavicon.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">The HTML &lt;picture&gt; element allows you to display different pictures for different devices or screen sizes.</p><br>
+		</div>
+		<hr>
+        <div class="w-example">
+            <img src="picture_example.jpg" alt="Workplace" usemap="#workmap">
+        </div>
+
+        <div class="wrap-column1">
+            <h2>The HTML<span class="attributecolor">&lt;picture&gt;</span> Element</h2>
+            <p class="col-paragraph">The HTML <span class="attributecolor">&lt;picture&gt;</span> element gives web developers more flexibility in specifying image resources.</p>
+            <p class="col-paragraph">The <span class="attributecolor">&lt;picture&gt;</span> element contains one or more <span class="attributecolor">&lt;source&gt;</span> elements, each referring to different images through the <span class="attributecolor">&lt;srcsetgt;</span> attribute. This way the browser can choose the image that best fits the current view and/or device.</p>
+            <p class="col-paragraph">Each <span class="attributecolor">&lt;source&gt;</span> element has a <span class="attributecolor">media</span> attribute that defines when the image is the most suitable.</p>
+        </div>
+
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Show different images for different screen sizes:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    picture
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    source media="(min-width: 650px)" srcset="img_food.jpg"
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    source media="(min-width: 465px)" srcset="img_car.jpg"
+                    <span class="tagcolor">&gt;</span>
+
+                    <span class="tagcolor">&lt;</span>
+                    img src="img_girl.jpg"
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    /picture
+                    <span class="tagcolor">&gt;</span>
+
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">
+            <p class="w-note"><strong>Note:</strong>Always specify an <span class="attributecolor">&lt;img&gt;</span> element as the last child element of the<span class="attributecolor">&lt;picture&gt;</span> element. The <span class="attributecolor">&lt;img&gt;</span> element is used by browsers that do not support the <span class="attributecolor">&lt;picture&gt;</span> element, or if none of the <span class="attributecolor">&lt;souce&gt;</span> tags match.</p>
+        </div>
+
+        <div class="wrap-column1">
+            <h2>When to use the Picture Element</h2>
+            <p class="col-paragraph">There are two main purposes for the  <span class="attributecolor">&lt;picture&gt;</span> element</p>
+            <ul class="bullet-container">
+                <ol>1. Bandwidth</ol>
+            </ul>
+            <p class="col-paragraph">If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <span class="attributecolor">&lt;source&gt;</span> element with matching attribute values, and ignore any of the following elements.</p>
+
+            <p class="col-paragraph">There are two main purposes for the  <span class="attributecolor">&lt;picture&gt;</span> element</p>
+            <ul class="bullet-container">
+                <ol>2. Format Support</ol>
+            </ul>
+            <p class="col-paragraph">Some browsers or devices may not support all image formats. By using the <span class="attributecolor">&lt;picture&gt;</span> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.</p>
+        </div>
+
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Show different images for different screen sizes:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    picture
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    source srcset="img_avatar.png""
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    source srcset="img_girl.jpg"
+                    <span class="tagcolor">&gt;</span>
+
+                    <span class="tagcolor">&lt;</span>
+                    img src="img_beatles.gif" alt="Beatles" style="width:auto;"
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    /picture
+                    <span class="tagcolor">&gt;</span>
+
+                </span>
+            </div>
+        </div>
+
+        <div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmlbgimages.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlfavicon.html">Next ❯</a>
+		</div>
+        <hr>
+        
+    </div>
+</body>
+<footer></footer>
+
+
+<script src="../source/burger.js"></script>
+</html>

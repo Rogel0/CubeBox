@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position:absolute;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+/*header*/
+.menu{
+    background: rgb(0,100,0);
+    text-align: center;
+    padding: 40px;
+    align-items: fixed;
+}
+
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #ffffff;
+    margin: auto;
+}
+menu ul li{
+    width: 120px;
+    margin: 15px;
+    height: auto;
+    
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0px 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    border-radius: .2em;
+    
+}
+.active,.menu ul li a:hover{
+    background:#2dab0d;
+    border-radius: 5px 5px;
+}
+.menu .fa{
+    margin-right: 8px;
+    align-items: right;
+}
+.menu ul li a:hover{
+    background:#2dab0d;
+    color: black;
+    border-radius: 5px 5px;
+    cursor: pointer;
+    padding: 5px 20px;
+    transform: none;
+
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+
+/*old code*/
+.sidenav
+{
+	background: gray;
+	position: fixed;
+	height: 100%;
+	width: 20%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow-y: auto;
+	padding-top: 20px;
+}
+.sidenav a
+{
+	color: gray;
+	padding: 10px 15px 10px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+}
+/* .sidenav a:hover
+{
+	background: rgb(41, 209, 77);
+} */
+
+
+
+
+
+
+body
+{
+	font-family: "Lato", sans-serif;
+}
+.sidenav
+{
+	background: gray;
+	position: fixed;
+	height: 100%;
+	width: 20%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+.sidenav a
+{
+	color: #000000;
+	padding: 10px 15px 10px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+}
+/* .sidenav a:hover
+{
+	background: rgb(58, 219, 120);
+} */
+h2
+{
+	padding: 10px 15px 10px 16px;
+	color: #030303;
+	
+}
+.main
+{
+	background: #ffffff;
+	margin-left: 20%;
+	padding: 4px 10px;
+	color: #080808;
+	display: inline-block;
+}
+
+
+/*Making responsive*/
+@media screen and (max-width: 600px)
+{
+	.sidenav
+	{
+		padding-top: 15px;
+		width: 155px;
+
+	}
+	.sidenav a
+	{
+		padding-left: 20px;
+		font-size: 18px;
+	}
+	.main
+	{
+		margin-left: 32%;
+		font-size: 15px;
+	}
+	p
+	{
+		display: inline-block;
+	}
+}

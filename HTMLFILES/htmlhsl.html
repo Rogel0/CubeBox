@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<header>
+
+</header>
+
+<body>
+    <div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">HSL and HSLA Colors</span></h1>
+			   <a class="w-left w-btn" href="htmlhex.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlcss.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">HSL stands for hue, saturation, and lightness.</p><br>
+            <p class="intro">HSLA color values are an extension of HSL with an Alpha channel (opacity).</p><br>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <h2>HSL Color Values</h2>
+            <p class="col-paragraph">In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p><br>
+            <p class="col-paragraph"><strong>hsl(hue, saturation, lightness)</strong></p><br>
+            <p class="col-paragraph">Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p><br>
+            <p class="col-paragraph">Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.</p><br>
+            <p class="col-paragraph">Lightness is also a percentage value. 0% is black, and 100% is white.</p><br>
+        </div>
+        <div class="w-example">
+            <div class="example">Example</div>
+            <div class="w-code">
+                <span class="color-h1">
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+                    <span class="tagcolor"></span>
+                </span>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Saturation</h2>
+            <p class="col-paragraph">Saturation can be described as the intensity of a color.</p><br>
+            <p class="col-paragraph">100% is pure color, no shades of gray.</p><br>
+            <p class="col-paragraph">50% is 50% gray, but you can still see the color.</p><br>
+            <p class="col-paragraph">0% is completely gray; you can no longer see the color.</p><br>
+        </div>
+        <div class="w-example">
+            <div class="example">Example</div>
+            <div class="w-code">
+                <span class="color-h1">
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                </span>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Lightness</h2>
+            <p class="col-paragraph">The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light), and 100% means full lightness (white).</p><br>
+        </div>
+        <div class="w-example">
+            <div class="example">Example</div>
+            <div class="w-code">
+                <span class="color-h1">
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+                    <span class="tagcolor"></span>
+                </span>
+            </div>
+        </div>
+        <hr>       
+        <div class="wrap-column1">
+            <h2>Shades of Gray</h2>
+            <p class="col-paragraph">Shades of gray are often defined by setting the hue and saturation to 0, and adjusting the lightness from 0% to 100% to get darker/lighter shades:</p><br>
+        </div>
+        <div class="w-example">
+            <div class="example">Example</div>
+            <div class="w-code">
+                <span class="color-h1">
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
+                    <span class="tagcolor"></span>
+                </span>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>HSLA Color Values</h2>
+            <p class="col-paragraph">HSLA color values are an extension of HSL color values, with an Alpha channel - which specifies the opacity for a color.</p><br>
+            <p class="col-paragraph">An HSLA color value is specified with:</p><br>
+            <p class="col-paragraph"><strong>hsla(hue, saturation, lightness, alpha)</strong></p><br>
+            <p class="col-paragraph">The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p><br>
+            <p class="col-paragraph"></p><br>
+        </div>
+        <div class="w-example">
+            <div class="example">Example</div>
+            <div class="w-code">
+                <span class="color-h1">
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+                    <span class="tagcolor"></span>
+                    <h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+                    <span class="tagcolor"></span>
+                </span>
+            </div>
+        </div>
+        <div class="w-clear nextprev">
+			<a class="w-left w-btn" href="htmlhex.html">❮ Previous</a>
+			<a class="w-right w-btn" href="htmlcss.html">Next ❯</a>
+		</div>
+        <hr>
+
+    </div>
+</body>
+
+
+<footer>
+
+</footer>
+
+
+<script src="../source/burger.js"></script>
+</html>

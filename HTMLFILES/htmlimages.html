@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<header>
+
+</header>
+<body>
+	
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Images</span></h1>
+			   <a class="w-left w-btn" href="htmllinkbookmarks.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlimagesmaps.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">Images can improve the design and the appearance of a web page.</p><br>
+		</div>
+		<hr>
+		<div class="w-row" style="text-align: center;">
+            <div class="w-col m4" style="background-image: url(https://www.w3schools.com/html/pic_trulli.jpg);"></div>
+		    <div class="w-col m4" style="background-image: url(https://www.w3schools.com/html/img_girl.jpg);"></div>
+		    <div class="w-col m4" style="background-image: url(https://www.w3schools.com/html/img_chania.jpg);"></div>
+		</div>
+		
+		
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="pic_trulli.jpg" alt="Italian Trulli"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="img_girl.jpg" alt="Girl in a jacket"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="flower.jpg" alt="Flowers in Chania"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<hr>
+
+		<div class="wrap-column1">
+			<h2></h2>
+			<p class="col-paragraph">The HTML <span class="attributecolor">&lt;img&gt;</span> tag is used to embed an image in a web page</p>
+			<p class="col-paragraph">Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.</p>
+			<p class="col-paragraph">The <span class="attributecolor">&lt;img&gt;</span>  tag is empty, it contains attributes only, and does not have a closing tag.</p>
+			<p class="col-paragraph">The <span class="attributecolor">&lt;img&gt;</span> tag has two required attributes:</p>
+
+			<ul class="bullet-container">
+				<li class="bullet"> <strong>src </strong> - Specifies the path to the image</li>
+				<li class="bullet"> <strong>alt </strong> - Specifies an alternate text for the image</li>
+			</ul>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Syntax</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="url" alt="alternatetext"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>The src Attribute</h2>
+			<p class="col-paragraph">The required <span class="attributecolor">src</span> attribute specifies the path (URL) to the image.</p>
+			<p class="w-note"> <strong>Note:</strong> When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the <span class="attributecolor">alt  </span>text are shown if the browser cannot find the image. </p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="img_chania.jpg" alt="Flowers in Chania"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>The alt Attribute</h2>
+			<p class="col-paragraph">The required <span class="attributecolor">src</span> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+			<p class="col-paragraph">The value of the <span class="attributecolor">src</span> attribute should describe the image:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="img_chania.jpg" alt="Flowers in Chania"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">If a browser cannot find an image, it will display the value of the <span class="attributecolor">src</span> attribute:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="wrongname.gif" alt="Flowers in Chania"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">			
+			<p class="w-note"> <strong>Tip:</strong> A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled. </p>
+		</div>
+
+		
+		<div class="wrap-column1">
+			<h2>Image Size - Width and Height</h2>
+			<p class="col-paragraph">You can use the <span class="attributecolor">style</span> attribute to specify the width and height of an image.</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">Alternatively, you can use the <span class="attributecolor">width</span> and <span class="attributecolor">height</span> attributes:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph"> The <span class="attributecolor">width</span> and <span class="attributecolor">height</span> attributes always define the width and height of the image in pixels.</p>
+		</div>
+
+		<div class="wrap-column1">			
+			<p class="w-note"> <strong>Tip:</strong>  Always specify the width and height of an image. If width and height are not specified, the web page might flicker while the image loads. </p>
+		</div>
+
+		<div class="wrap-column1">
+			<p class="col-paragraph"> The <span class="attributecolor">width</span>,<span class="attributecolor">height</span>  and <span class="attributecolor">style</span> attributes  are all valid in HTML.</p>
+			<p class="col-paragraph"> However, we suggest using the <span class="attributecolor">style</span> attribute. It prevents styles sheets from changing the size of images:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					!DOCTYPE html
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					html
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					head
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					style
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor"></span>
+					img &#123;
+					<span class="tagcolor"></span><br>
+					width: 100%;
+					<span class="tagcolor"></span><br>
+					&#125; 
+					<span class="tagcolor"></span><br>
+				</span>
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					/style
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					/head
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					body
+					<span class="tagcolor">&gt;</span><br>
+				</span>
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="html5.gif" alt="HTML5 Icon" width="128" height="128"
+					<span class="tagcolor">&gt;</span>
+				</span><br>
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"
+					<span class="tagcolor">&gt;</span><br> 
+				</span>
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					 /body
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					/html
+					<span class="tagcolor">&gt;</span><br>
+				</span>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>Images in Another Folder</h2>
+			<p class="col-paragraph">If you have your images in a sub-folder, you must include the folder name in the <span class="attributecolor">src</span> attribute:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<hr>
+
+		<div class="wrap-column1">
+			<h2>Images on Another Server/Website</h2>
+			<p class="col-paragraph">Some web sites point to an image on another server.</p>
+			<p class="col-paragraph">To point to an image on another server, you must specify an absolute (full) URL in the <span class="attributecolor">src</span> attribute:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">			
+			<p class="w-note"> <strong>Notes on External Images:</strong> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; they can suddenly be removed or changed.</p>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>Animated Images</h2>
+			<p class="col-paragraph">HTML allows animated GIFs:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>Image as a Link</h2>
+			<p class="col-paragraph">To use an image as a link, put the <strong class="attributecolor">&lt;img&gt;</strong> tag inside the <strong class="attributecolor">&lt;a&gt;</strong> tag:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="default.asp"
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span><br>
+				</span>
+			</div>
+		</div>
+		<hr>
+
+		<div class="wrap-column1">
+			<h2>Image Floating</h2>
+			<p class="col-paragraph">Use the CSS <span class="attributecolor">float</span> property to let the image float to the right or to the left of a text:</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"
+					<span class="tagcolor">&gt;</span><br>
+					The image will float to the right of the text.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span><br>
+
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"
+					<span class="tagcolor">&gt;</span><br>
+					The image will float to the right of the text.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span><br>
+				</span>
+			</div>
+		</div>
+		<hr>
+
+		<div class="wrap-column1">
+			<h2>Common Image Formats</h2>
+			<p class="col-paragraph">Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):</p><br>
+		</div>
+		<table class="w-table">
+			<tbody>
+				<tr>
+					<th><strong>Abbreviation</strong></th>
+					<th><strong>File Format</strong></th>
+					<th><strong>File Extension</strong></th>
+				</tr>
+				<tr>
+					<td>APNG</td>
+					<td>Animated Portable Network Graphics</td>
+					<td>.apng</td>
+				</tr>
+				<tr>
+					<td>GIF</td>
+					<td>Graphics Interchange Forma</td>
+					<td>	.gif</td>
+				</tr>
+				<tr>
+					<td>ICO</td>
+					<td>Microsoft Icon</td>
+					<td>.ico, .cur</td>
+				</tr>
+				<tr>
+					<td>JPEG</td>
+					<td>Joint Photographic Expert Group image</td>
+					<td>	.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+				</tr>
+				<tr>
+					<td>PNG</td>
+					<td>Portable Network Graphics</td>
+					<td>.png</td>
+				</tr>
+				<tr>
+					<td>PNG</td>
+					<td>Scalable Vector Graphics</td>
+					<td>.svg</td>
+				</tr>
+
+			</tbody>
+		</table><br>
+		<hr>
+		<div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmllinkbookmarks.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlimagesmaps.html">Next ❯</a>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+</body>
+<footer></footer>
+
+
+<script src="../source/burger.js"></script>
+</html>

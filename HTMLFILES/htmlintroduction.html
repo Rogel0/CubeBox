@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+<div class="main-container">
+    <div class="w-clear nextprev">
+		<h1 class="first-title">HTML <span class="color-h1">Introduction</span></h1>
+		   <a class="w-left w-btn" href="HTML.html">❮ Previous</a>
+		   <a class="w-right w-btn" href="htmleditors.html">Next ❯</a>
+	</div>
+	<hr>
+	<div>
+		<p class="intro">HTML is the standard markup language for creating web pages</p>
+	</div>
+	<hr>
+	<div class="wrap-column1">
+		<h2>What is HTML?</h2>
+		<ul class="bullet-container">
+			<li class="bullet">HTML stands for hyper Text Markup Language</li>
+			<li class="bullet">HTML is the standard markup language for creating Web pages</li>
+			<li class="bullet">HTML describes the structure of a Web page</li>
+			<li class="bullet">HTML consists of a series of elements</li>
+			<li class="bullet">HTML elements tell the browser how to display the content</li>
+			<li class="bullet">HTML elements label pieces of content such as "thing is a heading",
+				"this is a paragraph", "this is a link", etc.
+			</li>
+		</ul>	
+	</div>
+	<hr>
+	<div class="wrap-column1">
+       <h2>A Simple HTML Document</h2>
+	</div>
+
+	<div class="w-example">
+        <h2 class="example">Example</h2>
+		<div class="w-code">
+			<span class="tagnamecolor">
+				<span class="tagcolor">&lt;</span> 
+				   !DOCTYPE
+				<span class="attributecolor"> html</span>
+				<span class="tagcolor">&gt;</span>
+			</span>
+			 <br>
+			<span class="tagnamecolor">
+				<span class="tagcolor" >&lt;</span>
+				<span>html</span>
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<span class="tagcolor" >&lt;</span>
+				<span>body</span>
+				<span class="tagcolor">&gt;</span>
+			</span>
+			<br>
+			<br>
+			<span class="tagnamecolor">
+				<span class="tagcolor">&lt;</span>
+				h1
+				<span class="tagcolor">&gt;</span>
+				My First Heading
+				<span class="tagcolor">&lt;/</span>
+				h1
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<span class="tagcolor">&lt;</span>
+				p
+				<span class="tagcolor" >&gt;</span>
+				My first paragraph.
+				<span class="tagcolor">&lt;/</span>
+				p
+				<span class="tagcolor">&gt;</span>
+
+
+			</span>
+			<br>
+			<br>
+			<span class="tagnamecolor" >
+				<span class="tagcolor" >&lt;/</span>
+				<span>html</span>
+				<span class="tagcolor" >&gt;</span>
+				<br>
+				<span class="tagcolor" >&lt;/</span>
+				<span>body</span>
+				<span class="tagcolor" >&gt;</span>
+			</span>
+		</div>
+		<div class="w-clear nextprev">
+			<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+	 </div>
+	</div>
+
+	<div class="wrap-column1">
+		<h2>Example Explained</h2>
+		<ul class="bullet-container">
+			<li class="bullet">The <span class="attributecolor-bg">&lt;!DOCTYPE html&gt;</span> declaration defines
+			that this document is an HTML 5 document</li>
+			<li class="bullet">The <span class="attributecolor-bg">&lt;html&gt;</span> element is the root element of an HTML page</li>
+			<li class="bullet">The <span class="attributecolor-bg">&lt;head&gt;</span> element contains meta information about the HTML page</li>
+			<li class="bullet">The <span class="attributecolor-bg">&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+			<li class="bullet">The <span class="attributecolor-bg">&lt;body&gt;</span> element defines the document' body, and is a container for all the visible contents, such as headings,paragraphs,images,hyperlinks,<br>  tables,lists,etc.</li>
+			<li class="bullet">The <span class="attributecolor-bg">&lt;h1&gt;</span> element defines a large heading</li>
+			<li class="bullet">The <span class="attributecolor-bg">&lt;p&gt;</span> element defines a paragraph</li>
+		</ul>
+	</div>
+    <hr>
+	<div class="wrap-column1">
+		<h2>What is an HTML Element?</h2>
+		<p style="text-align: start;">An HTML element is defined by a start tag, some content, and an end tag:</p>
+		<div class="big-container">
+			<span class="tagcolor">&lt;</span>
+			<span class="tagnamecolor">tagname</span>
+			<span class="tagcolor">&gt;</span>
+			<span>Content goes here...</span>
+			<br>
+			<span class="tagcolor">&lt;/</span>
+			<span class="tagnamecolor">tagname</span>
+			<span class="tagcolor">&gt;</span>
+			 <br>
+			 <br>
+			
+		</div>
+		
+		<p style="text-align: start;">The HTML <strong>element</strong> is everything the start tag to the end tag:</p>
+		<div class="big-container ">
+			<span class="tagcolor">&lt;</span>
+			<span class="tagnamecolor">h1</span>
+			<span class="tagcolor">&gt;</span>
+			<span>My First Heading</span>
+			<span class="tagcolor">&lt;/</span>
+			<span class="tagnamecolor">h1</span>
+			<span class="tagcolor">&gt;</span>
+			<br>
+			<br>
+			<span class="tagcolor">&lt;</span>
+			<span class="tagnamecolor">p</span>
+			<span class="tagcolor">&gt;</span>
+			<span>My first paragraph</span>
+			<span class="tagcolor">&lt;/</span>
+			<span class="tagnamecolor">p</span>
+			<span class="tagcolor">&gt;</span>
+		</div>
+	</div>
+
+
+	<table class="w-table">
+		<tbody>
+			<tr>
+				<th>Start tag</th>
+				<th>Element content</th>
+				<th>End tag</th>
+			</tr>
+			<tr style="background-color:#FEFF86;">
+				<td style="padding-left: 25px;">&lt;h1&gt;</h1></td>
+				<td style="padding-left: 12px;">My First Heading</td>
+				<td style="padding-left: 15px;">&lt;/h1&gt;</h1></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 25px;">&lt;h1&gt;</h1></td>
+				<td style="padding-left: 12px;">My First Heading</td>
+				<td style="padding-left: 15px;">&lt;/h1&gt;</h1></td>
+			</tr>
+		</tbody>
+	</table>
+     <br>
+	<div class="wrap-column1">
+		<div class="w-notes">
+			<p style="text-align: left;"><strong>Note: </strong> Some HTML elements have no content (like the
+				&lt;br&gt; element). These elements do not have an end tag
+			</p>
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<footer>
+		
+	</footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    
+
+  </script>
+<script src="../source/burger.js"></script>
+</body>
+</html>

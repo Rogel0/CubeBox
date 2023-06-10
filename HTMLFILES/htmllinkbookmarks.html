@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<header>
+
+</header>
+<body>
+    <div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Links - Create Bookmarks</span></h1>
+			   <a class="w-left w-btn" href="htmllinkscolor.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlimages.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.</p><br>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <h2>Create a Bookmark in HTML</h2>
+            <p class="col-paragraph">Bookmarks can be useful if a web page is very long.</p>
+            <p class="col-paragraph">To create a bookmark - first create the bookmark, then add a link to it.</p>
+            <p class="col-paragraph">When the link is clicked, the page will scroll down or up to the location with the bookmark.</p>
+        </div>
+
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">First, use the <span class="attributecolor">id</span> attribute to create a bookmark:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    h1 id="C4"
+                    <span class="tagcolor">&gt;</span>
+                    Chapter 4
+                    <span class="tagcolor">&lt;</span>
+                    /h1
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <div class="wrap-column1">            
+            <p class="col-paragraph">Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</p>
+        </div>
+
+        <div class="w-example">
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    a href="#C4"
+                    <span class="tagcolor">&gt;</span>
+                    Jump to Chapter 4
+                    <span class="tagcolor">&lt;</span>
+                    /a
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">            
+            <p class="col-paragraph">You can also add a link to a bookmark on another page:</p>
+        </div>
+
+        <div class="w-example">
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    a href="html_demo.html#C4"
+                    <span class="tagcolor">&gt;</span>
+                    Jump to Chapter 4
+                    <span class="tagcolor">&lt;</span>
+                    /a
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">
+            <h2 class="color-h1">Chapter Summary</h2>
+            <ul class="bullet-container">
+                <li class="bullet">Use the <span class="attributecolor">id </span>attribute (id="value") to define bookmarks in a page</li>
+                <li class="bullet">Use the <span class="attributecolor">href</span> attribute (href="#value") to link to the bookmark</li>
+            </ul>
+        </div>
+
+        <div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmllinkscolor.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlimages.html">Next ❯</a>
+		</div>
+        <hr>
+
+    </div>
+</body>
+
+<footer></footer>
+
+
+<script src="../source/burger.js"></script>
+</html>

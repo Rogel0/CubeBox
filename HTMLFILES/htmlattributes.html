@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<header>
+
+</header>
+<body>
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Attributes</span></h1>
+			   <a class="w-left w-btn" href="htmlelements.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlheading.html">Next ❯</a>
+		   </div>
+		   <hr>
+		<div>
+			<p class="intro">HTML attributes provide additional information about HTML elements.</p>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>HTML Attributes</h2>
+			<ul class="bullet-container">
+				<li class="bullet">All HTML elements can have <strong>attributes</strong></li>
+				<li class="bullet">Attributes provide <strong>additional information</strong> about elements</li>
+				<li class="bullet">Attributes are always specified in <strong>the start tag</strong></li>
+				<li class="bullet">Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>The href Attribute</h2>
+			<p class="col-paragraph">The <strong>&lt;a&gt;</strong> tag defines a hyperlink. The <strong>&lt;href&gt;</strong> attribute specifies the URL of the page the link goes to:</p>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="https://www.w3schools.com">Visit W3Schools
+					<span class="tagcolor">&gt;</span>
+					
+					<span class="tagcolor">&lt;</span>
+					/a 
+					<span class="tagcolor">&gt;</span>
+					<br>
+
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">You will learn more about links in our HTML Links chapter.</p>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>The src Attribute</h2>
+			<p class="col-paragraph">The <strong>&lt;img&gt;</strong> tag is used to embed an image in an HTML page. The <strong>src</strong> attribute specifies the path to the image to be displayed:</p>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="img_girl.jpg
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">There are two ways to specify the URL in the src attribute:</p><br>
+			<ul class="bullet-container">
+				<ol class=""></ol>1. <strong> Absolute URL</strong> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com <br>/images/img_girl.jpg".<br>
+				<div class="w-note wrap-column1">
+					<p class="colo-paragragh"><Strong>Note: </Strong>External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
+				</div><hr>
+				<ol class="">2. <strong>Relative URL</strong> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</ol><br>
+				<div class="w-note wrap-column1">
+					<p class="colo-paragragh"><Strong>Tip: </Strong>It is almost always best to use relative URLs. They will not break if you change domain.</p>
+				</div><hr>
+			</ul>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>The width and height Attributes</h2>
+			<p class="col-paragraph">The <strong>&lt;img&gt;</strong> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):</p>
+		</div>
+
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="img_girl.jpg" alt="Girl with a jacket"
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<hr>
+		
+		<div class="w-example">
+			<div class="example">Example</div>
+			<p class="col-paragraph">See what happens if we try to display an image that does not exist:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					img src="img_typo.jpg" alt="Girl with a jacket"
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>The style Attribute</h2>
+			<p class="col-paragraph">The style attribute is used to add styles to an element, such as color, font, size, and more.</p>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p style="color:red;">This is a red paragraph.
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<hr>
+
+				<div class="wrap-column1">
+			<h2>The lang Attribute</h2>
+			<p class="col-paragraph">You should always include the <strong>lang</strong> attribute inside the <strong>&lt;html&gt;</strong> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					!DOCTYPE html
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					html lang="en"
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					body
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor"><strong class="">......</strong></span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					/body
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					/html
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.</p><br>
+			<p class="col-paragraph">The following example specifies English as the language and United States as the country:</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					!DOCTYPE html
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					html lang="en"
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					body
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor"><strong class="">......</strong></span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					/body
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					/html
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>The title Attribute</h2>
+			<p class="col-paragraph">The <strong>title</strong> attribute defines some extra information about an element.</p><br>
+			<p class="col-paragraph">The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p  title="I'm a tooltip">This is a paragraph.
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<h2>We Suggest: Always Use Lowercase Attributes</h2>
+			<p class="col-paragraph">The HTML standard does not require lowercase attribute names.</p><br>
+			<p class="col-paragraph">The title attribute (and all other attributes) can be written with uppercase or lowercase like <strong>title</strong> or <strong>TITLE</strong>.</p><br>
+			<p class="col-paragraph">However, W3C <strong>recommends</strong> lowercase attributes in HTML, and <strong>demands</strong> lowercase attributes for stricter document types like XHTML</p><br>
+		</div>
+		<hr>		
+		<div class="wrap-column1">
+			<h2>We Suggest: Always Quote Attribute Values</h2>
+			<p class="col-paragraph">The HTML standard does not require quotes around attribute values.</p><br>
+			<p class="col-paragraph">However, W3C <strong>recommends</strong> quotes in HTML, and <strong>demands</strong> quotes for stricter document types like XHTML.</p><br>
+		</div>
+		<div class="w-example">
+			<div class="example">Good</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href="https://www.w3schools.com/html/">Visit our HTML tutorial
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/a
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+		</div>
+		<div class="w-example">
+			<div class="example">Bad</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					a href=https://www.w3schools.com/html/>Visit our HTML tutorial
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/a 
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">Sometimes you have to use quotes. This example will not display the title attribute correctly, because it contains a space:</p><br>
+		</div>
+		<hr>
+
+		<div class="wrap-column1">
+			<h2>Single or Double Quotes?</h2>
+			<p class="col-paragraph">Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</p><br>
+			<p class="col-paragraph">In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p><br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p title='John "ShotGun" Nelson'
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">Or vice versa:</p>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p title="John 'ShotGun' Nelson
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<h2 class="attributecolor">Chapter Summary</h2>
+			<ul class="bullet-container">
+				<li class="bullet">All HTML elements can have attributes</li><br>
+				<li class="bullet">The <strong class="attributecolor">href</strong> attribute of <strong class="attributecolor">&lt;a&gt;</strong> specifies the URL of the page the link goes to</li><br>
+				<li class="bullet">The <strong class="attributecolor">scr</strong> attribute of <strong class="attributecolor">&lt;img&gt;</strong> specifies the path to the image to be displayed</li><br>
+				<li class="bullet">The <strong class="attributecolor">width</strong> and height attributes of <strong class="attributecolor">&lt;img&gt;</strong> provide size information for images</li><br>
+				<li class="bullet">The <strong class="attributecolor">alt</strong> attribute of <strong class="attributecolor">&lt;img&gt;</strong> provides an alternate text for an image</li><br>
+				<li class="bullet">The <strong class="attributecolor">style</strong> attribute is used to add styles to an element, such as color, font, size, and more</li><br>
+				<li class="bullet">The <strong class="attributecolor">lang</strong> attribute of the <strong class="attributecolor">&lt;html &gt;</strong> tag declares the language of the Web page</li><br>
+				<li class="bullet">The <strong class="attributecolor">title</strong> attribute defines some extra information about an element</li><br>
+			</ul>
+		</div>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmlelements.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlheading.html">Next ❯</a>
+		   </div>
+		   <hr>
+		<div>
+
+
+
+
+
+
+
+	</div>
+	
+
+</body>
+
+<footer>
+
+</footer>
+
+
+
+
+<script src="../source/burger.js"></script>
+</html>

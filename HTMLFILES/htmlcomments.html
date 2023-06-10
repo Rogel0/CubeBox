@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<header>
+
+</header>
+
+<body>
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Comments</span></h1>
+			   <a class="w-left w-btn" href="htmlquotations.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlcolors.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>HTML Comment Tag</h2>
+			<p class="col-paragraph">You can add comments to your HTML source by using the following syntax:</p><br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					!-- Write your comments here --
+
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p><br>
+		</div>
+
+		<div class="wrap-column1">
+			<p class="w-note"><strong>Tip:</strong> Comments are not displayed by the browser, but they can help document your HTML source code.</p><br>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>Add Comments</h2>
+			<p class="col-paragraph">With comments you can place notifications and reminders in your HTML code:</p><br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					!-- Write your comments here --
+
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					This is a paragraph.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					!-- Write your comments here --
+
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>Hide Content</h2>
+			<p class="col-paragraph">Comments can be used to hide content.</p><br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					This is a paragraph.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					!-- 
+				
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					 This is a paragraph.
+					 <span class="tagcolor">&lt;</span>
+					 /p
+					 <span class="tagcolor">&gt;</span>
+					  --
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					This is a paragraph too.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<p class="col-paragraph">You can also hide more than one line. Everything between the <strong>&lt;!-- and the --&gt;</strong> will be hidden from the display..</p><br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					This is a paragraph.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					!-- <br>
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					Look at this cool image:
+					 <span class="tagcolor">&lt;</span>
+					 /p
+					 <span class="tagcolor">&gt;</span>
+					 <span class="tagcolor">&lt;</span>
+					 img border="0" src="pic_trulli.jpg" alt="Trulli"
+					 <span class="tagcolor">&gt;</span>
+					 <br>
+					  --
+					<span class="tagcolor">&gt;</span>
+					<br>
+
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					This is a paragraph too.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<p class="col-paragraph">Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.</p><br>
+		</div>
+		<div class="wrap-column1">
+			<h2>Hide Inline Content</h2>
+			<p class="col-paragraph">Comments can be used to hide parts in the middle of the HTML code.</p><br>
+		</div>
+
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					This is 
+					<span class="tagcolor">&lt;</span>
+					!-- great text
+					--
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>\
+		<div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmlquotations.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlcolors.html">Next ❯</a>
+		</div>
+
+
+	</div>
+	
+</body>
+
+<footer>
+
+</footer>
+
+
+
+
+
+<script src="../source/burger.js"></script>
+</html>

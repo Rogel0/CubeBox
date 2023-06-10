@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	</div>
+
+	<div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+<div class="main-container" style="background-color: #DAF5FF">
+    <div class="w-clear nextprev">
+		<h1 class="first-title">HTML <span class="color-h1">Favicon</span></h1>
+		   <a class="w-left w-btn" href="htmlimages.html">❮ Previous</a>
+		   <a class="w-right w-btn" href="htmlpagetitle.html">Next ❯</a>
+	</div>
+	<hr>
+	<div class="wrap-column1">
+		<p class="intro">A favicon is a small image displayed next to the page title in the browser tab.</p>
+	</div>
+	<hr>
+	<div class="wrap-column1">
+		<h2>How To Add a Favicon in HTML</h2>
+		<P>You can use any image you like as your favicon. 
+			You can also create your own favicon on sites
+			like <a href="https://www.favicon.cc" target="_blank">
+				https://www.favicon.cc</a>
+		</P>
+	</div>
+    
+
+	<div class="wrap-column1">
+		<div class="w-note">
+			<p ><strong>Tip:</strong> A favicon is a small image, so
+			   it should be a simple image with high contrast.
+			</p>
+		</div>
+	</div>
+
+	<div class="wrap-column1">
+		<p class="intro">
+			A favicon image is displayed to the left of the
+			page title in the browser tab, like this:
+		</p>
+		<img src="https://www.w3schools.com/html/img_favicon.png" alt="" class="w-image">
+		<p class="intro">
+			To add a favicon to your website, either save your favicon image to the root
+			root directory of your webserver, or create a folder in the root directory
+			called images, and save your favicon image in this folder. A common name for 
+			a favicon image in this folder. A common name for a favicon image is "favicon.ico"
+		</p>
+		<br>
+		<p class="intro">
+			Next, add a <span class="attributecolor-bg">&lt;link&gt;</span>
+			element to your "index.html" file, after the <span class="attributecolor-bg">&lt;title&gt;</span>
+			element like this:
+		</p>
+	</div>
+
+	<div class="w-example">
+		<h3 class="example">Example</h3>
+		<div class="w-code">
+			<span class="tagnamecolor">
+				<span class="tagcolor">&lt;</span>
+				!DOCTYPE
+				<span class="atrributecolor"> html</span>
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<span class="tagcolor">&lt;</span>
+				html
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<span class="tagcolor">&lt;</span>
+				head
+				<span class="tagcolor">&gt;</span>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tagcolor">&lt;</span>
+				title
+				<span class="tagcolor">&gt;</span>
+				<span style="color: black">My Page Title</span>
+				<span class="tagcolor">&lt;/</span>
+				title
+				<span class="tagcolor">&gt;</span>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tagcolor">&lt;</span>
+				link 
+				<span class="attributecolor">href</span>
+				<span class="tagcolor">="icon"</span>
+				<span class="attributecolor">type</span>
+				<span class="tagcolor">"image/x-icon"</span>
+				<span class="attributecolor">href</span>
+				<span class="tagcolor">="images/favicon.ico"</span>
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<span class="tagcolor">&lt;</span>
+                /head
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<span class="tagcolor">&lt;</span>
+				body
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<br>
+				<span class="tagcolor">&lt;</span>
+				h1
+				<span class="tagcolor">&gt;</span>
+				This is a Heading
+				<span class="tagcolor">&lt;/</span>
+				h1 
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<span class="tagcolor">&lt;</span>
+				p 
+				<span class="tagcolor">&gt;</span>
+				This is a paragraph 
+				<span class="tagcolor">&lt;/</span>
+				p 
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<br>
+				<span class="tagcolor">&lt;/</span>
+				body 
+				<span class="tagcolor">&gt;</span>
+				<br>
+				<span class="tagcolor">&lt;/</span>
+                html 
+				<spaln class="tagcolor">&gt;</spaln>
+			</span>
+		</div>
+	</div>
+
+	<div class="wrap-column1">
+		<p class="intro">Now save the "index.html" file and reload it in
+			your browser. Your browser tab should now display your favicon
+			image to the let of the page title.
+		</p>
+	</div>
+	<hr>
+	<div class="wrap-column1">
+		<h2>Favicon File Format Support</h2>
+		<p class="intro">
+			The following table show the file format support for a favicon image:
+		</p>
+		<br>
+		<table class="w-table">
+			<tr>
+				<th>Browser</th>
+				<th>ICO</th>
+				<th>PNG</th>
+				<th>GIF</th>
+				<th>JPG</th>
+				<th>SVG</th>
+			</tr>
+			<tr style="background-color:#FFF9DE;">
+                <td class="w-tr" style="padding-left: 25px;">Edge</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+			</tr>
+			<tr>
+				<td class="w-tr" style="padding-left: 27.5px;">Chrome</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+			</tr>  
+			<tr style="background-color: #FFF9DE;">
+				<td class="w-tr" style="padding-left: 25px;">Firefox</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+			</tr>
+			<tr>
+				<td class="w-tr" style="padding-left: 25px;">Opera</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+			</tr>
+			<tr style="background-color: #FFF9DE;">
+				<td class="w-tr" style="padding-left: 25px;">Safari</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+			</tr>
+		</table>
+	</div>
+	<hr>
+	<div class="wrap-column1">
+		<h2>Chapter Summary</h2>
+		<ul class="bullet-container">
+			<li class="bullet">
+				Use the HTML <span class="attributecolor-bg">&lt;link&gt;</span>
+				elements to insert a favicon
+			</li>
+		</ul>
+	</div>
+	<hr>
+	<table>
+		<tr>
+			<th>Tag</th>
+			<th>Description</th>
+		</tr>
+		<tr  style="background-color: #FFF9DE;">
+            <td  style="padding-left: 20px;">&lt;link&gt;</td>
+			<td style="padding-left: 25px;">Defines the relationship between a document and an external resource</td>
+		</tr>
+	</table>
+
+	<br>
+	<br>
+	<br>
+	<div class="wrap-column1">
+		<div class="w-note">
+			<p>for a  complete list of all available HTML tags,
+				visit our <a href="#" class="black-a">HTML Tag Reference</a>.
+			</p>
+		</div>
+	</div>
+    <br>
+	<br>
+	<br>
+	<br>
+	<div class="w-clear nextprev">
+		<a class="w-left w-btn" href="htmlimages.html">❮ Previous</a>
+		<a class="w-right w-btn" href="htmlpagetitle.html">Next ❯</a>
+	</div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+	
+</footer>
+
+
+
+
+</body>
+
+
+
+
+
+
+<script src="../source/burger.js"></script>
+</html>

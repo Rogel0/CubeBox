@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<header>
+
+</header>
+<body>
+    
+    <div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1"> Links - Different Colors</span></h1>
+			   <a class="w-left w-btn" href="htmllinks.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmllinkbookmarks.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.</p><br>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+			<h2>HTML Link Colors</h2>
+			<p class="col-paragraph">By default, a link will appear like this (in all browsers):</p><br>
+			<ul class="bullet-container">
+				<li class="bullet">An unvisited link is underlined and blue</li>
+				<li class="bullet">A visited link is underlined and purple</li>
+				<li class="bullet">An active link is underlined and red</li>
+			</ul>
+			<p class="col-paragraph">You can change the link state colors, by using CSS:</p><br>
+		</div>
+        <div class="w-example">
+			<div class="example">"Example</div>
+            <p class="col-paragraph">Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    style
+                    <span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor"></span>
+					a:link &#123;<br>
+					<span class="tagcolor"></span>
+                    color: green;<br>
+                    background-color: transparent; <br>
+                    text-decoration: none;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+                    <span class="tagcolor"></span>
+					a:visited &#123;<br>
+					<span class="tagcolor"></span>
+                    color: pink;<br>
+                    background-color: transparent;<br>
+                    text-decoration: none;<br>
+					<span class="tagcolor"></span>
+                    &#125;<br>
+                    <span class="tagcolor"></span>
+					a:hover&#123;<br>
+					<span class="tagcolor"></span>
+                    color: red;<br>
+                    background-color: transparent;<br>
+                    text-decoration: underline;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+                    <span class="tagcolor"></span>
+					a:active &#123;<br>
+					<span class="tagcolor"></span>
+                    color: yellow;<br>
+                    background-color: transparent;<br>
+                    text-decoration: underline;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+                    <span class="tagcolor">&lt;</span>
+                    /style
+                    <span class="tagcolor">&gt;</span><br>
+
+				</span>
+			</div>
+		</div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Link Buttons</h2>
+            <p class="col-paragraph">A link can also be styled as a button, by using CSS:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">            
+                <head>
+                <style>
+                a:link, a:visited {
+                  background-color: #f44336;
+                  color: white;
+                  padding: 15px 25px;
+                  
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                }
+                
+                a:hover, a:active {
+                  background-color: red;
+                  
+                }
+                </style>
+                </head>
+                <body>
+                <a href="default.asp" target="_blank">This is a link</a>
+                
+                </body>
+
+            </div>
+        </div>
+        <div class="w-example">
+			<div class="example">"Example</div>
+            <p class="col-paragraph">Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
+			<div class="w-code">
+				<span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    style
+                    <span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor"></span>
+					a:link , a:visited &#123;<br>
+					<span class="tagcolor"></span>
+                    background-color: #f44336;<br>
+                    color: white;<br>
+                    padding: 15px 25px;<br>
+                    text-align: center;<br>
+                    text-decoration: none;<br>
+                    display: inline-block;<br>
+					<span class="tagcolor"></span>
+					&#125;<br>
+                    <span class="tagcolor"></span>
+					a:hover, a:active &#123;<br>
+					<span class="tagcolor"></span>
+                    background-color: red;<br>
+					<span class="tagcolor"></span>
+                    &#125;<br>
+                    
+
+				</span>
+			</div>
+		</div>
+
+        <div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmllinks.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmllinkbookmarks.html">Next ❯</a>
+		</div>
+        <hr>
+
+    </div>
+</body>
+
+<footer></footer>
+
+
+
+<script src="../source/burger.js"></script>
+</html>

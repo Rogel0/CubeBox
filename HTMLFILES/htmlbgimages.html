@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<header>
+
+</header>
+<body>
+    
+    <div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Background Images</span></h1>
+			   <a class="w-left w-btn" href="htmlimagesmaps.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlpicelement.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">A background image can be specified for almost any HTML element.</p><br>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <h2>Background Image on a HTML element</h2>
+            <p class="col-paragraph">To add a background image on an HTML element, use the HTML <span class="attributecolor">style</span> attribute and the CSS <span class="attributecolor">background-images</span>  property:</p>
+        </div>
+
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Add a background image on a HTML element:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    p style="background-image: url('img_girl.jpg');"
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">
+            <p class="col-paragraph">You can also specify the background image in the <span class="attributecolor">&lt;style&gt;</span> element, in the <span class="attributecolor">&lt;head&gt;</span> section:</p>
+        </div>
+
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Specify the background image in the <span class="attributecolor">&lt;style&gt;</span> element:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    style
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor"></span>
+                    p &#123
+                    <span class="tagcolor"></span><br>
+                    background-image: url('img_girl.jpg');
+                    <span class="tagcolor"></span>
+                    &#125
+                    <span class="tagcolor"></span>
+
+                    <span class="tagcolor">&lt;</span>
+                    /style
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">
+            <h2>Background Image on a Page</h2>
+            <p class="col-paragraph">If you want the entire page to have a background image, you must specify the background image on the  <span class="attributecolor">body</span> element:</p>
+        </div>
+
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Add a background image for the entire page:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    style
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor"></span>
+                    body &#123
+                    <span class="tagcolor"></span><br>
+                    background-image: url('img_girl.jpg');
+                    <span class="tagcolor"></span>
+                    &#125
+                    <span class="tagcolor"></span>
+
+                    <span class="tagcolor">&lt;</span>
+                    /style
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">
+            <h2>Background Repeat</h2>
+            <p class="col-paragraph">If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element:</p>
+        </div>
+
+        <div class="w-example">
+            <img src="img_girl.jpg" alt="Workplace" usemap="#workmap">
+        </div>
+
+        
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Add a background image for the entire page:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    style
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor"></span>
+                    body &#123
+                    <span class="tagcolor"></span><br>
+                    background-image: url('example_img_girl.jpg');
+                    <span class="tagcolor"></span><br>
+                    &#125
+                    <span class="tagcolor"></span><br>
+
+
+                    <span class="tagcolor">&lt;</span>
+                    /style
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">
+            <p class="col-paragraph">To avoid the background image from repeating itself, set the <span class="attributecolor">background-repeat</span> property to <span class="attributecolor">no-repeat</span>.</p>
+        </div>
+
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Add a background image for the entire page:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    style
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor"></span>
+                    body &#123
+                    <span class="tagcolor"></span><br>
+                    background-image: url('example_img_girl.jpg');<br>
+                    background-repeat: no-repeat;<br>
+                    <span class="tagcolor"></span>
+                    &#125
+                    <span class="tagcolor"></span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    /style
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">
+            <h2>Background Cover</h2>
+            <p class="col-paragraph">If you want the background image to cover the entire element, you can set the  <span class="attributecolor">background-size</span> property to <span class="attributecolor">cover</span>.</p>
+            <p class="col-paragraph">Also, to make sure the entire element is always covered, set the  <span class="attributecolor">background-attachment</span> property to <span class="attributecolor">fixed</span>.</p>
+            <p class="col-paragraph">This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions):</p>
+        </div>
+
+        
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Add a background image for the entire page:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    style
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor"></span>
+                    body &#123
+                    <span class="tagcolor"></span><br>
+                    background-image: url('img_girl.jpg');<br>
+                    background-repeat: no-repeat;<br>
+                    background-attachment: fixed;<br>
+                    background-size: cover;<br>
+                    <span class="tagcolor"></span>
+                    &#125
+                    <span class="tagcolor"></span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    /style
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap-column1">
+            <h2>Background Stretch</h2>
+            <p class="col-paragraph">If you want the background image to stretch to fit the entire element, you can set the  <span class="attributecolor">background-attachment</span> property to <span class="attributecolor">100% 100%</span></p>
+        </div>
+
+        <div class="w-example">
+            <img src="img_girl.jpg" alt="Workplace" usemap="#workmap">
+        </div>
+
+        <div class="wrap-column1">
+            <p class="col-paragraph">Try resizing the browser window, and you will see that the image will stretch, but always cover the entire element.</p>
+        </div>
+
+        <div class="w-example">
+            <div class="example">Example</div>
+            <p class="col-paragraph">Add a background image for the entire page:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    style
+                    <span class="tagcolor">&gt;</span><br>
+
+                    <span class="tagcolor"></span>
+                    body &#123
+                    <span class="tagcolor"></span><br>
+                    background-image: url('img_girl.jpg');<br>
+                    background-repeat: no-repeat;<br>
+                    background-attachment: fixed;<br>
+                    background-size: 100% 100%;<br>
+                    <span class="tagcolor"></span>
+                    &#125
+                    <span class="tagcolor"></span><br>
+
+                    <span class="tagcolor">&lt;</span>
+                    /style
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmlimagesmaps.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlpicelement.html">Next ❯</a>
+		</div>
+
+
+    </div>
+</body>
+<footer></footer>
+
+
+<script src="../source/burger.js"></script>
+</html>

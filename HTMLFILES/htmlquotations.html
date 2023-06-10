@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<header>
+
+</header>
+
+<body>
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Quotation and Citation Elements</span></h1>
+			   <a class="w-left w-btn" href="htmlformatting.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlcomments.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">In this chapter we will go through the  <strong>&lt;blockqoute&gt; ,&lt;q&gt;, &lt;abbr&gt;, &lt;address&gt;, &lt;cite&gt;</strong>, and <strong>&lt;bdo&gt; </strong> HTML elements.</p>
+		</div>
+		<hr>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="color-h1"><br>
+					<span class="tagcolor"></span>
+					<p>Here is a quote from WWF's website:</p>
+					<span class="tagcolor"></span>
+					<br>
+					<br>
+					<span class="tagcolor"></span>
+					<blockquote cite="http://www.worldwildlife.org/who/index.html">
+						For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+						</blockquote>
+					<span class="tagcolor"></span>
+					<br>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>HTML &lt;blockqoute&gt; for Quotations</h2>
+			<p class="col-paragraph">The HTML &lt;blockqoute&gt; element defines a section that is quoted from another source.</p>
+			<br>
+			<p class="col-paragraph">Browsers usually indent &lt;blockqoute&gt; elements.</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor"><br>
+					<span class="tagcolor">&lt;</span>
+					p 
+					<span class="tagcolor">&gt;</span>
+					Here is a quote from WWF's website:
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					<strong>blockquote</strong> cite="http://www.worldwildlife.org/who/index.html"
+					<span class="tagcolor">&gt;</span><br>
+						For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+					<span class="tagcolor">&lt;</span>
+					<strong>/blockquote</strong>
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<h2>HTML &lt;q&gt;  for Short Quotations</h2>
+			<p class="col-paragraph">The HTML &lt;q&gt; tag defines a short quotation.</p>
+			<br>
+			<p class="col-paragraph">Browsers normally insert quotation marks around the quotation.</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					WWF's goal is to:
+					<span class="tagcolor">&lt;</span>
+					q
+					<span class="tagcolor">&gt;</span>
+					Build a future where people live in harmony with nature.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/q
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>HTML &lt;abbr&gt;  for Abbreviations</h2>
+			<p class="col-paragraph">The HTML &lt;abbr&gt;  tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+			<br>
+			<p class="col-paragraph">Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+			<br>
+		</div>
+		<div class="w-note">
+			<div class="wrap-column1">
+				<p><strong>Tip:</strong>Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. </p>
+			</div>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					The
+					<span class="tagcolor">&lt;</span>
+					abbr title="World Health Organization"
+					<span class="tagcolor">&gt;</span>
+					WHO
+					<span class="tagcolor">&lt;</span>
+					/abbr
+					<span class="tagcolor">&gt;</span>
+					was founded in 1948.
+					<span class="tagcolor">&lt;</span>
+					/q
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>HTML &lt;address&gt;  for Contact Information</h2>
+			<p class="col-paragraph">The HTML &lt;address&gt;  tag defines the contact information for the author/owner of a document or an article.</p>
+			<br>
+			<p class="col-paragraph">The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</p>
+			<br>
+			<p class="col-paragraph">The text in the &lt;address&gt; element usually renders in italic, and browsers will always add a line break before and after the &lt;address&gt; element.
+
+			</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					address
+					<span class="tagcolor">&gt;</span><br>
+					Written by John Doe.
+					<span class="tagcolor">&lt;</span>
+					br
+					<span class="tagcolor">&gt;</span><br>
+					Visit us at:
+					<span class="tagcolor">&lt;</span>
+					br
+					<span class="tagcolor">&gt;</span><br>
+					Example.com
+					<span class="tagcolor">&lt;</span>
+					br
+					<span class="tagcolor">&gt;</span><br>
+					Box 564, Disneyland
+					<span class="tagcolor">&lt;</span>
+					br
+					<span class="tagcolor">&gt;</span><br>
+					USA<br>
+					<span class="tagcolor">&lt;</span>
+					/address
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>HTML &lt;cite&gt;  for Work Title</h2>
+			<p class="col-paragraph">The HTML &lt;cite&gt;  tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p>
+			<br>
+			<div class="w-note">
+				<div class="wrap-column1">
+					<p><strong>Note:</strong>A person's name is not the title of a work. </p>
+				</div>
+			</div>
+			<p class="col-paragraph">The text in the &lt;cite&gt; element usually renders in italic.</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					
+					<span class="tagcolor">&lt;</span>
+					cite
+					<span class="tagcolor">&gt;</span>
+					The Scream
+					<span class="tagcolor">&lt;</span>
+					/cite
+					<span class="tagcolor">&gt;</span>
+					by Edvard Munch. Painted in 1893.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<h2>HTML &lt;bdo&gt;  for Bi-Directional Override</h2>
+			<p class="col-paragraph">BDO stands for Bi-Directional Override.</p>
+			<br>
+			<div class="w-note">
+				<div class="wrap-column1">
+					<p><strong>Note:</strong>A person's name is not the title of a work. </p>
+				</div>
+			</div>
+			<p class="col-paragraph"> The HTML  &lt;bdo&gt; tag is used to override the current text direction:</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					bdo dir="rtl">This text will be written from right to left
+					<span class="tagcolor">&gt;</span>
+					
+					<span class="tagcolor">&lt;</span>
+					/bdo
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+		</div>
+		<div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmlformatting.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlcomments.html">Next ❯</a>
+		</div>
+
+	</div>
+	
+
+</body>
+
+
+<footer>
+
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

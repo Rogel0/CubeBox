@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<header>
+
+</header>
+
+<body>
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Your Logo</a>
+		</div>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">HTML <span class="color-h1">Paragraphs</span></h1>
+			   <a class="w-left w-btn" href="htmlheading.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlstyles.html">Next ❯</a>
+		</div>
+		<hr>
+		<div>
+			<p class="intro">A paragraph always starts on a new line, and is usually a block of text.</p>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>HTML Paragraphs</h2>
+			<p class="col-paragraph">The HTML <strong>&lt;p&gt;</strong> element defines a paragraph.</p>
+			<br>
+			<p class="col-paragraph">A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p This is a paragraph.
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					p This is another paragraph.
+					<span class="tagcolor">&gt;</span>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>HTML Display</h2>
+			<p class="col-paragraph">You cannot be sure how HTML will be displayed.</p>
+			<br>
+			<p class="col-paragraph">Large or small screens, and resized windows will create different results.</p>
+			<br>
+			<p class="col-paragraph">With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+			<br>
+			<p class="col-paragraph">The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p 
+					<span class="tagcolor">&gt;</span><br>
+					This paragraph<br>
+					contains a lot of lines<br>
+					in the source code,<br>
+					but the browser<br>
+					ignores it.
+					<br>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br><br>
+					<span class="tagcolor">&lt;</span>
+					p 
+					<span class="tagcolor">&gt;</span><br>
+					This paragraph <br>
+					contains         a lot of spaces <br>
+					in the source         code,<br>
+					but the        browser <br>
+					ignores it. <br>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+					<br>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>HTML Horizontal Rules</h2>
+			<p class="col-paragraph">The <strong>&lt;hr&gt;</strong> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+			<br>
+			<p class="col-paragraph">The <strong>&lt;hr&gt;</strong> element is used to separate content (or define a change) in an HTML page:</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					h1
+					<span class="tagcolor">&gt;</span>
+					This is heading.
+					<span class="tagcolor">&lt;</span>
+					/h1
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					 p
+					<span class="tagcolor">&gt;</span>
+					This is some text.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					hr
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					h1
+					<span class="tagcolor">&gt;</span>
+					This is heading.
+					<span class="tagcolor">&lt;</span>
+					/h1
+					<span class="tagcolor">&gt;</span>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					 p
+					<span class="tagcolor">&gt;</span>
+					This is some other text.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span><br>
+					<span class="tagcolor">&lt;</span>
+					hr
+					<span class="tagcolor">&gt;</span>
+
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+
+		<div class="wrap-column1">
+			<p class="col-paragraph">The <strong>&lt;hr&gt;</strong> tag is an empty tag, which means that it has no end tag.</p>
+			<br>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>HTML Line Breaks</h2>
+			<p class="col-paragraph">The HTML <strong>&lt;br&gt;</strong> element defines a line break.</p>
+			<br>
+			<p class="col-paragraph">Use <strong>&lt;br&gt;</strong> if you want a line break (a new line) without starting a new paragraph:</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span>
+					This is &lt;br&gt; a paragraph &lt;br&gt; with line breaks.
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="col-paragraph">The <strong>&lt;br&gt;</strong> tag is an empty tag, which means that it has no end tag.</p><br>
+		</div>
+		<hr>
+
+		<div class="wrap-column1">
+			<h2>The Poem Problem</h2>
+			<p class="col-paragraph">The Poem Problem</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					p
+					<span class="tagcolor">&gt;</span><br><br>
+					My Bonnie lies over the ocean.
+					<br>
+					<br>
+					My Bonnie lies over the sea.
+					<br>
+					<br>
+					My Bonnie lies over the ocean.
+					<br>
+					<br>
+					Oh, bring back my Bonnie to me.
+					<br>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					/p
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div><hr>
+
+
+		
+		<div class="wrap-column1">
+			<h2>Solution - The HTML &lt;pre&gt; Element</h2>
+			<p class="col-paragraph">The HTML <strong>&lt;pre&gt;</strong> element defines preformatted text.</p>
+			<br>
+			<p class="col-paragraph">The text inside a <strong>&lt;pre&gt;</strong> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt;</span>
+					pre
+					<span class="tagcolor">&gt;</span><br><br>
+					My Bonnie lies over the ocean.
+					<br>
+					<br>
+					My Bonnie lies over the sea.
+					<br>
+					<br>
+					My Bonnie lies over the ocean.
+					<br>
+					<br>
+					Oh, bring back my Bonnie to me.
+					<br>
+					<br>
+					<span class="tagcolor">&lt;</span>
+					/pre 
+					<span class="tagcolor">&gt;</span>
+				</span>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/html">Try it!</a>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="htmlheading.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="htmlstyles.html">Next ❯</a>
+		</div>
+		<hr>
+
+
+	</div>
+	<footer>
+
+	</footer>
+	
+
+</body>
+
+
+
+<script src="../source/burger.js"></script>
+</html>
