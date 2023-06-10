@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Booleans</span></h1>
+			   <a class="w-left w-btn" href="pythonstrings.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythonoperators.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <p class="intro">
+                Booleans represent one of two values: <span class="attributecolor-bg">True</span>
+                or <span class="attributecolor-bg">False.</span>
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Boolean Values</h2>
+            <br>
+            <p class="intro">In programming you often need to know if an expression is <span class="attributecolor-bg">True</span>
+                or <span class="attributecolor-bg">False</span>
+                .
+            </p>
+            <br>
+            <p class="intro">You can evaluate any expression in Python, and get one of two answers, <span class="attributecolor-bg">True</span>
+                or <span class="attributecolor-bg">False</span>
+                .</p>
+            <br>
+            <p class="intro">When you compare two values, the expression is evaluated and Python returns the Boolean answer:</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">1</span>
+                <br>
+                <span class="tagcolor">0</span>
+                <span class="delimiter">></span>
+                <span class="tagcolor">9</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">10</span>
+                <span class="delimiter">==</span>
+                <span class="tagcolor">9</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">10</span>
+                <span class="delimiter"><</span>
+                <span class="tagcolor">9</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">When you run a condition in an if statement, Python returns <span class="attributecolor-bg">True</span>
+               or <span class="attributecolor-bg">False</span>:
+            </p>
+        </div>
+        <div class="w-example">
+            <h2 class="example">Example</h2>
+            <br>
+            <p>Print a message based on whether the condition is <span class="attributecolor-bg">True</span>
+              or <span class="attributecolor-bg">False</span>:
+            </p>
+            <div class="w-code">
+                <span class="delimiter">a =</span>
+                <span class="tagcolor">200</span>
+                <br>
+                <span class="delimiter">b =</span>
+                <span class="tagcolor">33</span>
+                <br>
+                <br>
+                <span class="tagnamecolor">if</span>
+                <span class="delimiter">b > a:</span>
+                <br>
+                &nbsp;&nbsp;<span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"b is greater than a"</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">else <span class="delimiter">:</span></span>
+                <br>
+                &nbsp;&nbsp;<span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"b is not greater than a"</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Evaluate Values and Variables</h2>
+            <br>
+            <p class="intro">The <span class="attributecolor-bg">bool()</span> function allows you to evaluate
+               any value, and give you <span class="attributecolor-bg">True</span> or <span class="attributecolor-bg">False</span>
+               in return,
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <p>Evaluate a string and a number:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"Hello"</span>
+                <span class="delimiter">)</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">15</span>
+                <span class="delimiter">)</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="w-example">
+           <h3 class="example">Example</h3>
+           <p>Evaluate two variables:</p>
+           <div class="w-code">
+                <span class="tagnamecolor">x =</span>
+                <span class="tagcolor">"Hello"</span>
+                <br>
+                <span class="tagnamecolor">y =</span>
+                <span class="tagcolor">15</span>
+                <br>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagnamecolor">x</span>
+                <span class="delimiter">)</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagnamecolor">y</span>
+                <span class="delimiter">)</span>
+                <span class="delimiter">)</span>
+           </div>
+              <div class="w-clear nextprev">
+                 <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+              </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Most Values are True</h2>
+            <br>
+            <p class="intro">
+                Almost any value is evaluated to <span class="attributecolor-bg">True</span> if it has some sort of content.
+            </p>
+            <br>
+            <p class="intro">
+                Any string is <span class="attributecolor-bg">True</span>, except empty strings.
+            </p>
+            <br>
+            <p class="intro">
+                Any number is <span class="attributecolor-bg">True</span>, except 0.
+            </p>
+            <br>
+            <p class="intro">
+                Any <span class="attributecolor-bg">True</span> value is <span class="attributecolor-bg">True</span>.
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <p>The following will return True:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"abc"</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">123</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">["apple", "cherry", "banana"]</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Some Values are False</h2>
+            <br>
+            <p class="intro">
+                In fact, there are not many values that evaluates to <span class="attributecolor-bg">False</span>,
+                except empty values, such as <span class="attributecolor-bg">()</span>, <span class="attributecolor-bg">[]</span>,
+                <span class="attributecolor-bg">""</span>, the number <span class="attributecolor-bg">0</span>,
+                and the value <span class="attributecolor-bg">None</span>.
+            </p>
+            <br>
+            <p class="intro">
+                And of course the value <span class="attributecolor-bg">False</span> evaluates to <span class="attributecolor-bg">False</span>.
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <p>The following will return False:</p>
+            <div class="w-code">
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">False</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">None</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">0</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">""</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">()</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">[]</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">One more value, or object in this case, 
+                evaluates to <span class="attributecolor-bg">False</span>, and that
+                is if you have an object that is made from a class with a
+                <span class="attributecolor-bg">__len__</span> function that returns 0 or <span class="attributecolor-bg">False:</span>
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">class</span>
+                <span class="classnamecolor">myclass</span>
+                <span class="delimiter">:</span>
+                <br>
+                <span class="tab"></span>
+                <span class="tagnamecolor">def</span>
+                <span class="defnamecolor">__len__</span>
+                <span class="delimiter">(</span>
+                <span class="selfcolor">self</span>
+                <span class="delimiter">)</span>
+                <span class="delimiter">:</span>
+                <br>
+                <span class="tab"></span>
+                <span class="tab"></span>
+                <span class="keywordcolor">return</span>
+                <span class="numcolor">0</span>
+                <br>
+                <br>
+                <span class="tagnamecolor">myobj</span>
+                <span class="delimiter">=</span>
+                <span class="classnamecolor">myclass</span>
+                <span class="delimiter">()</span>
+                <br>
+                print 
+                <span class="delimiter">(</span>
+                <span class="tagnamecolor">bool</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">myobj</span>
+                <span class="delimiter">)</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythonstrings.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythonoperators.html">Next ❯</a>
+	    </div>
+        
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

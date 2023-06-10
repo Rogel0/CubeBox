@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Strings</span></h1>
+			   <a class="w-left w-btn" href="pythoncasting.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythonbooleans.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <h2>Strings</h2>
+            <br>
+            <p class="intro">
+                Strings in python are surrounded by either single quotation marks, or double quotation marks.
+            </p>
+            <br>
+            <p class="intro">
+                <span class="attributecolor-bg">'hello'</span>
+                is the same as 
+                <span class="attribiutecolor-bg">"hello"</span>
+                <br>
+                <br>
+                You can display a string literal with the
+                <span class="attributecolor-bg">print()</span>
+                function:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"</span>
+                <br>
+                <span class="tagcolor">Hello"</span>
+                <span class="delimiter">)</span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">'Hello'</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Assign String to a Variable</h2>
+            <br>
+            <p class="intro">
+                Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">a</span>
+                <span class="delimiter">=</span>
+                <span class="tagcolor">"Hello"</span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="delimiter">a</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Multi-line Strings</h2>
+            <br>
+            <p class="intro">
+                You can assign a multiline string to a variable by using three quotes:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">a</span>
+                <span class="delimiter">=</span>
+                <span class="tagcolor">"""Lorem ipsum dolor sit amet,
+                <br>
+                consectetur adipiscing elit,
+                <br>
+                sed do eiusmod tempor incididunt
+                <br>
+                ut labore et dolore magna aliqua."""
+                </span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="delimiter">a</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Or three single quotes</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">a</span>
+                <span class="delimiter">=</span>
+                <span class="tagcolor">'''Lorem ipsum dolor sit amet,
+                <br>
+                consectetur adipiscing elit,
+                <br>
+                sed do eiusmod tempor incididunt
+                <br>
+                ut labore et dolore magna aliqua.'''
+                </span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="delimiter">a</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p class="intro"><strong>Note:</strong> in the result, the line breaks are inserted
+                  at the same position as in the code.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Strings are Arrays</h2>
+            <br>
+            <p class="intro">
+                Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+            </p>
+            <br>
+            <p class="intro">
+                However, Python does not have a character data type, a single character is simply a string with a length of 1.
+            </p>
+            <br>
+            <p class="intro">
+                Square brackets can be used to access elements of the string.
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">a</span>
+                <span class="delimiter">=</span>
+                <span class="tagcolor">"Hello, World!"</span>
+                <br>
+                <span class="tagnamecolor">print</span>
+                <span class="delimiter">(</span>
+                <span class="delimiter">a[1]</span>
+                <span class="delimiter">)</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Slicing</h2>
+            <br>
+            <p class="intro">
+                You can return a range of characters by using the slice syntax.
+            </p>
+            <br>
+            <p class="intro">
+                Specify the start index and the end index, separated by a colon, to return a part of the string.
+            </p>
+            <br>
+            <p class="intro">
+                <strong>Example</strong>
+            </p>
+            <br>
+            <p class="intro">
+                Get the characters from position 2 to position 5 (not included):
+            </p>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythoncasting.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythonbooleans.html">Next ❯</a>
+	    </div>
+        
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

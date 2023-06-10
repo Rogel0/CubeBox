@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Getting Started</span></h1>
+            <a class="w-left w-btn" href="pythonintro.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythonsyntax.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <h2>Python Install</h2>
+            <br>
+            <p class="intro">Many PCs and Macs will have python already installed.</p>
+            <br>
+            <p class="intro">To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+        </div>
+        <br>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>C:\Users\Your Name>python --version</span>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <p class="intro">To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+        </div>
+        <br>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>python --version</span>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <p class="intro">If you find that you do not have python installed on your computer, then you can download it for free from the following website: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Python Quickstart</h2>
+            <p class="intro">Python is an interpreted programming language, this means that as a developer
+                you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
+            </p>
+            <br>
+            <p class="intro">The way to run a python file is like this on the command line:</p>
+        </div>
+        <br>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>C:\Users\Your Name>python</span> 
+                <span>helloworld.py</span>
+
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <p class="intro">
+                Where "helloworld.py" is the name of your python file.
+            </p>
+            <br>
+            <p class="intro">
+                Let's write our first Python file, called helloworld.py, which can be done in any text editor.
+            </p>
+        </div>
+        <br>
+        <div class="w-example">
+            <p>helloworld.py</p>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">print</span>
+                    <span class="attributecolor">(</span>
+                    <span class="stringcolor">"Hello, World!"</span>
+                    <span class="attributecolor">)</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Simple as that. Save your file. Open your command line, navigate to the directory
+                where you saved your file, and run:
+            </p>
+        </div>
+        <br>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>C:\Users\Your Name>python</span> 
+                <span>helloworld.py</span>
+
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">The output should read:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>Hello, World!</span>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Congratulations, you have written and executed your first Python program.
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>The Python Command Line</h2>
+            <br>
+            <p class="intro">To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.</p>
+            <br>
+            <p class="intro">
+                Type the following on the Windows, Mac or Linux command line:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>C:\Users\Your Name>python</span>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Or, if the "python" command did not work, you can try "py":</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>C:\Users\Your Name>py</span>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code2">
+                <span style="color: rgb(152, 150, 148);">C:\Users\Your Name>python</span>
+                <br>
+                <span style="color: rgb(152,150,148);">Python 3.6.4 (v3.6.4:d48eceb, Dec</span>
+                <br>    
+                <span style="color: rgb(152,150,148);">19 2017, 06:04:45) [MSC v.1900 32</span>
+                <br>
+                <span style="color: rgb(152,150,148);">bit (Intel)] on win32</span>
+                <br>
+                <span style="color: rgb(152,150,148);">Type "help", "copyright",</span>
+                <br>    
+                <span style="color: rgb(152, 150, 148);">"credits" or "license" for more</span>
+                <br>
+                <span style="color: rgb(152, 150, 148);">information.</span>
+                <br>
+                <span>>>>>    &nbsp;&nbsp;print("Hello, World!")</span>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Which will write "Hello, World!" in the command line:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code2">
+                <span style="color: rgb(152, 150, 148);">C:\Users\Your Name>python</span>
+                <br>
+                <span style="color: rgb(152,150,148);">Python 3.6.4 (v3.6.4:d48eceb, Dec</span>
+                <br>    
+                <span style="color: rgb(152,150,148);">19 2017, 06:04:45) [MSC v.1900 32</span>
+                <br>
+                <span style="color: rgb(152,150,148);">bit (Intel)] on win32</span>
+                <br>
+                <span style="color: rgb(152,150,148);">Type "help", "copyright",</span>
+                <br>    
+                <span style="color: rgb(152, 150, 148);">"credits" or "license" for more</span>
+                <br>
+                <span style="color: rgb(152, 150, 148);">information.</span>
+                <br>
+                <span style="color: rgb(152, 150, 148);">>>>>    &nbsp;&nbsp;print("Hello, World!")</span>
+                <br>
+                <span>Hello, World!</span>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>exit()</span>
+            </div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythonintro.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythonsyntax.html">Next ❯</a>
+	    </div>
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Variables</span></h1>
+			   <a class="w-left w-btn" href="pythoncomments.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythondatatypes.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <h2>Variables</h2>
+            <br>
+            <p class="intro">Variables are container for storing data values.</p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Creating Variables</h2>
+            <br>
+            <p class="intro">Python has no command for declaring a variable.</p>
+            <br>
+            <p class="intro">A variable is created the moment you first assign a value to it.</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagcolor">5</span>
+                <br>
+                <span class="delimiter">y =</span>
+                <span class="tagcolor">"John"</span>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(x)</span>
+                    <br>
+                    print 
+                    <span class="delimiter">(y)</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Variables do not need to be declared with any particular type, and even change
+                type after they have been set.
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagcolor">4</span>
+                &nbsp;&nbsp;&nbsp;
+                <span style="color: rgba(65, 243, 65);"># x is of type type int</span>
+                <br>
+                <span class="delimiter">x =</span>
+                <span class="tagcolor">"Sally"</span>
+                <span style="color: rgba(65, 243, 65);"># x is now of type str</span>
+                <br>
+                <span class="tagnamecolor">print
+                    <span class="delimiter">(x)</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Casting</h2>
+            <br>
+            <p class="intro">If you want
+                to specify the data type of a variable, this can be done with casting.
+            </p>
+        </div><div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagnamecolor">str</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">3</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># x will be '3'</span>
+                <br>
+                <span class="delimiter">y =</span>
+                <span class="tagnamecolor">int</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">3</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># y will be 3</span>
+                <br>
+                <span class="delimiter">z =</span>
+                <span class="tagnamecolor">float</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">3</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># z will be 3.0</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Get the Type</h2>
+            <br>
+            <p class="intro">You can get the data type of a variable with the <span class="attributecolor-bg">type()</span> function.</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagcolor">5</span>
+                <br>
+                <span class="delimiter">y =</span>
+                <span class="tagcolor">"John"</span>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(x))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(y))</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p class="intro">You will learn more about data types and casting later in this tutorial.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagcolor">"John"</span>
+                <br>
+                <span style="color: rgba(65, 243, 65);"># is the same as</span>
+                <br>
+                <span class="delimiter">x =</span>
+                <span class="tagcolor">'John'</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Case-Sensitive</h2>
+            <br>
+            <p class="intro">Variable names are case-sensitive.</p>
+        </div>
+            <div class="w-example">
+                <h3 class="example">Example</h3>
+                <p class="intro">This will create two variables:</p>
+                <div class="w-code">
+                    <span class="delimiter">a =</span>
+                    <span class="tagcolor">4</span>
+                    <br>
+                    <span class="delimiter">A =</span>
+                    <span class="tagcolor">"Sally"</span>
+                    <br>
+                    <span style="color: rgba(65, 243, 65);">#A will not overwrite a</span>
+                </div>
+                <div class="w-clear nextprev">
+                    <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythoncomments.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythondatatypes.html">Next ❯</a>
+	    </div>
+        
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Comments</span></h1>
+			   <a class="w-left w-btn" href="pythonsyntax.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythonvariables.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <p class="intro">
+                Comments can be used to explain Python code.
+            </p>
+            <br>
+            <p class="intro">
+                Comments can be used to make the code more readable.
+            </p>
+            <br>
+            <p class="intro">Comments can be used to prevent execution when testing code.</p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Creating a Comment</h2>
+            <br>
+            <p class="intro">Comments starts with a <span class="attributecolor-bg">#</span>
+               , and Python will ignore them:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span style="color: rgb(65, 243, 65);">#This</span>
+                <br>
+                <span style="color: rgba(65, 243, 65);">is a comment</span>
+                <br>
+                <span class="tagnamecolor">print
+                    <span class="delimiter">(</span>
+                    <span class="tagcolor">"Hello, World!"</span>
+                    <span class="delimiter">)</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    <span class="tagcolor">"Hello, World!"</span>
+                    <span class="delimiter">)</span>
+                    &nbsp;<span style="color: rgb(65, 243, 65);">#This is a comment</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code:</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span style="color: rgb(65, 243, 65);">#print("Hello, World!")</span>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    <span class="tagcolor">"Cheers, Mate!"</span>
+                    <span class="delimiter">)</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <h2>Multiline Comments</h2>
+            <p class="intro">Python does not really have a syntax for multiline comments.</p>
+            <br>
+            <p class="intro">To add a multiline comment you could insert a <span class="attributecolor-bg">#</span> for each line:</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span style="color: rgb(65, 243, 65);">#This is a comment</span>
+                <br>
+                <span style="color: rgb(65, 243, 65);">#written in</span>
+                <br>
+                <span style="color: rgb(65, 243, 65);">#more than just one line</span>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    <span class="tagcolor">"Hello, World!"</span>
+                    <span class="delimiter">)</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Or, not quite as intended, you can use a multiline string
+            </p>
+            <br>
+            <p class="intro">
+                Since Python will ignore string literals that are not assigned to a variable,
+                you can add a multiline string (triple quotes) in your code, and place your
+                comment inside it:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">
+                    """
+                    <br>
+                    This is a commment
+                    <br>
+                    written in 
+                    <br>
+                    more than just one line
+                    <br>
+                    """
+                    <br>
+                    <span class="tagnamecolor">
+                        print 
+                        <span class="delimiter">(</span>
+                        <span class="tagcolor">"Hello, World!"</span>
+                        <span class="delimiter">)</span>
+                    </span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                As long as the string is not assigned to a variable,
+                Python will read the code, but then ignore it, and you have made a 
+                multiline comment.
+            </p>
+        </div>
+        <hr>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythonsyntax.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythonvariables.html">Next ❯</a>
+	    </div>
+        
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

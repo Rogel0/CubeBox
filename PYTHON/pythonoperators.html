@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PYTHON</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Operators</span></h1>
+			   <a class="w-left w-btn" href="pythonbooleans.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythonlists.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <h2>Python Operators</h2>
+            <br>
+            <p class="intro">Operators are used to perform operations
+                on variables and values.
+            </p>
+            <br>
+            <p class="intro">In the example below
+                , we use the <span class="attributecolor-bg">+</span> operator to add together two values:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">print
+                    <span class="delimiter">(</span>
+                    <span class="tagcolor">10</span>
+                    <span class="delimiter">+</span>
+                    <span class="tagcolor">5</span>
+                    <span class="delimiter">)</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Python divides the operators in the following groups:
+            </p>
+            <br>
+            <br>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet">Arithmetic Operators</li>
+                    <li class="bullet">Assignment Operators</li>
+                    <li class="bullet">Comparison Operators</li>
+                    <li class="bullet">Logical Operators</li>
+                    <li class="bullet">Identity Operators</li>
+                    <li class="bullet">Membership Operators</li>
+                    <li class="bullet">Bitwise Operators</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Python Arithmetic Operators</h2>
+            <br>
+            <p class="intro">Arithmetic operators
+                are used with numeric values to perform common
+                mathematical operations:
+            </p>
+            <br>
+            <table class="w-table">
+                <tbody>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">+</td>
+                        <td>Addition</td>
+                        <td>x + y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">-</td>
+                        <td>Subtraction</td>
+                        <td>x - y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">*</td>
+                        <td>Multiplication</td>
+                        <td>x * y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">/</td>
+                        <td>Division</td>
+                        <td>x / y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">%</td>
+                        <td>Modulus</td>
+                        <td>x % y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">**</td>
+                        <td>Exponentiation</td>
+                        <td>x ** y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">//</td>
+                        <td>Floor division</td>
+                        <td>x // y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Python Assignment Operators</h2>
+            <br>
+            <p class="intro">Assignment operators are used to assign values to variables:</p>
+            <br>
+            <table class="w-table">
+                <tbody>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Example</th>
+                        <th>Same As</th>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">=</td>
+                        <td>x = 5</td>
+                        <td>x = 5</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">+=</td>
+                        <td>x += 3</td>
+                        <td>x = x + 3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">-=</td>
+                        <td>x -= 3</td>
+                        <td>x = x - 3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">*=</td>
+                        <td>x *= 3</td>
+                        <td>x = x * 3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">/=</td>
+                        <td>x /= 3</td>
+                        <td>x = x / 3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">%=</td>
+                        <td>x %= 3</td>
+                        <td>x = x % 3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">//=</td>
+                        <td>x //= 3</td>
+                        <td>x = x // 3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">**=</td>
+                        <td>x **= 3</td>
+                        <td>x = x ** 3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">&amp;=</td>
+                        <td>x &amp;= 3</td>
+                        <td>x = x &amp; 3</td>
+                    </tr>
+                </tbody>
+                </table>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Python Comparison Operators</h2>
+            <br>
+            <p class="intro">Comparison operators are used to compare two values:</p>
+            <br>
+            <table class="w-table">
+                <tbody>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">==</td>
+                        <td>Equal</td>
+                        <td>x == y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">!=</td>
+                        <td>Not equal</td>
+                        <td>x != y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">&gt;</td>
+                        <td>Greater than</td>
+                        <td>x &gt; y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">&lt;</td>
+                        <td>Less than</td>
+                        <td>x &lt; y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">&gt;=</td>
+                        <td>Greater than or equal to</td>
+                        <td>x &gt;= y</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">&lt;=</td>
+                        <td>Less than or equal to</td>
+                        <td>x &lt;= y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Python Logical Operators</h2>
+            <br>
+            <p class="intro">Logical operators are used to combine conditional statements:</p>
+            <br>
+            <table class="w-table">
+                <tbody>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">and</td>
+                        <td>Returns True if both statements are true</td>
+                        <td>x &lt; 5 and  x &lt; 10</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">or</td>
+                        <td>Returns True if one of the statements is true</td>
+                        <td>x &lt; 5 or x &lt; 4</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">not</td>
+                        <td>Reverse the result, returns False if the result is true</td>
+                        <td>not(x &lt; 5 and x &lt; 10)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythonbooleans.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythonlists.html">Next ❯</a>
+	    </div>
+        
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

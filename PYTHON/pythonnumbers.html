@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<di class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Numbers</span></h1>
+			   <a class="w-left w-btn" href="pythondatatypes.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythoncasting.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <p class="intro">
+                There are three numeric types in Python:
+            </p>
+            <br>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet"><span class="attributecolor-bg">int</span></li>
+                    <li class="bullet"><span class="attributecolor-bg">float</span></li>
+                    <li class="bullet"><span class="attributecolor-bg">complex</span></li>
+                </ul>
+            </div>
+            <br>
+            <p class="intro">
+                Variables of numeric tpes are created when you assign a value to them:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagcolor">1 </span>
+                <span style="color: rgba(65, 243, 65);"># int</span>
+                <br>
+                <span class="delimiter">y =</span>
+                <span class="tagcolor">2.8</span> 
+                <span style="color: rgba(65, 243, 65);"># float</span>
+                <br>
+                <span class="delimiter">z =</span>
+                <span class="delimiter">1j</span>
+                <span style="color: rgba(65, 243, 65);"># complex</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                To verify the type of any object in Python, use the <span class="attributecolor-bg">type()</span> function:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(x))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(y))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(z))</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Int</h2>
+            <br>
+            <p class="intro">Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    x = 
+                    <span class="tagcolor">1</span>
+                    <br>
+                    y = 
+                    <span class="tagcolor">35656222554887711</span>
+                    <br>
+                    z = 
+                    <span class="tagcolor">-3255522</span>
+                </span>
+                <br>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(x))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(y))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(z))</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Float</h2>
+            <br>
+            <p class="intro">
+                Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    x = 
+                    <span class="tagcolor">1.10</span>
+                    <br>
+                    y = 
+                    <span class="tagcolor">1.0</span>
+                    <br>
+                    z = 
+                    <span class="tagcolor">-35.59</span>
+                </span>
+                <br>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(x))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(y))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(z))</span>
+                </span>
+             </div>
+             <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    x = 
+                    <span class="tagcolor">35e3</span>
+                    <br>
+                    y = 
+                    <span class="tagcolor">12E4</span>
+                    <br>
+                    z = 
+                    <span class="tagcolor">-87.7e100</span>
+                </span>
+                <br>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(x))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(y))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(z))</span>
+                </span>
+             </div>
+             <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Complex numbers are written with a "j" as the imaginary part:</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    x = 
+                    <span class="tagcolor">3+5j</span>
+                    <br>
+                    y = 
+                    <span class="tagcolor">5j</span>
+                    <br>
+                    z = 
+                    <span class="tagcolor">-5j</span>
+                </span>
+                <br>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(x))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(y))</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    type
+                    <span class="delimiter">(z))</span>
+                </span>
+             </div>
+             <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <h2>Type Conversion</h2>
+            <p class="intro">
+                You can convert from one type to another with the int(), float(), and complex() methods:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    x = 
+                    <span class="tagcolor">1</span>
+                    <br>
+                    y = 
+                    <span class="tagcolor">2.8</span>
+                    <br>
+                    z = 
+                    <span class="tagcolor">1j</span>
+                </span>
+                <br>
+                <br>
+                <span class="tagnamecolor">
+                    #convert from int to float:
+                    <br>
+                    a = 
+                    <span class="tagcolor">float(x)</span>
+                    <br>
+                    <br>
+                    #convert from float to int:
+                    <br>
+                    b = 
+                    <span class="tagcolor">int(y)</span>
+                    <br>
+                    <br>
+                    #convert from int to complex:
+                    <br>
+                    c = 
+                    <span class="tagcolor">complex(x)</span>
+                </span>
+                <br>
+                <br>
+                <span class="tagnamecolor">
+                    print
+                    <span class="delimiter">(</span>
+                    a
+                    <span class="delimiter">)</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    b
+                    <span class="delimiter">)</span>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    c
+                    <span class="delimiter">)</span>
+                </span>
+             </div>
+             <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p class="note">
+                    <strong>Note:</strong> You cannot convert complex numbers into another number type.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Random Number</h2>
+            <p class="intro">
+                Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    import random
+                    <br>
+                    <br>
+                    print
+                    <span class="delimiter">(</span>
+                    random.randrange
+                    <span class="delimiter">(</span>
+                    1
+                    <span class="delimiter">,</span>
+                    10
+                    <span class="delimiter">)</span>
+                    <span class="delimiter">)</span>
+                </span>
+             </div>
+             <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                In our Random Module Reference you will learn more about the Random module.
+            </p>
+        </div>
+        <hr>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythondatatypes.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythoncasting.html">Next ❯</a>
+	    </div>
+        
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

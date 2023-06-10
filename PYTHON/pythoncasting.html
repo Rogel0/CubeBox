@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<di class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Casting</span></h1>
+			   <a class="w-left w-btn" href="pythonnumbers.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythonstrings.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="wrap-column1">
+            <h2>Specify a Variable Type</h2>
+            <br>
+            <p class="intro">
+                There may be times when you want to specify a type
+                on to a variable. This can be done with casting.
+                Python is an object-oriented language. and as such
+                it uses classes to define data types,
+                including its primitive types.
+                <br>
+                <br>
+                Casting in python is therefore done using constructor functions:
+            </p>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet">
+                        <span class="attributecolor-bg">int()</span>
+                        - constructs an integer number from an integer literal,
+                        a float literal (by rounding down to the previous whole number),
+                        or a string literal (providing the string represents a whole number)
+                    </li>
+                    <li class="bullet">
+                        <span class="attributecolor-bg">float()</span>
+                        - constructs a float number from an integer literal,
+                        a float literal or a string literal (providing the string represents a float or an integer)
+                    </li>
+                    <li class="bullet">
+                        <span class="attributecolor-bg">str()</span>
+                        - constructs a string from a wide variety of data types,
+                        including strings, integer literals and float literals
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagnamecolor">int</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">1</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># x will be 1</span>
+                <br>
+                <span class="delimiter">y =</span>
+                <span class="tagnamecolor">int</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">2.8</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># y will be 2</span>
+                <br>
+                <span class="delimiter">z =</span>
+                <span class="tagnamecolor">int</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"3"</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># z will be 3</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <br>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagnamecolor">float</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">1</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># x will be 1.0</span>
+                <br>
+                <span class="delimiter">y =</span>
+                <span class="tagnamecolor">float</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">2.8</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># y will be 2.8</span>
+                <br>
+                <span class="delimiter">z =</span>
+                <span class="tagnamecolor">float</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"3"</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># z will be 3.0</span>
+                <br>
+                <span class="delimiter">w =</span>
+                <span class="tagnamecolor">float</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"4.2"</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># w will be 4.2</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">x =</span>
+                <span class="tagnamecolor">str</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">3</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># x will be '3'</span>
+                <br>
+                <span class="delimiter">y =</span>
+                <span class="tagnamecolor">str</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">3.0</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># y will be '3.0'</span>
+                <br>
+                <span class="delimiter">z =</span>
+                <span class="tagnamecolor">str</span>
+                <span class="delimiter">(</span>
+                <span class="tagcolor">"3"</span>
+                <span class="delimiter">)</span>
+                <span style="color: rgba(65, 243, 65);"># z will be '3'</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+            </div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythonnumbers.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythonstrings.html">Next ❯</a>
+	    </div>
+        
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

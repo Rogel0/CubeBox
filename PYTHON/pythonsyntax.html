@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/pythonstyle.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+		  <li><a href="#">CSS</a></li>
+		  <li><a href="#">JAVA</a></li>
+		  <li><a href="#">JAVASCRIPT</a></li>
+		  <li><a href="#">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Python <span class="color-h1">Syntax</span></h1>
+			   <a class="w-left w-btn" href="pythongetstarted.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="pythoncomments.html">Next ❯</a>
+		</div>
+		<hr>
+        <div class="flex-container">
+            <div class="flex1">
+                <div class="pagemenu">
+                    <h2>On this page</h2>
+                    <hr>
+                    <a href="#">Execute Python Syntax</a>
+                    <a href="#">Python Indentation</a>
+                    <a href="#">Python Variables</a>
+                    <a href="#">Python Comments</a>
+                    <a href="#">Exercises</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <h2>Execute Python Syntax</h2>
+            <br>
+            <p class="intro">As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>>>>  print("Hello, World")</span>
+                <br>
+                <span>Hello, World</span>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <p class="intr">Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code2">
+                <span>Example</span>
+                <br>
+                <span>print("Hello, World")</span>
+            </div>
+		</div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Python Indentation</h2>
+            <br>
+            <p class="intro">Indentation refers to the spaces at the beginning of a code line.</p>
+            <br>
+            <p class="intro">Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+            <br>
+            <p class="intro">Python uses indentation to indicate a block of code.</p>
+        </div>
+        <br>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    if <span class="tagcolor">5 </span>
+                    <span class="delimiter">> </span>
+                    <span class="tagcolor">2</span>
+                    <span class="delimiter">:</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;print 
+                    <span class="delimiter">(</span>
+                    <span class="tagcolor">"Five is greater than two!"</span>
+                    <span class="delimiter">)</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+			</div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Python will give you an error if you skip the indentation:</p>
+        </div>
+        
+            <div class="w-example">
+                <h3 class="example">Example</h3>
+                <p class="intro" style="color: red; padding-left: 29px;">Syntax Error:</p>
+                <div class="w-code">
+                    <span class="tagnamecolor">
+                        if <span class="tagcolor">5 </span>
+                        <span class="delimiter">> </span>
+                        <span class="tagcolor">2</span>
+                        <span class="delimiter">:</span>
+                        <br>
+                        print 
+                        <span class="delimiter">(</span>
+                        <span class="tagcolor">"Five is greater than two!"</span>
+                        <span class="delimiter">)</span>
+                    </span>
+                </div>
+                <div class="w-clear nextprev">
+                    <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+                </div>
+            </div>
+            <br>
+            <div class="wrap-column1">
+                <p class="intro">
+                    The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
+                </p>
+            </div>
+            <br>
+            <div class="w-example">
+                <h3 class="example">Example</h3>
+                <div class="w-code">
+                    <span class="tagnamecolor">
+                        if 
+                        <span class="tagcolor">5</span>
+                        <span class="delimiter">></span>
+                        <span class="tagcolor">2</span>
+                        <span class="delimiter">:</span>
+                        <br>
+                        &nbsp;&nbsp;print 
+                        <span class="delimiter">(</span>
+                        <span class="tagcolor">"Five is greater than two!"</span>
+                        <span class="delimiter">)</span>
+                        <br>
+                        if 
+                        <span class="tagcolor">5</span>
+                        <span class="delimiter">></span>
+                        <span class="tagcolor">2</span>
+                        <span class="delimiter">:</span>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print 
+                        <span class="delimiter">(</span>
+                        <span class="tagcolor">"Five is greater than two!"</span>
+                        <span class="delimiter">)</span>
+                    </span>
+                </div>
+                <div class="w-clear nextprev">
+                    <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="wrap-column1">
+                <h2>Python Variables</h2>
+                <br>
+                <p class="intro">In Python, variables are created when you assign a value to it:</p>
+            </div>
+            <br>
+            <div class="w-example">
+                <h3 class="example">Example</h3>
+                <p>Variables in Python:</p>
+                <div class="w-code">
+                    <span class="delimiter">x =</span>
+                    <span class="tagcolor">5</span>
+                    <br>
+                    <span class="delimiter">y =</span>
+                    <span class="tagcolor">"Hello, World!"</span>
+                </div>
+                <div class="w-clear nextprev">
+                    <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+                </div>
+            </div>
+            <br>
+            <div class="wrap-column1">
+                <p class="intro">Python has no command for declaring a variable.</p>
+                <br>
+                <p class="intro">You will learn more about variables in the <a href="#">Python Variables</a> chapter.</p>
+            </div>
+            <hr>
+            <div class="wrap-column1">
+                <h2>Comments</h2>
+                <br>
+                <p class="intro">Python has commenting capability for the purpose of in-code documentation.</p>
+                <br>
+                <p class="intro">Comments start with a #, and Python will render the rest of the line as a comment:</p>
+            </div>
+            <br>
+            <div class="w-example">
+                <h3 class="example">Example</h3>
+                <p>Comments in Python:</p>
+                <div class="w-code">
+                    <span class="delimiter">#This is a comment</span>
+                    <br>
+                    <span class="tagnamecolor">print</span>
+                    <span class="tagcolor">("Hello, World!")</span>
+                </div>
+                <div class="w-clear nextprev">
+                    <a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+                </div>
+            </div>
+        
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="pythongetstarted.html">❮ Previous</a>
+			<a class="w-right w-btn" href="pythoncomments.html">Next ❯</a>
+	    </div>
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>
