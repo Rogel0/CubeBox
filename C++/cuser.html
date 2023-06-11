@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+      <div class="w-clear nextprev">
+        <h1 class="first-title">C++ <span class="color-h1">User Input</span></h1>
+        <a class="w-left w-btn" href="cvariablescons.html">❮ Previous</a>
+        <a class="w-right w-btn" href="cdata.html">Next ❯</a>
+      </div>
+      <hr>
+      <div class="wrap-column1">
+        <h2>C++ User Input</h2><br>
+        <p class="intro">You have already learned that cout is used to output (print) values. Now we will use cin to get user input.</p><br>
+        <p class="intro">cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).</p><br>
+        <p class="intro">In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x:</p><br>
+      </div>
+      <div class="w-example">
+        <div class="example">Example</div>
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">int </span>
+            <span class="tagcolor"> x ;</span>
+            <br>
+            <span class="tagcolor">cout</span>
+            <span class="tagcolor"><<</span>
+            
+            <span class="tagcolor">" type a number" ;</span>
+            <span class="tagcolor">// type a number and press enter</span>
+            
+
+            <br>
+            <span class="tagcolor">cin</span>
+            <span class="tagcolor"> >></span>
+           
+            <span class="tagcolor">x ;</span>
+            <span class="tagcolor">// get user input from the keyboard</span>
+            
+            <span class="tagcolor"></span>
+            <br>
+            <span class="tagcolor">cout</span>
+            <span class="tagcolor"><<</span>
+            
+            <span class="tagcolor">" your name is:" </span>
+             <span class="tagcolor"> << x ;</span>
+             <span class="tagcolor"> // display the input value</span> 
+           
+
+          </span>
+        </div>
+        <div class="w-clear nextprev">
+          <a class="w-btn w-try" href="https://www.w3schools.com/cpp/showcpp.asp?filename=demo_user_input">Try it!</a><br>
+      </div><br>
+      </div>
+
+      <div class="wrap-column1">
+        <div class="w-note">
+          <h2>Good To Know</h2><br>
+          <p class="intro"> <span class="attributecolor">cout</span> is pronounced "see-out". Used for <strong>output</strong>, and uses the insertion operator (<span class="attributecolor"><<</span> )</p><br>
+          <p class="intro"> <span class="attributecolor">cin</span> is pronounced "see-in". Used for <strong>input</strong>, and uses the extraction operator (<span class="attributecolor">>></span> )</p><br>
+        </div>
+      </div>
+      <hr> 
+      <div class="wrap-column1">
+        <h2>Creating a Simple Calculator</h2><br>
+        <p class="intro"> In this example, the user must input two numbers. Then we print the sum by calculating (adding) the two numbers:</p><br>
+      </div>
+
+      <div class="w-example">
+        <div class="example">Example</div>
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor"> x, y;</span>
+            <br>
+            <span class="tagcolor">int </span>
+            <span class="tagcolor">sum;</span>
+             <br>
+
+            <span class="tagcolor">cout</span>
+            <span class="tagcolor"><<</span>
+            
+            <span class="tagcolor">" type a number: " ;</span>
+            <br>
+            <span class="tagcolor">cin</span>
+            <span class="tagcolor"> >></span>
+           
+            <span class="tagcolor">x ;</span>
+
+            <span class="tagcolor">" type another number: " ;</span>
+            
+            <br>
+            <span class="tagcolor">cin</span>
+            <span class="tagcolor"> >></span>
+           
+            <span class="tagcolor">y ;</span>
+            <span class="tagcolor">sum = x + y ;</span>
+             <br>
+            <span class="tagcolor">cout</span>
+            <span class="tagcolor"><<</span>
+            
+            <span class="tagcolor">"Sum is: " <<</span>
+            <span class="tagcolor">sum  ;</span>
+            
+            <br>
+
+          </span>
+        </div>
+        <div class="w-clear nextprev">
+          <a class="w-btn w-try" href="https://www.w3schools.com/cpp/showcpp.asp?filename=demo_user_input2">Try it!</a><br>
+      </div><br>
+      </div>
+
+      <div class="w-clear nextprev">
+        <a class="w-left w-btn" href="cvariablescons.html">❮ Previous</a>
+        <a class="w-right w-btn" href="cdata.html">Next ❯</a>
+      </div>
+      <hr>
+
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

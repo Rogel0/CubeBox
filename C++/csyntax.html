@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>C++</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+      <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1">Syntax</span></h1>
+               <a class="w-left w-btn" href="cgetstarted.html">❮ Previous</a>
+               <a class="w-right w-btn" href="coutput.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="sidebar">
+          <div class="logo">
+            <a href="#">Cube Code</a>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVA</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">PYTHON</a></li>
+          </ul>
+        </div>
+      
+        <div class="toggle-btn" onclick="toggleSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="wrap-column1">
+        <h2>C++ Syntax</h2><br>
+        <p class="intro">Let's break up the following code to understand it better:</p><br>
+      </div>
+      <div class="w-example">
+        <h3 class="example">Example</h3>
+        <div class="w-code">
+            <span class="tagnamecolor">
+
+              <span class="tagnamecolor">
+                <span class="tagcolor">#Include </span>
+                
+                
+                
+                <span class="tagcolor">&lt;</span>
+                <span class="tagcolor">iostream</span>
+                
+                <span class="tagcolor">&gt;</span>
+                <br>
+                <span class="tagcolor">using namespace </span>
+                
+                <span class="tagcolor">std;</span>
+                <br>
+                <span class="tagcolor">int</span> 
+                <span class="tagcolor">main</span>
+                
+                <span class="tagcolor">() &#123</span> 
+                <br>
+                <span class="tagcolor">cout &lt;&lt;</span>
+                <span class="tagcolor">"Hello World!";</span>
+                <br>
+                <span class="tagcolor">return 0;</span><br>
+                <span class="tagcolor"></span>
+                <span class="tagcolor"> &#125</span>
+               
+                <span class="tagcolor"></span>
+            </span>
+
+        </div>
+        <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.tutorialspoint.com/compile_cpp_online.php">Try it!</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+      </div>
+
+      <div class="wrap-column1">
+        <h2>Example Explained</h2><br>
+        <p class="intro"><strong>line 1: </strong><span class="attributecolor">#include &lt;iostream&gt; </span> is a <strong>header file library</strong> that lets us work with input and output objects, such as <span class="attributecolor">cout</span> (used in line 5). Header files add functionality to C++ programs.</p><br>
+        <p class="intro"><strong>line 2: </strong> <span class="attributecolor">using namespace std </span> means that we can use names for objects and variables from the standard library.</p><br>
+
+        <p class="w-note">Don't worry if you don't understand how <span class="attributecolor">#include &lt;iostream&gt;</span> and <span class="attributecolor">using namespace std </span> works. Just think of it as something that (almost) always appears in your program.</p><br>
+
+        <p class="intro"><strong>line 3: </strong>A blank line. C++ ignores white space. But we use it to make the code more readable.</p><br>
+        <p class="intro"><strong>line 4: </strong>Another thing that always appear in a C++ program, is <span class="attributecolor">int main()</span>. This is called a <strong>function</strong>. Any code inside its curly brackets <span class="attributecolor">&#123 &#125</span> will be executed.</p><br>
+        <p class="intro"><strong>line 5: </strong><span class="attributecolor">cout</span> (pronounced "see-out") is an <strong>object</strong> used together with the insertion operator (<span class="attributecolor">&lt; &lt;</span> ) to output/print text. In our example it will output "Hello World!".</p><br>
+
+        <p class="w-note"><strong>Note: </strong>Every C++ statement ends with a semicolon <span class="attributecolor"><strong>;</strong></span>.</p><br>
+        <p class="w-note"><strong>Note: </strong>The body of <span class="attributecolor">int main()</span> could also been written as:
+          <span class="attributecolor">int main () { cout &lt; &lt; "Hello World! "; return 0; } &lt;/p&gt; </span><br>
+        <p class="w-note"><strong>Remember: </strong>The compiler ignores white spaces. However, multiple lines makes the code more readable.</p><br>
+
+        <p class="intro"><strong>line 6: </strong><span class="attributecolor">return 0 </span> ends the main function.</p><br>
+        <p class="intro"><strong>line 7: </strong>Do not forget to add the closing curly bracket <span class="attributecolor"><strong>&#125</strong></span> to actually end the main function.</p><br>
+
+      </div>
+      <hr>
+
+      <div class="wrap-column1">
+        <h2>Omitting Namespace</h2><br>
+        <p class="intro">You might see some C++ programs that runs without the standard namespace library. The <span class="attributecolor">using namespace std</span> line can be omitted and replaced with the <span class="attributecolor">std </span> keyword, followed by the <span class="attributecolor"> :: </span> operator for some objects:</p><br>
+      </div>
+
+      <div class="w-example">
+        <h3 class="example">Example</h3>
+        <div class="w-code">
+            <span class="tagnamecolor">
+
+              <span class="tagnamecolor">
+                <span class="tagcolor">#Include </span>
+                
+                
+                
+                <span class="tagcolor">&lt;</span>
+                <span class="tagcolor">iostream</span>
+                
+                <span class="tagcolor">&gt;</span>
+                <br>
+                <span class="tagcolor">using namespace </span>
+                
+                <span class="tagcolor">std;</span>
+                <br>
+                <span class="tagcolor">int</span> 
+                <span class="tagcolor"> main</span>
+               
+                <span class="tagcolor">() &#123</span> 
+                <br>
+                <span class="tagcolor">cout &lt;&lt;</span>
+                <span class="tagcolor">"Hello World!";</span>
+                <br>
+                <span class="tagcolor">return 0;</span><br>
+                <span class="tagcolor"> &#125</span>
+               
+                <span class="tagcolor"></span>
+            </span>
+
+        </div><br>
+        <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.tutorialspoint.com/compile_cpp_online.php">Try it!</a>
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+      </div>
+      <br>
+      <br>
+
+
+   
+      <div class="w-clear nextprev">
+           <a class="w-left w-btn" href="cgetstarted.html">❮ Previous</a>
+           <a class="w-right w-btn" href="coutput.html">Next ❯</a>
+      </div>
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1">Structures (struct)</span></h1>
+               <a class="w-left w-btn" href="carrays.html">❮ Previous</a>
+               <a class="w-right w-btn" href="creferences.html">Next ❯</a>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>C++ Structures</h2><br>
+          <p class="intro">Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a <strong>member</strong> of the structure.</p><br>
+          <p class="intro">Unlike an array, a structure can contain many different data types (int, string, bool, etc.).</p><br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Create a Structure</h2><br>
+          <p class="intro">To create a structure, use the <span class="attributecolor">struct</span> keyword and declare each of its members inside curly braces.</p><br>
+          <p class="intro">After the declaration, specify the name of the structure variable (<strong>myStructure</strong> in the example below):</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">struct &#123</span>
+              <span class="tagcolor" style="color:gray">&nbsp; // Structure declaration</span><br>
+              <span class="tagcolor">int myNum;</span>
+              <span class="tagcolor" style="color:gray">&nbsp; // Member (int variable) </span><br>
+              <span class="tagcolor">string myString;</span>
+              <span class="tagcolor" style="color:gray">&nbsp; // Member (string variable) </span><br>
+              <span class="tagcolor">&#125</span>
+              <span class="tagcolor">myStructure;</span>
+              <span class="tagcolor" style="color:gray">&nbsp; // Structure variable</span><br>
+
+            </span>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Access Structure Members</h2><br>
+          <p class="intro">To access members of a structure, use the dot syntax ( <span class="attributecolor">.</span> ):</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">Assign data to members of a structure and print it:</p>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor" style="color:gray">&nbsp; // Create a structure variable called myStructure </span><br>
+              <span class="tagcolor">struct &#123</span>
+              <span class="tagcolor">int myNum;</span>
+              <span class="tagcolor">string myString;</span><br>
+              <span class="tagcolor">&#125</span><br>
+              <span class="tagcolor">myStructure;</span>
+              <span class="tagcolor" style="color:gray">&nbsp; // Assign values to members of myStructure</span><br>
+              <br>
+              <span class="tagcolor">myStructure.myNum = 1;</span><br>
+              <span class="tagcolor">myStructure.myString = &quot;Hello World! &quot;</span><br>
+
+              <span class="tagcolor" style="color:gray">&nbsp; // Print members of myStructure</span><br>
+              <span class="tagcolor">cout &lt;&lt; myStructure.myNum = &quot;\n &quot;</span>
+              <span class="tagcolor">cout &lt;&lt; myStructure.myString = &quot;\n  &quot;</span>
+
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_struct_access">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>One Structure in Multiple Variables</h2><br>
+          <p class="intro">You can use a comma ( <span class="attributecolor">,</span> ) to use one structure in many variables:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">struct &#123</span><br>
+              <span class="tagcolor">int myNum;</span><br>
+              <span class="tagcolor">string myString;</span><br>
+              <span class="tagcolor">&#125</span><br>
+              <span class="tagcolor">myStructure1 ,  myStructure2 ,  myStructure3 ,  ;</span><br>
+              <span class="tagcolor" style="color:gray">&nbsp; // Multiple structure variables separated with commas</span><br>
+              <br>
+            </span>
+          </div>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <p>Use one structure to represent two cars:</p><br>
+         <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">struct { </span><br>
+            <span class="tagcolor"> string brand; </span><br>
+            <span class="tagcolor"> string model; </span><br>
+            <span class="tagcolor"> int year; </span><br>
+            <span class="tagcolor">}; </span>
+            <br>
+            <span class="tagcolor">myCar1, myCar2;</span><br>
+            <span class="tagcolor" style="color:gray">&nbsp; // We can add variables by separating them with a comma here </span><br><br>
+            <span class="tagcolor" style="color:gray">&nbsp; // Put data into the first structure</span><br>
+            <span class="tagcolor"> myCar1.brand = "BMW"; </span><br>
+            <span class="tagcolor"> myCar1.model = "X5"; </span><br>
+            <span class="tagcolor"> myCar1.year = 1999; </span><br><br>
+            <br>
+            <span class="tagcolor" style="color:gray">&nbsp; // Put data into the second structure </span><br>
+            <span class="tagcolor"> car myCar2; </span><br>
+            <span class="tagcolor"> myCar2.brand = "Ford"; </span><br>
+            <span class="tagcolor"> myCar2.model = "Mustang"; </span><br>
+            <span class="tagcolor"> myCar2.year = 1969; </span><br>
+            <span class="tagcolor"> <br>
+            <span class="tagcolor" style="color:gray">&nbsp; // Print the structure members </span><br>
+            <span class="tagcolor"> cout &lt;&lt; myCar1.brand &lt;&lt; " " &lt;&lt; myCar1.model &lt;&lt; " " &lt;&lt; myCar1.year &lt;&lt; "\n"; </span><br>
+            <span class="tagcolor"> cout &lt;&lt; myCar2.brand &lt;&lt; " " &lt;&lt; myCar2.model &lt;&lt; " " &lt;&lt; myCar2.year &lt;&lt; "\n"; </span><br>
+            <span class="tagcolor"> </span> <br>
+            <span class="tagcolor"> return 0; </span><br>
+        }
+      </span>
+      </div>
+      <div class="w-clear nextprev">
+        <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_struct_multiple">Try it!</a>
+      </div><br><br><br>
+      </div>
+
+      <div class="wrap-column1">
+        <h2>Named Structures</h2><br>
+        <p class="intro">By giving a name to the structure, you can treat it as a data type. This means that you can create variables with this structure anywhere in the program at any time.</p><br>
+        <p class="intro">To create a named structure, put the name of the structure right after the <span class="attributecolor">struct</span> keyword:</p><br>
+      </div>
+
+      <div class="w-example">
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">struct myDataType &#123</span><br>
+            <span class="tagcolor" style="color:gray">// This structure is named "myDataType"</span><br>
+            <span class="tagcolor">int myNum;</span><br>
+            <span class="tagcolor">string myString;</span><br>
+            <span class="tagcolor">&#125 ;</span><br>
+          </span>
+        </div>
+      </div>
+
+      <div class="wrap-column1">
+        <p class="intro">To declare a variable that uses the structure, use the name of the structure as the data type of the variable:</p><br>
+      </div>
+
+      <div class="w-example">
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">myDataType myVar;</span><br>
+          </span>
+        </div>
+      </div>
+
+        <div class="wrap-column1">
+          <p class="intro">This example shows how to use a structure in two different variables:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <p>Use one structure to represent two cars:</p><br>
+         <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor" style="color:gray">// Declare a structure named "car" </span><br>
+            <span class="tagcolor">struct car { </span><br>
+            <span class="tagcolor"> string brand; </span><br>
+            <span class="tagcolor"> string model; </span><br>
+            <span class="tagcolor"> int year; </span><br>
+            <span class="tagcolor">}; </span>
+            <br>
+            <br>
+            <int class="tagcolor">int main() { </span><br>
+            <span class="tagcolor" style="color:gray">&nbsp; // Create a car structure and store it in myCar1; </span><br>
+            <span class="tagcolor"> car myCar1; </span> <br>
+            <span class="tagcolor"> myCar1.brand = "BMW"; </span><br>
+            <span class="tagcolor"> myCar1.model = "X5"; </span><br>
+            <span class="tagcolor"> myCar1.year = 1999; </span><br>
+            <br>
+            <span class="tagcolor" style="color:gray">&nbsp; // Create another car structure and store it in myCar2; </span><br>
+            <span class="tagcolor"> car myCar2; </span><br>
+            <span class="tagcolor"> myCar2.brand = "Ford"; </span><br>
+            <span class="tagcolor"> myCar2.model = "Mustang"; </span><br>
+            <span class="tagcolor"> myCar2.year = 1969; </span><br>
+            <span class="tagcolor"> <br>
+            <span class="tagcolor" style="color:gray">&nbsp; // Print the structure members </span><br>
+            <span class="tagcolor"> cout &lt;&lt; myCar1.brand &lt;&lt; " " &lt;&lt; myCar1.model &lt;&lt; " " &lt;&lt; myCar1.year &lt;&lt; "\n"; </span><br>
+            <span class="tagcolor"> cout &lt;&lt; myCar2.brand &lt;&lt; " " &lt;&lt; myCar2.model &lt;&lt; " " &lt;&lt; myCar2.year &lt;&lt; "\n"; </span><br>
+            <span class="tagcolor"> </span> <br>
+            <span class="tagcolor"> return 0; </span><br>
+        }
+      </span>
+      </div>
+      <div class="w-clear nextprev">
+        <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_struct_named">Try it!</a>
+      </div><br><br><br>
+      </div>
+
+
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="carrays.html">❮ Previous</a>
+             <a class="w-right w-btn" href="creferences.html">Next ❯</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1">Constant</span></h1>
+            <a class="w-left w-btn" href="cvariablesiden.html">❮ Previous</a>
+            <a class="w-right w-btn" href="cuser.html">Next ❯</a>
+        </div>
+        <hr>
+
+        <div class="wrap-column1">
+            <h2>Constants</h2><br>
+            <p class="intro">When you do not want others (or yourself) to change existing variable values, use the <span class="attributecolor">const</span> keyword (this will declare the variable as "constant", which means <strong>unchangeable and read-only</strong> ):</p><br>
+        </div>
+        <div class="w-example">
+            <div class="example">Example</div>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor">const int</span>
+                <span class="tagcolor">myNum =</span>
+                
+                <span class="tagcolor">15;</span>
+                <span class="tagcolor">// myNum will always be 15</span>
+                
+                <span class="tagcolor"></span><br>
+                <span class="tagcolor">myNum =</span>
+                
+                <span class="tagcolor">10;</span>
+                <span class="tagcolor">// error: assignment of read-only variable 'myNum'</span>
+                
+              </span>
+              
+            </div>            
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_variables_const">Try it!</a>
+            </div><br>
+        </div>
+
+            <hr>
+            <div class="wrap-column1">
+                <p class="intro">You should always declare the variable as constant when you have values that are unlikely to change:</p><br>
+            </div>
+            <div class="w-example">
+                <div class="example">Example</div>
+                <div class="w-code">
+                  <span class="tagnamecolor">
+                    <span class="tagcolor">const int</span>
+                    <span class="tagcolor">minutesPerHour =</span>
+                     
+                    <span class="tagcolor">60;</span>
+                    
+                    <span class="tagcolor">const Float</span><br>
+                    <span class="tagcolor"> PI = </span>
+                   
+                    <span class="tagcolor">3.14;</span>
+                  </span>
+                </div>
+                <div class="w-clear nextprev">
+                    <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_variables_const2">Try it!</a><br>
+                  </div>
+            </div>
+
+            <div class="w-clear nextprev">
+                <a class="w-left w-btn" href="cvariablesiden.html">❮ Previous</a>
+                <a class="w-right w-btn" href="cuser.html">Next ❯</a>
+            </div>
+            <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+<footer>
+
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

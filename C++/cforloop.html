@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1">For Loop</span></h1>
+               <a class="w-left w-btn" href="cwhile.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cbreak.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>C++ For Loop</h2><br>
+          <p class="intro">When you know exactly how many times you want to loop through a block of code, use the <span class="attributecolor">for</span> loop instead of a <span class="attributecolor">while</span> loop:</p><br>
+        </div>
+        <div class="w-example">
+          <div class="example">Syntax</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">for</span>
+              <span class="tagcolor">( statement 1; statement 2; statement 3; ) &#123</span><br>
+              <span class="tagcolor" style="color:gray"> // code block to be executed</span><br>
+              <span class="tagcolor">&#125 </span>
+              <span class="tagcolor"></span>
+            </span>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro"><strong>Statement 1</strong> is executed (one time) before the execution of the code block.</p><br>
+          <p class="intro"><strong>Statement 2</strong> defines the condition for executing the code block.</p><br>
+          <p class="intro"><strong>Statement 3</strong> is executed (every time) after the code block has been executed.</p><br>
+          <p class="intro">The example below will print the numbers 0 to 4:</p><br>
+        </div><br>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">for</span>
+              <span class="tagcolor">( int i = 0; i &lt; 5; i++) &#123</span><br>
+              <span class="tagcolor">cout &lt; &lt; i &lt; &lt; &quot; \n &quot; </span><br>
+              <span class="tagcolor">&#125</span>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_for_loop">Try it!</a><br>
+          </div><br>
+          <br>
+          <br>
+          <br>
+        </div>
+        <div class="wrap-column1">
+          <p class="intro">Example explained</p><br>
+          <p class="intro">Statement 1 sets a variable before the loop starts (int i = 0).</p><br>
+          <p class="intro">Statement 2 defines the condition for the loop to run (i must be less than 5). If the condition is true, the loop will start over again, if it is false, the loop will end.</p><br>
+          <p class="intro">Statement 3 increases a value (i++) each time the code block in the loop has been executed.</p><br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Another Example</h2><br>
+          <p class="intro">This example will only print even values between 0 and 10:</p><br>
+        </div>
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">for</span><br>
+              <span class="tagcolor">(int i = 0; i &lt;= 10; i = i + 2) &#123</span><br>
+              <span class="tagcolor">cout &lt; &lt; i &lt; &lt; &quot; \n &quot;</span>
+              <span class="tagcolor">&#125</span>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_for_loop_even">Try it!</a><br>
+          </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Nested Loops</h2><br>
+          <p class="intro">It is also possible to place a loop inside another loop. This is called a <strong>nested loop</strong>.</p><br>
+          <p class="intro">The "inner loop" will be executed one time for each iteration of the "outer loop":</p><br>
+        </div>
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor"></span>
+              <span class="tagcolor" style="color:gray" >// Outer loop </span><br>
+              <span class="tagcolor">for (int i = 1; i &lt;= 2; ++i) &#123 </span><br><br>
+               
+              <span class="tagcolor" >cout &lt;&lt; &quot;Outer: &quot; &lt;&lt; i &lt;&lt; &quot;\n&quot;;</span><br>
+              <span class="tagcolor" style="color:gray" >// Executes 2 times </span><br><br>
+              
+              <span class="tagcolor" style="color:gray" > // Inner loop </span><br>
+              <span class="tagcolor" >for (int j = 1; j &lt;= 3; ++j) { </span><br><br>
+              <span class="tagcolor" >cout &lt;&lt; &quot; </span>
+              <span class="tagcolor" >Inner: &quot; &lt;&lt; j &lt;&lt; &quot;\n&quot;; // Executes 6 times (2 * 3  ) </span><br>
+              <span class="tagcolor" >&#125 </span> <br>
+              <span class="tagcolor">&#125</span><br>
+            </span>
+          </div><br>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_for_loop_nested">Try it!</a>
+          </div>
+        </div>
+        <div class="wrap-column1">
+          <h2>The for each Loop</h2><br>
+          <p class="intro">There is also a "<strong>for each loop</strong> " (introduced in C++ version 11 (2011), which is used exclusively to loop through elements in an array (or other data sets):</p><br>
+        </div>
+        <div class="w-example">
+          <div class="example">Syntax</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">for</span>
+              <span class="tagcolor">( typr variableName : arrayname) &#123</span><br>
+              <span class="tagcolor" style="color:gray">// code block to be executed</span><br>
+              <span class="tagcolor">&#125</span>
+            </span>
+          </div>
+        </div><br>
+        <div class="wrap-column1">
+          <p class="intro">The following example outputs all elements in an array, using a "<strong>for-each</strong> loop":</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">int</span>
+              <span class="tagcolor"> myNumbers[5] = &#123 10, 20, 30, 40, 50 &#125 ;</span><br>
+              <span class="tagcolor">for</span>
+              <span class="tagcolor">(int i : myNumbers) &#123 </span><br>
+              <span class="tagcolor">cout &lt; &lt; i &lt; &lt; &quot;\n&quot; ; </span><br>
+              <span class="tagcolor">&#125</span>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_array_loop_foreach">Try it!</a><br>
+          </div>
+        </div>
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>Don't worry if you don't understand the example above. You will learn more about arrays in the C++ Arrays chapter.</p><br>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cwhile.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cbreak.html">Next ❯</a>
+         </div>
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

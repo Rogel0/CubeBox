@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1"> Arrays</span></h1>
+               <a class="w-left w-btn" href="cbreak.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cstructures.html">Next ❯</a>
+        </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <h2>C++ Arrays</h2><br>
+          <p class="intro">Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p><br>
+          <p class="intro">To declare an array, define the variable type, specify the name of the array followed by <strong>square brackets</strong> and specify the number of elements it should store:</p><br>
+        </div><br>
+        <div class="w-example">
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">string cars [4] ;</span>
+            </span>
+          </div>
+        </div><br>
+
+        <div class="wrap-column1">
+          <p class="intro">We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">string cars [4] = &#123</span>
+              <span class="tagcolor">&quot;Volvo &quot;, &quot; BMW &quot;, &quot;Ford &quot;, &quot;Mazda &quot; &#125 ;</span>
+            </span>
+          </div>
+
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">To create an array of three integers, you could write:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">int myNum [3] = &#123; 10,20,30 &#125; ;</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Access the Elements of an Array</h2><br>
+          <p class="intro">You access an array element by referring to the index number inside square brackets <span class="attributecolor">[ ]</span>.</p><br>
+          <p class="intro">This statement accesses the value of the <strong>first element</strong> in <strong>cars</strong>:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">string cars [4] = &#123</span>
+              <span class="tagcolor">&quot;Volvo &quot;, &quot; BMW &quot;, &quot;Ford &quot;, &quot;Mazda &quot; &#125 ;</span><br>
+              <span class="tagcolor">cout &lt;  &lt; cars [0] ;</span><br>
+              <span class="tagcolor" style="color:gray">// outputs Volvo</span><br>
+            </span>
+
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_array">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong> Array indexes start with 0: [0] is the first element. [1] is the second element, etc.</p><br>
+        </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <h2>Change an Array Element</h2><br>
+          <p class="intro">To change the value of a specific element, refer to the index number:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">cars [0] = &#123</span>
+              <span class="tagcolor">&quot;opel &quot;;</span>
+            </span>
+        </div><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">string cars [4] = &#123</span>
+              <span class="tagcolor">&quot;Volvo &quot;, &quot; BMW &quot;, &quot;Ford &quot;, &quot;Mazda &quot; &#125 ;</span><br>
+              <span class="tagcolor">cars [0] = &quot; opel &quot;;</span><br>
+              <span class="tagcolor">cout &lt;  &lt; cars [0] ;</span><br>
+              <span class="tagcolor" style="color:gray">// Now outputs opel instead of volvo</span><br>
+            </span>
+
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_array">Try it!</a>
+          </div><br><br><br>
+        </div>
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cbreak.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cstructures.html">Next ❯</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

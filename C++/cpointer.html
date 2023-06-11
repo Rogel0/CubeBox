@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1">Pointers</span></h1>
+               <a class="w-left w-btn" href="creferences.html">❮ Previous</a>
+               <a class="w-right w-btn" href="#">Next ❯</a>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Creating Pointers</h2><br>
+          <p class="intro">You learned from the previous chapter, that we can get the <strong>memory address</strong> of a variable by using the <span class="attributecolor">&</span> operator:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">string food = "Pizza";</span>
+              <span class="tagcolor" style="color:gray">// A food variable of type string</span><br>
+              <span class="tagcolor">cout &lt; &lt; food;</span>
+              <span class="tagcolor" style="color:gray">// Outputs the value of food (Pizza)</span><br>
+              <span class="tagcolor">cout &lt; &lt; & food;</span>
+              <span class="tagcolor" style="color:gray">// Outputs the memory address of food (0x6dfed4)</span><br>
+            </span>
+          </div><br>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_pointer_ref">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">A <strong>pointer</strong> however, is a variable that <strong>stores the memory address as its value</strong>.</p><br>
+          <p class="intro">A pointer variable points to a data type (like <span class="attributecolor">int</span>  or <span class="attributecolor">string</span> ) of the same type, and is created with the <span class="attributecolor">*</span>  operator. The address of the variable you're working with is assigned to the pointer:</p><br>
+        </div>
+
+        
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">string food = "Pizza";</span>
+              <span class="tagcolor" style="color:gray">// A food variable of type string</span><br>
+              <span class="tagcolor">string* ptr = &amp;food;</span>
+              <span class="tagcolor" style="color:gray">//A pointer variable, with the name ptr, that stores the address of food</span><br><br>
+              <span class="tagcolor" style="color:gray">// Outputs the value of food (Pizza)</span><br>
+              <span class="tagcolor">cout &lt; &lt; food;</span><br><br>
+              <span class="tagcolor" style="color:gray">// Outputs the memory address of food (0x6dfed4)</span><br>
+              <span class="tagcolor">cout &lt; &lt; & food;</span><br><br>
+              <span class="tagcolor" style="color:gray">// // Output the memory address of food with the pointer (0x6dfed4)</span><br>
+              <span class="tagcolor">cout &lt; &lt; ptr &lt; &lt;;</span><br><br>
+
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_pointer">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Example explained</h2><br>
+          <p class="intro">Create a pointer variable with the name <span class="atributecolor">ptr</span> , that points to a <span class="atributecolor">string</span> variable, by using the asterisk sign <span class="atributecolor">* </span> (<span class="atributecolor">string * ptr</span>). Note that the type of the pointer has to match the type of the variable you're working with.</p><br>
+          <p class="intro">Use the <span class="atributecolor">&amp;</span> operator to store the memory address of the variable called food, and assign it to the pointer.</p><br>
+          <p class="intro">Now, <span class="atributecolor">ptr</span> holds the value of <span class="atributecolor">food</span>'s memory address.</p><br>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Tip: </strong>There are three ways to declare pointer variables, but the first way is preferred:</p><br>
+
+          <div class="w-example">
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor">string* mystring;</span>
+                <span class="tagcolor" style="color:gray"> //  Preferred</span><br>
+                <span class="tagcolor">string *mystring;</span><br>
+                <span class="tagcolor">string * mystring;</span><br>
+              </span>
+            </div><br>
+          </div>
+        </div><br><br>
+
+
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="creferences.html">❮ Previous</a>
+             <a class="w-right w-btn" href="#">Next ❯</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1">Break/Continue</span></h1>
+               <a class="w-left w-btn" href="cforloop.html">❮ Previous</a>
+               <a class="w-right w-btn" href="carrays.html">Next ❯</a>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>C++ Break</h2><br>
+          <p class="intro">You have already seen the <span class="attributecolor">break</span> statement used in an earlier chapter of this tutorial. It was used to "jump out" of a <span class="attributecolor">switch</span> statement.</p><br>
+          <p class="intro">The break statement can also be used to jump out of a <strong>loop</strong>.</p><br>
+          <p class="intro">This example jumps out of the loop when i is equal to 4:</p><br>
+        </div><br>
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">for</span>
+              <span class="tagcolor">(int i = 0; i &lt; 10; i++) &#123</span><br>
+              <span class="tagcolor">if (i == 4) &#123</span><br> 
+              <span class="tagcolor">break;</span><br>
+              <span class="tagcolor">&#125</span><br>
+              <span class="tagcolor">cout &lt;  &lt; i &lt;  &lt; &quot; \n &quot;</span><br>
+              <span class="tagcolor">&#125</span>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_break">Try it!</a><br>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>C++ Continue</h2><br>
+          <p class="intro">The <span class="attributecolor">continue </span> statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.</p><br>
+          <p class="intro">This example skips the value of 4:</p><br>
+        </div><br>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">for</span>
+              <span class="tagcolor">(int i = 0; i &lt; 10; i++) &#123</span><br>
+              <span class="tagcolor">if (i == 4) &#123</span><br> 
+              <span class="tagcolor">continue;</span><br>
+              <span class="tagcolor">&#125</span><br>
+              <span class="tagcolor">cout &lt;  &lt; i &lt;  &lt; &quot; \n &quot;</span><br>
+              <span class="tagcolor">&#125</span>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_continue">Try it!</a><br>
+          </div><br><br><br>
+        </div>
+
+        
+        <div class="wrap-column1">
+          <h2>Break and Continue in While Loop</h2><br>
+          <p class="intro">You can also use <span class="attributecolor">break </span> and <span class="attributecolor">continue</span> in while loops:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">int i = 0;</span><br>
+              <span class="tagcolor">while (i &lt; 10) &#123</span><br>
+              <span class="tagcolor">cout &lt; &lt; i  &lt; &lt; &quot; \n &quot; ;</span><br>
+              <span class="tagcolor">i++;</span><br>
+              <span class="tagcolor">if ( i == 4 ) &#123</span><br>
+              <span class="tagcolor">break;</span><br>
+              <span class="tagcolor"> &nbsp;&#125 </span><br>
+              <span class="tagcolor">&#125</span>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_break_while">Try it!</a><br>
+          </div><br><br><br>
+        </div>
+        
+
+        <div class="w-example">
+          <div class="example"> Continue Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">int i = 0;</span><br>
+              <span class="tagcolor">while (i &lt; 10) &#123</span><br>
+              <span class="tagcolor">cout &lt; &lt; i  &lt; &lt; &quot; \n &quot; ;</span><br>
+              <span class="tagcolor">i++;</span><br>
+              <span class="tagcolor">if ( i == 4 ) &#123</span><br>
+              <span class="tagcolor">Continue;</span><br>
+              <span class="tagcolor"> &nbsp;&#125 </span><br>
+              <span class="tagcolor">&#125</span>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_continue_while">Try it!</a><br>
+          </div><br><br><br>
+        </div>
+
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cforloop.html">❮ Previous</a>
+             <a class="w-right w-btn" href="carrays.html">Next ❯</a>
+        </div>
+
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

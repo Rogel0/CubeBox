@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1">References</span></h1>
+               <a class="w-left w-btn" href="cstructures.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cpointer.html">Next ❯</a>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Creating References</h2><br>
+          <p class="intro">A reference variable is a "reference" to an existing variable, and it is created with the <span class="attributecolor">&</span> operator:</p><br>
+        </div>
+        <div class="w-example">
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">string food = "Pizza";</span>
+              <span class="tagcolor" style="color:gray">// food variable</span><br>
+              <span class="tagcolor">string &meal = food;</span>
+              <span class="tagcolor" style="color:gray">// reference to food</span><br>
+            </span>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">Now, we can use either the variable name <span class="attributecolor">food</span> or the reference name <span class="attributecolor">meal</span> to refer to the <span class="attributecolor">food</span> variable:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">string food = "Pizza";</span><br>
+              <span class="tagcolor">string &meal = food;</span><br>
+
+              <span class="tagcolor">cout &lt;  &lt; food &lt;  &lt; &quot; \n &quot;  </span>
+              <span class="tagcolor" style="color:gray">// food variable</span><br>
+              <span class="tagcolor">cout &lt;  &lt; meal &lt;  &lt; &quot; \n &quot; </span>
+              <span class="tagcolor" style="color:gray">// food variable</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_reference">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cstructures.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cpointer.html">Next ❯</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

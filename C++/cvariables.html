@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+      <div class="w-clear nextprev">
+        <h1 class="first-title">C++ <span class="color-h1">Variables</span></h1>
+        <a class="w-left w-btn" href="coutputnew.html">❮ Previous</a>
+        <a class="w-right w-btn" href="cvariableDMV.html">Next ❯</a>
+      </div>
+      <hr>
+
+      <div class="wrap-column1">
+        <h2>C++ Variables</h2><br>
+        <p class="intro">Variables are containers for storing data values.</p><br>
+        <p class="intro">In C++, there are different <strong>types</strong> of variables (defined with different keywords), for example:</p><br>
+      </div>
+      <div class="wrap-column1">
+        <ul class="bullet-container">
+          <li class="bullet"><span class="attributecolor">int</span> - stores integers (whole numbers), without decimals, such as 123 or -123</li><br>
+          <li class="bullet"><span class="attributecolor">double</span> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li><br>
+          <li class="bullet"><span class="attributecolor">char</span> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li><br>
+          <li class="bullet"><span class="attributecolor">string</span> - stores text, such as "Hello World". String values are surrounded by double quotes</li><br>
+          <li class="bullet"><span class="attributecolor">bool</span> - stores values with two states: true or false</li><br>
+        </ul>
+      </div>
+      <hr>
+      <div class="wrap-column1">
+        <h2>Declaring (Creating) Variables</h2><br>
+        <p class="intro">To create a variable, specify the type and assign it a value:</p><br>
+      </div>
+      <div class="w-example">
+        <div class="example">Syntax</div>
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">type variableName = value;</span>
+          </span>
+        </div>
+      </div>
+      <div class="wrap-column1">
+        <p class="intro">Where type is one of C++ types (such as <span class="attributecolor">int</span> ), and variableName is the name of the variable (such as <strong>x</strong> or <strong>myName</strong> ). The <strong>equal sign</strong> is used to assign values to the variable.</p><br>
+        <p class="intro">To create a variable that should store a number, look at the following example:</p><br>
+      </div>
+      <div class="w-example">
+        <div class="example">Example</div>
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">int</span>
+            <span class="tagcolor"> myNum =</span>
+           
+            <span class="tagcolor">15 ;</span>
+            <span class="tagcolor">count</span>
+            
+            <span class="tagcolor">&lt; &lt;</span>
+            
+            <span class="tagcolor">myNum = 15;</span>
+          </span>
+        </div>
+        <div class="w-clear nextprev">
+          <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_variables_int">Try it!</a>
+        </div><br>
+      </div>
+      <div class="wrap-column1">
+        <p class="intro">You can also declare a variable without assigning the value, and assign the value later:</p><br>
+      </div>
+
+      <div class="w-example">
+        <div class="example">Example</div>
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">int</span>
+            <span class="tagcolor">myNum</span>
+             
+            <span class="tagcolor">;</span><br>
+            <span class="tagcolor"> myNum = </span>
+           
+            <span class="tagcolor">15 ;</span><br>
+            
+            <span class="tagcolor">count</span>
+            
+            <span class="tagcolor">&lt; &lt;</span>
+            <span class="tagcolor">myNum = 15;</span>
+            
+            <span class="tagcolor"></span>
+          </span>
+        </div>
+        <div class="w-clear nextprev">
+          <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_variables_int2">Try it!</a><br>
+        </div>
+      </div>
+      <div class="wrap-column1">
+        <p class="intro">Note that if you assign a new value to an existing variable, it will overwrite the previous value:</p><br>
+      </div>
+
+      <div class="w-example">
+        <div class="example">Example</div>
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">int</span>
+            <span class="tagcolor"> myNum =</span>
+            
+           
+            <span class="tagcolor">15 ;</span>
+            <span class="tagcolor">// myNum is 15</span><br>
+            <span class="tagcolor">int</span>
+            <span class="tagcolor">myNum =</span>
+            
+            <span class="tagcolor">10 ;</span>
+            <span class="tagcolor">// Now myNum is 10</span><br>
+            <span class="tagcolor">count</span>
+            
+            <span class="tagcolor">&lt; &lt;</span>
+            <span class="tagcolor">myNum ;</span>
+            
+            <span class="tagcolor">// Outputs 10</span>
+          </span>
+        </div>
+        <div class="w-clear nextprev">
+          <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_variables_int3">Try it!</a><br>
+        </div>
+      </div>
+      <hr>
+      <div class="wrap-column1">
+        <h2>Other Types</h2><br>
+        <p class="intro">A demonstration of other data types:</p><br>
+      </div>
+      <div class="w-example">
+        <div class="example">Example</div>
+        <div class="w-code">
+          <span class="tagnamecolor">
+
+            <span class="tagcolor">int</span>
+            <span class="tagcolor"> myNum =</span>
+           
+            <span class="tagcolor">5 ;</span>
+            <span class="tagcolor">// Integer (whole number without decimals)</span><br>
+
+            <span class="tagcolor">double</span>
+            <span class="tagcolor">myFloatNum =</span>
+            
+            <span class="tagcolor">5.99 ;</span>
+            <span class="tagcolor">// Floating point number (with decimals)</span><br>
+
+            <span class="tagcolor">char</span>
+            <span class="tagcolor">myLetter = </span>
+            
+            <span class="tagcolor">'D' ;</span>
+            <span class="tagcolor">// Character</span><br>
+
+            <span class="tagcolor">String</span>
+            <span class="tagcolor">myText = </span>
+            
+            <span class="tagcolor"> "Hello world" ;</span>
+            <span class="tagcolor">// String (text)</span><br>
+
+            <span class="tagcolor">bool</span>
+            <span class="tagcolor">myBoolean =</span>
+            
+            <span class="tagcolor"> true ;</span>
+            <span class="tagcolor">// Boolean (true or false)</span><br>
+          </span>
+        </div>
+        <div class="w-clear nextprev">
+          <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_variables_int3">Try it!</a><br>
+        </div>
+      </div>
+      <hr>
+      <div class="wrap-column1">
+        <h2>Display Variables</h2>
+        <p class="intro">The <span class="attributecolor">cout</span> object is used together with the <span class="attributecolor"><<</span> operator to display variables.</p><br>
+        <p class="intro">To combine both text and a variable, separate them with the <span class="attributecolor"><<</span> operator:</p><br>
+      </div>
+      <div class="w-example">
+        <div class="example">Example</div>
+        <div class="w-code">
+          <span class="tagnamecolor">
+            <span class="tagcolor">int</span>
+            <span class="tagcolor">myAge =</span>
+            
+            <span class="tagcolor">35 ;</span><br>
+            <span class="tagcolor">count</span>
+            
+            <span class="tagcolor">&lt; &lt;</span>
+            <span class="tagcolor">"i am"</span>
+            <span class="tagcolor">&lt; &lt;</span>
+            <span class="tagcolor">myAge</span>
+            
+            <span class="tagcolor">&lt; &lt;</span>
+            <span class="tagcolor">"years old." ;</span>
+          </span>
+        </div>
+        <div class="w-clear nextprev">
+          <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_variables_display">Try it!</a>
+        </div>
+      </div>
+
+
+      <div class="wrap-column1">
+        <h2>Add Variables Together</h2><br>
+        <p class="intro">To add a variable to another variable, you can use the + operator:</p><br>
+      </div>
+
+    </div>
+    <div class="w-example">
+      <div class="example">Example</div>
+      <div class="w-code">
+        <span class="tagnamecolor">
+          <span class="tagcolor">int</span>
+          <span class="tagcolor">x =</span>
+          
+          <span class="tagcolor">5 ;</span><br>
+          <span class="tagcolor">int</span>
+          <span class="tagcolor">y =</span>
+          
+          <span class="tagcolor">int</span>
+          <span class="tagcolor">sum = x + y;</span>
+          
+          <span class="tagcolor">6 ;</span><br>
+          <span class="tagcolor">count</span>
+          
+          <span class="tagcolor">&lt; &lt;</span>
+          <span class="tagcolor">sum;</span>
+          
+          <span class="tagcolor"></span>
+
+        </span>
+      </div>
+      <div class="w-clear nextprev">
+      <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_variables_add">Try it!</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    
+
+    
+    
+  </div>
+  
+  <div class="w-clear nextprev">
+    <a class="w-left w-btn" href="coutputnew.html">❮ Previous</a>
+    <a class="w-right w-btn" href="cvariableDMV.html">Next ❯</a>
+  </div>
+  
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

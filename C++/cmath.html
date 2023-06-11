@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">C++ <span class="color-h1">Math</span></h1>
+               <a class="w-left w-btn" href="cstring.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cbooleans.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>C++ Math</h2><br>
+          <p class="intro">C++ has many functions that allows you to perform mathematical tasks on numbers.</p><br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Max and Min </h2><br>
+          <p class="intro">The <span class="attributecolor">max (x,y) </span> function can be used to find the highest value of x and y:</p><br>
+        </div>
+        <hr>
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+             <span class="tagcolor">cout &lt; &lt;</span>
+             <span class="tagcolor">max</span>              
+             <span class="tagcolor">(5, 10);</span>              
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+           <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_math_max">Try it!</a><br>
+          </div>
+        </div>
+        <div class="wrap-column1">
+          <p class="intro">And the <span class="attributecolor">min (x,y)</span> function can be used to find the lowest value of x and y:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+             <span class="tagcolor">cout &lt; &lt;</span>
+             <span class="tagcolor">min</span>              
+             <span class="tagcolor">(5, 10);</span>              
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+           <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_math_min">Try it!</a>
+          </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>C++ &lt;cmath&gt; Header</h2><br>
+          <p class="intro">Other functions, such as <span class="attributecolor">sqrt</span> (square root), <span class="attributecolor">round</span> (rounds a number) and <span class="attributecolor">log</span> (natural logarithm), can be found in the <span class="attributecolor">&lt;cmath&gt;</span> header file:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+                 <span class="tagcolor" style="color:gray">// Include the cmath library</span><br>              
+                 <span class="tagcolor">#include &lt;cmath&gt;</span><br><br>
+                 <span class="tagcolor">cout &lt;&lt;</span>
+                 <span class="tagcolor">sqrt</span>
+                 <span class="tagcolor">(64);</span><br>
+                 <span class="tagcolor">cout &lt;&lt;</span>
+                 <span class="tagcolor">round</span>
+                 <span class="tagcolor">(2.6)</span><br>
+                 <span class="tagcolor">cout &lt;&lt;</span>
+                 <span class="tagcolor">log</span>   
+                 <span class="tagcolor">(2);</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_math_cmath">Try it!</a>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Other Math Functions</h2><br>
+          <p class="intro">A list of other popular Math functions (from the <span class="attributecolor">&lt;cmath&gt;</span> library) can be found in the table below:</p><br>
+        </div>
+        <div class="w-example">
+          <table class="w-table">
+            <tbody>
+              <tr>
+                <th>Function</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>abs(x)</td>
+                <td>Returns the absolute value of x</td>
+              </tr>
+              <tr>
+                <td>acos(x)</td>
+                <td>Returns the arccosine of x</td>
+              </tr>
+              <tr>
+                <td>asin(x)</td>
+                <td>Returns the arcsine of x</td>
+              </tr>
+              <tr>
+                <td>atan(x)</td>
+                <td>Returns the arctangent of x</td>
+              </tr>
+              <tr>
+                <td>cbrt(x)</td>
+                <td>Returns the cube root of x</td>
+             </tr>
+              <tr>
+                <td>ceil(x)</td>
+                <td>Returns the value of x rounded up to its nearest integer</td>
+              </tr>
+              <tr>
+                <td>cos(x)</td>
+                <td>Returns the cosine of x</td>
+              </tr>
+              <tr>
+                <td>cosh(x)</td>
+                <td>Returns the hyperbolic cosine of x</td>
+             </tr>
+              <tr>
+                <td>exp(x)</td>
+                <td>Returns the value of E<sup>x</sup></td>
+             </tr>
+              <tr>
+                <td>expm1(x)</td>
+                <td>Returns e<sup>x</sup> -1</td>
+             </tr>
+              <tr>
+                <td>fabs(x)</td>
+                <td>Returns the absolute value of a floating x</td>
+              </tr>
+              <tr>
+                <td>fdim(x, y)</td>
+                <td>Returns the positive difference between x and y</td>
+              </tr>
+              <tr>
+                <td>floor(x)</td>
+                <td>Returns the value of x rounded down to its nearest integer</td>
+              </tr>
+              <tr>
+                <td>hypot(x, y)</td>
+                <td>Returns sqrt(x<sup>2</sup> +y<sup>2</sup>) without intermediate overflow or underflow</td>
+             </tr>
+              <tr>
+                <td>fma(x, y, z)</td>
+                <td>Returns x*y+z without losing precision</td>
+             </tr>
+              <tr>
+                <td>fmax(x, y)</td>
+                <td>Returns the highest value of a floating x and y</td>
+             </tr>
+              <tr>
+                <td>fmin(x, y)</td>
+                <td>Returns the lowest value of a floating x and y</td>
+             </tr>
+              <tr>
+                <td>fmod(x, y)</td>
+                <td>Returns the floating point remainder of x/y</td>
+             </tr>
+              <tr>
+                <td>pow(x, y)</td>
+                <td>Returns the value of x to the power of y</td>
+              </tr>
+              <tr>
+                <td>sin(x)</td>
+                <td>Returns the sine of x (x is in radians)</td>
+             </tr>
+              <tr>
+                <td>sinh(x)</td>
+               <td>Returns the hyperbolic sine of a double value</td>
+             </tr>
+              <tr>
+                <td>tan(x)</td>
+                <td>Returns the tangent of an angle</td>
+              </tr>
+              <tr>
+                <td>tanh(x)</td>
+                <td>Returns the hyperbolic tangent of a double value</td>
+             </tr>
+            </tbody>
+          </table>
+      </div>
+      <br><br>
+      <div class="w-clear nextprev">
+           <a class="w-left w-btn" href="cstring.html">❮ Previous</a>
+           <a class="w-right w-btn" href="cbooleans.html">Next ❯</a>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+</body>
+
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>
