@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Padding</span></h1>
+               <a class="w-left w-btn" href="cssmargins.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssheightorwidth.html">Next ❯</a>
+           </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <p class="intro">Padding is used to create space around an element's content, inside of any defined borders.</p><br>
+        </div>
+        <hr>
+
+        <div class="w-example">
+          <span class="tagnamecolor">
+            <div class="tagnamecolor" style="border-width:1px;border-style:solid;margin:70px;padding:5px;color:rgb(0, 0, 0);background-color:white;">
+              This element has a padding of 70px.
+            </span>
+          </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" style="text-align: center;" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_intro">Try it!</a>
+          </div>
+        </div>
+        <div class="wrap-column1">
+          <h2>CSS Padding</h2><br>
+          <p class="intro">The CSS <span class="attributecolor">padding</span> properties are used to generate space around an element's content, inside of any defined borders.</p><br>
+          <p class="intro">With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p><br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Padding - Individual Sides</h2><br>
+          <p class="intro">CSS has properties for specifying the padding for each side of an element:</p><br>
+          <ul class="bullet-contianer">
+            <li class="bullet"><span class="attributecolor">padding - top</span></li><br>
+            <li class="bullet"><span class="attributecolor">padding - right</span></li><br>
+            <li class="bullet"><span class="attributecolor">padding - bottom</span></li><br>
+            <li class="bullet"><span class="attributecolor">padding - left</span></li><br>
+          </ul>
+          <p class="intro"><li class="bullet"><span class="attributecolor"></span></li></p><br>
+          <ul class="bullet-container">
+            <li class="bullet">length - specifies a padding in px, pt, cm, etc.</li><br>
+            <li class="bullet">% - specifies a padding in % of the width of the containing element</li><br>
+            <li class="bullet">inherit - specifies that the padding should be inherited from the parent element</li><br>
+          </ul>
+        </div>
+        <div class="w-note">
+          <p class="intro"><Strong>Note: </Strong>Negative values are not allowed.</p><br>
+        </div>
+
+        < class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">Set different padding for all four sides of a  &lt; div &gt; element:</p><br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">div &#123;</span><br><br>
+              <span class="tagcolor">padding-top:50px;</span><br><br>
+              <span class="tagcolor">padding-bottom:30px</span><br><br>
+              <span class="tagcolor">padding-right: 50px</span><br><br>
+              <span class="tagcolor">padding-left: 80px</span><br><br>
+              <span class="tagcolor">&#125</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" style="text-align: center;" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_sides">Try it!</a>
+          </div>
+          <div class="wrap-column1">
+            <h2>padding - Shorthand Property</h2><br>
+            <p class="intro">To shorten the code, it is possible to specify all the padding properties in one property.</p><br>
+            <p class="intro">The <span class="attributecolor">padding</span> property is a shorthand property for the following individual padding properties:</p><br>
+          </div>
+  
+          <div class="wrap-column1">
+            <ul class="bullet-container">
+              <li class="bullet"><span class="attributecolor"> padding - top</span></li><br>
+              <li class="bullet"><span class="attributecolor"> padding - right</span></li><br>
+              <li class="bullet"><span class="attributecolor"> padding - bottom</span></li><br>
+              <li class="bullet"><span class="attributecolor"> padding - left</span></li><br>
+            </ul>
+            <p class="intro">So, here is how it works:</p><br>
+            <p class="intro">If the <span class="attributecolor">padding </span> property has four values:</p><br>
+            <ul class="bullet-container">
+              <li class="bullet"><strong>padding: 25px 50px 75px 100px;</strong></li><br>
+              <li class="bullet">top padding is 25px</li><br>
+              <li class="bullet">right padding is 50px</li><br>
+              <li class="bullet">bottom padding is 75px</li><br>
+              <li class="bullet">left padding is 100px</li><br>
+            </ul>
+          </div>
+  
+          <div class="w-example">
+            <div class="example">Example</div>
+            <div class="wrap-column1">
+              <p class="intro">Set different paddings for all four sides of a &lt; p &gt; element:</p><br>
+            </div>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor">p &#123;</span><br><br><br>
+                <span class="tagcolor">padding:25px 50px 75px 100px;</span><br><br><br>
+                <span class="tagcolor">&#125</span><br><br>
+              </span>
+            </div>
+            <div class="w-clear nextprev">
+              <a class="w-btn w-try" style="text-align: center;" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val">Try it!</a><br>
+            </div><br>
+          </div>
+  
+  
+          <div class="wrap-column1">
+            <p class="intro">If the padding property has three values:</p><br>
+            <ul class="bullet-container">
+              <li class="bullet"><strong>padding: 25px 50px 75px;</strong></li><br>
+              <li class="bullet">top padding is 25px</li><br>
+              <li class="bullet">right and left paddings are 50px</li><br>
+              <li class="bullet">bottom padding is 75px</li><br>
+  
+            </ul>
+          </div>
+  
+          <div class="w-example">
+            <div class="example">Example</div>
+            <div class="wrap-column1">
+              <p class="intro">Use the padding shorthand property with three values: </p><br>
+            </div>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor">p &#123;</span><br><br><br>
+                <span class="tagcolor">padding:25px 50px 75px;</span><br><br><br>
+                <span class="tagcolor">&#125</span><br><br>
+              </span>
+            </div>
+            <div class="w-clear nextprev">
+              <a class="w-btn w-try" style="text-align: center;" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_3val">Try it!</a><br>
+            </div><br>
+          </div>
+  
+          
+          <div class="wrap-column1">
+            <p class="intro">If the padding property has two values:</p><br>
+            <ul class="bullet-container">
+              <li class="bullet"><strong>padding: 25px 50px;</strong></li><br>
+              <li class="bullet">top and bottom paddings are 25px</li><br>
+              <li class="bullet">right and left paddings are 50px</li><br>
+  
+            </ul>
+          </div>
+  
+          <div class="w-example">
+            <div class="example">Example</div>
+            <div class="wrap-column1">
+              <p class="intro">Use the padding shorthand property with two values: </p><br>
+            </div>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor">p &#123;</span><br><br><br>
+                <span class="tagcolor">padding:25px 50px;</span><br><br><br>
+                <span class="tagcolor">&#125</span><br><br>
+              </span>
+            </div>
+            <div class="w-clear nextprev">
+              <a class="w-btn w-try" style="text-align: center;" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_2val">Try it!</a><br>
+            </div><br>
+          </div>
+  
+                  
+          <div class="wrap-column1">
+            <p class="intro">If the padding property has one value:</p><br>
+            <ul class="bullet-container">
+              <li class="bullet"><strong>padding: 25px;</strong></li><br>
+              <li class="bullet">all four paddings are 25px</li><br>
+  
+            </ul>
+          </div>
+  
+          <div class="w-example">
+            <div class="example">Example</div>
+            <div class="wrap-column1">
+              <p class="intro">Use the padding shorthand property with one value:  </p><br>
+            </div>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor">p &#123;</span><br><br><br>
+                <span class="tagcolor">padding:25px;</span><br><br><br>
+                <span class="tagcolor">&#125</span><br><br>
+              </span>
+            </div>
+            <div class="w-clear nextprev">
+              <a class="w-btn w-try" style="text-align: center;" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_1val">Try it!</a><br>
+            </div><br>
+          </div>
+
+          <div class="wrap-column1">
+            <h2>Padding and Element Width</h2><br>
+            <p class="intro">The CSS <span class="attributecolor">width</span> property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).</p><br>
+            <p class="intro">So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p><br>
+          </div>
+          <div class="w-example">
+            <div class="example">Example</div>
+            <div class="wrap-column1">
+              <p class="intro">Here, the &lt;div&gt; element is given a width of 300px. However, the actual width of the &lt;div&gt; element will be 350px (300px + 25px of left padding + 25px of right padd&lt;ng)&gt;</p><br>
+            </div>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor">div &#123</span><br><br>
+                <span class="tagcolor"> width: 300px;</span><br><br>
+                <span class="tagcolor"> padding: 25px;</span><br><br>
+                <span class="tagcolor">&#125</span><br><br>
+              </span>
+            </div>
+            <div class="w-clear nextprev">
+              <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width">Try it!</a>
+            </div>
+          </div><br>
+          <div class="wrap-column1">
+            <p class="intro">To keep the width at 300px, no matter the amount of padding, you can use the <span class="attributecolor">box-sizing </span> property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.</p><br>
+          </div>
+          <br>
+          <div class="w-example">
+            <div class="example">Example</div>
+            <div class="wrap-column1">
+              <p class="intro">Use the box-sizing property to keep the width at 300px, no matter the amount of padding:</p><br>
+            </div>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor">div &#123</span><br><br>
+                <span class="tagcolor"> width: 300px;</span><br><br>
+                <span class="tagcolor"> padding: 25px;</span><br><br>
+                <span class="tagcolor"> box-sizing: border-box;</span><br><br>
+                <span class="tagcolor">&#125</span><br><br>
+              </span>
+            </div>
+            <div class="w-clear nextprev">
+              <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width2">Try it!</a>
+            </div>
+          </div><br><br>
+
+          <div class="w-clear nextprev">
+               <a class="w-left w-btn" href="cssmargins.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssheightorwidth.html">Next ❯</a>
+           </div>
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

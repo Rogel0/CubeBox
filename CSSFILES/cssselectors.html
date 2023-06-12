@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Selector </span></h1>
+               <a class="w-left w-btn" href="csssyntax.html">❮ Previous</a>
+               <a class="w-right w-btn" href="csshowto.html">Next ❯</a>
+           </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <p class="intro">A CSS selector selects the HTML element(s) you want to style.</p><br>
+        </div>
+        <hr>
+
+        
+        <div class="wrap-column1">
+          <h2>CSS Selectors</h2><br>
+          <p class="intro">CSS selectors are used to "find" (or select) the HTML elements you want to style.</p><br>
+          <p class="intro">We can divide CSS selectors into five categories:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet">Simple selectors (select elements based on name, id, class)</li><br>
+            <li class="bullet">Combinator selectors (select elements based on a specific relationship between them)</li><br>
+            <li class="bullet">Pseudo-class selectors (select elements based on a certain state)</li><br>
+            <li class="bullet">Pseudo-elements selectors (select and style a part of an element)</li><br>
+            <li class="bullet">Pseudo-elements selectors (select and style a part of an element)</li><br>
+          </ul>
+          <p class="intro">This page will explain the most basic CSS selectors.</p><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>The CSS element Selector</h2><br>
+          <p class="intro">The element selector selects HTML elements based on the element name.</p><br>
+        </div>
+        
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color: </p><br>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor" style="color:crimson">p &#123;</span><br>
+                <span class="tagcolor" style="color:blueviolet">text-align:</span>
+
+                <span class="tagcolor">center;</span><br>
+                <span class="tagcolor" style="color:blueviolet">color:</span>
+                <span class="tagcolor">red ;</span><br>
+                <span class="tagcolor">&#125;</span>
+
+              </span>
+            </div>
+          </div>
+          <div class="w-clear nextprev">
+            <A class="w-btn w-try " href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element">Try it!</A>
+          </div><br><br>
+        </div>
+        <div class="wrap-column1">
+          <h2>The CSS id Selector</h2><br>
+          <p class="intro">The id selector uses the id attribute of an HTML element to select a specific element.</p><br>
+          <p class="intro">The id of an element is unique within a page, so the id selector is used to select one unique element!</p><br>
+          <p class="intro">To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">The CSS rule below will be applied to the HTML element with id="para1":  </p><br>
+            <div class="w-code">
+              <span class="tagnamecolor">
+                <span class="tagcolor" style="color:crimson">#para1 &#123;</span><br>
+                <span class="tagcolor" style="color:blueviolet">text-align:</span>
+
+                <span class="tagcolor">center;</span><br>
+                <span class="tagcolor" style="color:blueviolet">color:</span>
+                <span class="tagcolor">red ;</span><br>
+                <span class="tagcolor">&#125;</span>
+
+              </span>
+            </div>
+          </div>
+          <div class="w-clear nextprev">
+            <A class="w-btn w-try " href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element">Try it!</A>
+          </div><br>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>An id name cannot start with a number!</p><br>
+        </div>
+        <br>
+        <br>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="csssyntax.html">❮ Previous</a>
+             <a class="w-right w-btn" href="csshowto.html">Next ❯</a>
+         </div>
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Height, Width and Max-width</span></h1>
+               <a class="w-left w-btn" href="csspadding.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssboxmodel.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <p class="intro">The CSS <span class="attributecolor">height</span> and <span class="attributecolor">width</span> properties are used to set the height and width of an element.</p><br>
+          <p class="intro">The CSS <span class="attributecolor">max-width</span> property is used to set the maximum width of an element.</p><br>
+        </div><hr>
+
+        <div class="w-example">
+          <span class="tagnamecolor">
+            <div class="tagnamecolor" style="border-width:1px;border-style:solid;margin:70px;padding:5px;color:rgb(255, 0, 0);background-color:white;">
+              This element has a height of 50 pixels and a width of 100%.
+            </span>
+          </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" style="text-align: center;" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_height_width_intro">Try it!</a>
+          </div>
+        </div><hr>
+
+        <div class="wrap-column1">
+          <h2>CSS Setting height and width</h2><br>
+          <p class="intro">The <span class="attributecolor">height</span> and <span class="attributecolor">width</span> properties are used to set the height and width of an element.</p><br>
+          <p class="intro">The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.</p><br>
+        </div><hr>
+
+        
+        <div class="wrap-column1">
+          <h2>CSS height and width Values</h2><br>
+          <p class="intro">The <span class="attributecolor">height</span> and <span class="attributecolor">width</span> properties may have the following values:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet"><span class="attributecolor">auto</span> - This is default. The browser calculates the height and width </li><br>
+            <li class="bullet"><span class="attributecolor">length</span> - This is default. The browser calculates the height and width </li><br>
+            <li class="bullet"><span class="attributecolor">%</span> - Defines the height/width in percent of the containing block </li><br>
+            <li class="bullet"><span class="attributecolor">initial</span> - Sets the height/width to its default value </li><br>
+            <li class="bullet"><span class="attributecolor">inherit</span> - The height/width will be inherited from its parent value </li><br>
+          </ul>
+        </div><hr>
+
+        <div class="w-example">
+          <div class="wrap-column1">
+            <h2>CSS height and width Examples</h2><br>
+            <div class="tagcolor" style="width:50%;height:200px;padding:10px;background-color:powderblue;color:black;">
+              This element has a height of 200 pixels and a width of 50%</div>
+          </div>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <div class="wrap-column1">
+            <p class="intro">Set the height and width of a &lt;div&gt; element:</p><br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">div &#123</span><br>
+              <span class="tagcolor">height: 200px;</span><br>
+              <span class="tagcolor">width: 50%;</span><br>
+              <span class="tagcolor">background-color: powderblue;</span><br>
+              <span class="tagcolor">&#125</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_width2">Try it!</a>
+          </div><br><br>
+        </div>
+
+        <div class="w-example">
+          <div class="tagcolor" style="height:100px;width:500px;padding:10px;background-color:powderblue;color:black">
+            This element has a height of 100 pixels and a width of 500 pixels.</div>
+        </div>
+
+        
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <div class="wrap-column1">
+            <p class="intro">Set the height and width of another &lt;div&gt; element:</p><br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">div &#123</span><br>
+              <span class="tagcolor">height: 100px;</span><br>
+              <span class="tagcolor">width: 500px;</span><br>
+              <span class="tagcolor">background-color: powderblue;</span><br>
+              <span class="tagcolor">&#125</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_width">Try it!</a>
+          </div><br><br>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong> Remember that the <span class="attributecolor">height</span> and <span class="attributecolor">width</span> properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!</p><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>The max-width property is used to set the maximum width of an element.</h2><br>
+          <p class="intro">The <span class="attributecolor">max-width</span> property is used to set the maximum width of an element.</p><br>
+          <p class="intro">The <span class="attributecolor">max-width</span> can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).</p><br>
+          <p class="intro">The problem with the <span class="attributecolor">&lt; div &gt;</span> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.</p><br>
+          <p class="intro">Using <span class="attributecolor">max-width</span> instead, in this situation, will improve the browser's handling of small windows.</p><br>
+        </div>
+        <div class="w-note">
+          <p class="intro"><strong>Tip: </strong>Drag the browser window to smaller than 500px wide, to see the difference between the two divs!</p><br>
+        </div>
+        <div class="w-example">
+          <div class="tagcolor" style="padding:10px;background-color:powderblue;color:black;height:100px; max-width:500px;">
+            This element has a height of 100 pixels and a max-width of 500 pixels.</div>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>If you for some reason use both the <span class="attributecolor">width</span> property and the <span class="attributecolor">max-width</span> property on the same element, and the value of the <span class="attributecolor">width</span> property is larger than the <span class="attributecolor">max-width</span> property; the <span class="attributecolor">max-width</span> property will be used (and the <span class="attributecolor">width</span> property will be ignored).</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <div class="wrap-column1">
+            <p class="intro">The &lt;div&gt; element has a height of 100 pixels and a max-width of 500 pixels: </p><br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">div &#123</span><br>
+              <span class="tagcolor">max-width: 500px;</span><br>
+              <span class="tagcolor">height: 100px;</span><br>
+              <span class="tagcolor">background-color: powderblue;</span><br>
+              <span class="tagcolor">&#125</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max_width">Try it!</a>
+          </div><br><br><br>
+      </div>
+
+      <div class="w-clear nextprev">
+           <a class="w-left w-btn" href="csspadding.html">❮ Previous</a>
+           <a class="w-right w-btn" href="cssboxmodel.html">Next ❯</a>
+       </div>
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Icons</span></h1>
+               <a class="w-left w-btn" href="cssfonts.html">❮ Previous</a>
+               <a class="w-right w-btn" href="csslinks.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <p class="intro">Icons can easily be added to your HTML page, by using an icon library.</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="tagnamecolor">
+          <i class="fa fa-cloud" style="font-size:36px;"></i>
+          <i class="fa fa-cloud" style="font-size:60px;"></i>
+          <i class="fa fa-cloud" style="font-size:72px;color:red"></i>
+          </div>
+          
+          <div class="w3-third">
+          <i class="fa fa-car" style="font-size:36px;"></i>
+          <i class="fa fa-car w3-text-dark-grey" style="font-size:60px;"></i>
+          <i class="fa fa-car w3-text-grey" style="font-size:72px;"></i>
+          </div>
+          
+          <div class="w3-third">
+          <i class="fa fa-thumbs-o-up" style="font-size:36px;"></i>
+          <i class="fa fa-thumbs-o-up" style="font-size:60px;"></i>
+          <i class="fa fa-thumbs-o-up" style="font-size:72px;color:rgb(79, 79, 192);"></i>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>How To Add Icons</h2><br>
+          <p class="intro">The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.</p><br>
+          <p class="intro">Add the name of the specified icon class to any inline HTML element (like  &lt;i&gt;  or &lt;span&gt; ).</p><br>
+          <p class="intro">All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)
+          </p><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Font Awesome Icons</h2><br>
+          <p class="intro">To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the <span class="attributecolor">&lt; head &gt;</span> section of your HTML page:</p><br>
+          <p class="intro"><span class="attributecolor"><script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script></span></p><br>
+          <p class="intro">Read more about how to get started with Font Awesome in our Font Awesome 5 tutorial.</p><br>
+        </div><br>
+
+        <div class="w-note">
+          <p class="intro"><Strong>Note: </Strong>No downloading or installation is required!</p>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">&lt;!DOCTYPE html &gt;</span><br>
+              <span class="tagcolor">&lt; html &gt;</span><br>
+              <span class="tagcolor">&lt; head &gt;</span><br><br>
+
+              <span class="tagcolor">&lt; script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" &gt;</span><br>
+
+              <span class="tagcolor">&lt;/script &gt;</span><br>
+              <span class="tagcolor">&lt;/head &gt;</span><br>
+              <span class="tagcolor">&lt;body &gt;</span><br>
+
+              <span class="tagcolor">&lt;i class="fas fa-cloud" &gt;</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br>
+              <span class="tagcolor">&lt;i class="fas fa-heart" &gt;</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br>
+              <span class="tagcolor">&lt;i class="fas fa-car" &gt;</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br>
+              <span class="tagcolor">&lt;i class="fas fa-file" &gt;</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br>
+              <span class="tagcolor">&lt;i class="fas fa-bars" &gt;</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br><br><br>
+              
+
+              <span class="tagcolor">&lt;/body &gt;</span><br>
+              <span class="tagcolor">&lt;/html  &gt;</span><br>
+            </span>
+          </div><br><br>
+          <div class="wrap-column1">
+            <p class="intro">Result:</p>
+            <div class="w-tagnamecolor">
+              <div class="tagcolor">
+                <i class="fa fa-cloud"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-car"></i>
+                <i class="fa fa-file"></i>
+                <i class="fa fa-bars"></i>
+                </div>
+            </div>
+          </div><br><br>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_icons_fa">Try it!</a>
+          </div>
+        </div><hr>
+
+        <div class="wrap-column1">
+          <h2>Google Icons</h2><br>
+          <p class="intro">To use the Google icons, add the following line inside the <span class="attributecolor">&lt;head&gt;</span> section of your HTML page:</p><br>
+          <p class="intro"><span class="attributecolor"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></span></p><br>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><Strong>Note: </Strong>No downloading or installation is required!</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">&lt;!DOCTYPE html &gt;</span><br>
+              <span class="tagcolor">&lt; html &gt;</span><br>
+              <span class="tagcolor">&lt; head &gt;</span><br><br>
+
+              <span class="tagcolor">&lt; link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" &gt;</span><br>
+
+
+              <span class="tagcolor">&lt;/head &gt;</span><br>
+              <span class="tagcolor">&lt;body &gt;</span><br>
+
+              <span class="tagcolor">&lt;i class="material-icons" &gt;cloud</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br>
+              <span class="tagcolor">&lt;i class="material-icons" &gt;favorite</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br>
+              <span class="tagcolor">&lt;i class="material-icons" &gt;attachment</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br>
+              <span class="tagcolor">&lt;i class="material-icons" &gt;computer</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br>
+              <span class="tagcolor">&lt;i class="material-icons" &gt;traffic</span>
+              <span class="tagcolor">&lt;/i &gt;</span><br><br><br>
+              
+
+              <span class="tagcolor">&lt;/body &gt;</span><br>
+              <span class="tagcolor">&lt;/html  &gt;</span><br>
+            </span>
+          </div><br><br>
+          <div class="wrap-column1">
+            <p class="intro">Result:</p>
+            <div class="w-tagnamecolor">
+              <div class="tagcolor" src="trycss_icons_google_ifr.htm" style="width:100%;border:none;height:50px;overflow:hidden;padding-left:6px;padding-top:6px">
+                <i class="material-icons"></i>
+                <i class="material-icons"></i>
+                <i class="material-icons"></i>
+                <i class="material-icons"></i>
+              </div>
+            </div>
+          </div><br><br>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_icons_google">Try it!</a>
+          </div>
+        </div><hr><br><br>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cssfonts.html">❮ Previous</a>
+             <a class="w-right w-btn" href="csslinks.html">Next ❯</a>
+         </div>
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

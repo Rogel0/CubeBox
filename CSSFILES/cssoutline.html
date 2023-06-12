@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Outline</span></h1>
+               <a class="w-left w-btn" href="cssboxmodel.html">❮ Previous</a>
+               <a class="w-right w-btn" href="csstext.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <p class="intro">An outline is a line drawn outside the element's border.</p><br>
+        </div><hr>
+        <div class="w-example" style="width:98%;border:2px solid black;outline:#04AA6D solid 10px;padding:20px;margin:auto;padding-right:30px;text-align:center">
+          <div class="wrap-column1">
+            <p class="intro">
+              This element has a black border and a green outline with a width of 10px.
+            </p>
+          </div>
+        </div><br><br>
+        <div class="w-clear">
+          <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline_intro">Try it!</a>
+        </div><br>
+
+
+        <div class="wrap-column1">
+          <h2>CSS Outline</h2><br>
+          <p class="intro">An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".</p><br>
+        </div><br>
+
+        <div class="w-example">
+          <div class="outline w-theme">
+              <div class="border">
+                <div class="content"></div>
+               </div>
+          </div>
+          </div><br>
+
+        <div class="wrap-column1">
+          <p class="intro">CSS has the following outline properties:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet"><span class="attributecolor">outline -style</span></li><br>
+            <li class="bullet"><span class="attributecolor">outline -color</span></li><br>
+            <li class="bullet"><span class="attributecolor">outline -width</span></li><br>
+            <li class="bullet"><span class="attributecolor">outline -offset</span></li><br>
+            <li class="bullet"><span class="attributecolor">outline -</span></li><br>
+          </ul>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.</p><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>CSS Outline Style</h2><br>
+          <p class="intro">The <span class="attributecolor">outline-style</span> property specifies the style of the outline, and can have one of the following values:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet"><span class="attributecolor">dotted</span> - Defines a dashed outline</li><br>
+            <li class="bullet"><span class="attributecolor">dashed</span> - Defines a dashed outline</li><br>
+            <li class="bullet"><span class="attributecolor">solid</span> - Defines a double outline</li><br>
+            <li class="bullet"><span class="attributecolor">double</span> - Defines a double outline</li><br>
+            <li class="bullet"><span class="attributecolor">groove</span> - Defines a 3D grooved outline</li><br>
+
+            <li class="bullet"><span class="attributecolor">ridge</span> - Defines a 3D ridged outline</li><br>
+            <li class="bullet"><span class="attributecolor">inset</span> - Defines a 3D inset outline</li><br>
+            <li class="bullet"><span class="attributecolor">outset</span> - Defines a 3D outset outline</li><br>
+            <li class="bullet"><span class="attributecolor">none</span> - Defines no outline</li><br>
+            <li class="bullet"><span class="attributecolor">hidden</span> - Defines a hidden outline</li><br>
+          </ul>
+          <p class="intro">The following example shows the different <span class="attributecolor">outline-style</span> values:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <div class="wrap-column1">
+            <p class="intro"></p><br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">p.dotted  &#123;</span><br>
+              <span class="tagcolor">outline-style: dotted;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+              
+              <span class="tagcolor">p.dashed  &#123;</span><br>
+              <span class="tagcolor">outline-style: dashed;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">p.solid  &#123;</span><br>
+              <span class="tagcolor">outline-style: solid;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">p.double  &#123;</span><br>
+              <span class="tagcolor">outline-style: double;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">p.groove  &#123;</span><br>
+              <span class="tagcolor">outline-style: groove;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+              
+              <span class="tagcolor">p.ridge  &#123;</span><br>
+              <span class="tagcolor">outline-style: ridge;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">p.inset  &#123;</span><br>
+              <span class="tagcolor">outline-style: inset;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">p.outset  &#123;</span><br>
+              <span class="tagcolor">outline-style: outset;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+        </div><br><br>
+
+        <div class="wrap-column1">
+          <p class="intro">Result: </p><br>
+        </div>
+        <div class="w-example">
+          <div class="tagnamecolor">
+
+            <p style="outline-style:dotted;outline-color:red;padding:2px 4px">A dotted outline.</p><br>
+            <p style="outline-style:dashed;outline-color:red;padding:2px 4px">A dashed outline.</p><br>
+            <p style="outline-style:solid;outline-color:red;padding:2px 4px">A solid outline.</p><br>
+            <p style="outline-style:double;outline-color:red;padding:2px 4px">A double outline.</p><br>
+            <p style="outline-style:groove;outline-color:red;padding:2px 4px">A groove outline. The effect depends on the outline-color value.</p><br>
+            <p style="outline-style:ridge;outline-color:red;padding:2px 4px">A ridge outline. The effect depends on the outline-color value.</p><br>
+            <p style="outline-style:inset;outline-color:red;padding:2px 4px">An inset outline. The effect depends on the outline-color value.</p><br>
+            <p style="outline-style:outset;outline-color:red;padding:2px 4px">An outset outline. The effect depends on the outline-color value.</p><br>
+          </div>
+        </div><br>
+        <div class="w-clear">
+          <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-style">Try it!</a><br>
+        </div><br>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>None of the other outline properties (which you will learn more about in the next chapters) will have ANY effect unless the <span class="attributecolor">outline-style</span> property is set!</p>
+        </div>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cssboxmodel.html">❮ Previous</a>
+             <a class="w-right w-btn" href="csstext.html">Next ❯</a>
+         </div>
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Introduction</span></h1>
+               <a class="w-left w-btn" href="csshome.html">❮ Previous</a>
+               <a class="w-right w-btn" href="csssyntax.html">Next ❯</a>
+        </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <p class="intro">CSS is the language we use to style a Web page.</p> <br>
+        </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <h2>What is CSS?</h2> <br>
+         <ul class="bullet-container">
+
+          <li class="bullet">CSS stands for Cascading Style Sheets</li> <br>
+          <li class="bullet">CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li> <br>
+          <li class="bullet">CSS saves a lot of work. It can control the layout of multiple web pages all at once</li> <br>
+          <li class="bullet">External stylesheets are stored in CSS files</li> <br>
+         </ul>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>CSS Demo - One HTML Page - Multiple Styles!</h2> <br>
+          <p class="intro">Here we will show one HTML page displayed with four different stylesheets. Click on the "Stylesheet 1", "Stylesheet 2", "Stylesheet 3", "Stylesheet 4" links below to see the different styles:</p> <br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Why Use CSS?</h2>
+          <p class="intro">CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p> <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example"> CSS Example</div>
+          <div class="w-code">
+              <span class="tagnamecolor">
+                  <span class="tagcolor" style="color:crimson">body &#123;</span><br>
+                  <span class="tagcolor">background-color:</span>
+                  <span class="tagcolor" style="color:blueviolet">lightblue;</span>
+                  <span class="tagcolor" style="color:crimson">&#125</span><br>
+
+                  <span class="tagcolor" style="color:crimson">h1 &#123;</span><br>
+                  <span class="tagcolor">color:</span>
+                  <span class="tagcolor" style="color:blueviolet">white;</span> <br>
+                  <span class="tagcolor">text-align:</span>
+                  <span class="tagcolor" style="color:blueviolet">center;</span> <br>
+                  <span class="tagcolor" style="color:crimson">&#125</span>
+
+                  <span class="tagcolor" style="color:crimson">p &#123;</span><br>
+                  <span class="tagcolor">font-family:</span>
+                  <span class="tagcolor" style="color:blueviolet">verdana;</span> <br>
+                  <span class="tagcolor">font-size:</span>
+                  <span class="tagcolor" style="color:blueviolet">20px;</span> <br>
+                  <span class="tagcolor" style="color:crimson">&#125</span>
+              </span>
+          </div>
+          <div class="w-clear nextprev">
+              <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_intro">Try it!</a>
+          </div>
+
+          <div class="wrap-column1">
+            <h2>CSS Solved a Big Problem</h2> <br>
+            <p class="intro">HTML was NEVER intended to contain tags for formatting a web page!</p> <br>
+            <p class="intro">HTML was created to describe the content of a web page, like:</p> <br>
+            <p class="intro">&lt;h1&gt;This is a heading&lt;/h1&gt;</p> <br>
+            <p class="intro">&lt;p&gt;This is a paragraph&lt;/p&gt;</p> <br>
+            <p class="intro">When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p> <br>
+            <p class="intro">To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p> <br>
+            <p class="intro">CSS removed the style formatting from the HTML page!</p> <br>
+          </div>
+
+          <div class="w-note">
+            <p class="intro">If you don't know what HTML is, we suggest that you read our HTML Tutorial.
+              
+            </p> <br>
+          </div>
+
+          <div class="wrap-column1">
+            <h2>CSS Saves a Lot of Work!</h2> <br>
+            <p class="intro">The style definitions are normally saved in external .css files.</p> <br>
+            <p class="intro">With an external stylesheet file, you can change the look of an entire website by changing just one file!</p> <br>
+          </div>
+          <br>
+          <br>
+          <div class="w-clear nextprev">
+               <a class="w-left w-btn" href="csshome">❮ Previous</a>
+               <a class="w-right w-btn" href="csssyntax.html">Next ❯</a>
+        </div>
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

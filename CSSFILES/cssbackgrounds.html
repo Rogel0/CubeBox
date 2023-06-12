@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Background</span></h1>
+               <a class="w-left w-btn" href="csscolors.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssborders.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <p class="intro">The CSS background properties are used to add background effects for elements.</p><br>
+        </div>
+        <hr>
+
+        <div class="w-example">
+          <div class="wrap-column1">
+            <p class="intro">In these chapters, you will learn about the following CSS background properties:</p><br>
+            <ul class="bullet-container">
+              <li class="bullet"><span class="attributecolor">background - color</span></li><br>
+              <li class="bullet"><span class="attributecolor">background - image</span></li><br>
+              <li class="bullet"><span class="attributecolor">background - repeat</span></li><br>
+              <li class="bullet"><span class="attributecolor">background - attachment</span></li><br>
+              <li class="bullet"><span class="attributecolor">background - position</span></li><br>
+              <li class="bullet"><span class="attributecolor">background </span>(shorthand property)</li><br>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>CSS background-color</h2><br>
+          <p class="intro">The <span class="attributecolor">background-color</span> property specifies the background color of an element.          </p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">The background color of a page is set like this:</p><br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">body &#123;</span><br>
+              <span class="tagcolor">background-color:</span>
+              <span class="tagcolor">lightblue;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_body">Try it!</a>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">With CSS, a color is most often specified by:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet">a valid color name - like "red"</li><br>
+            <li class="bullet">a HEX value - like "#ff0000"</li><br>
+            <li class="bullet">an RGB value - like "rgb(255,0,0)"</li><br>
+          </ul>
+          <p class="intro">Look at CSS Color Values for a complete list of possible color values.</p><br>
+        </div>
+
+        
+        <div class="wrap-column1">
+          <h2>Other Elements</h2><br>
+          <p class="intro">You can set the background color for any HTML elements:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">Here, the <span class="attributecolor">&lt;h1&gt;</span>, <span class="attributecolor">&lt;p&gt;</span>, and <span class="attributecolor">&lt;div&gt;</span> elements will have different background colors: </p><br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">h1 &#123;</span><br>
+              <span class="tagcolor">background-color:</span>
+              <span class="tagcolor">green;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">div &#123;</span><br>
+              <span class="tagcolor">background-color:</span>
+              <span class="tagcolor">lightblue;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">p &#123;</span><br>
+              <span class="tagcolor">background-color:</span>
+              <span class="tagcolor">yellow;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_elements">Try it!</a>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Opacity / Transparency</h2><br>
+          <p class="intro">The <span class="attributecolor">opacity</span> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="tagcolor">
+            <div style="background-color:#4CAF50;opacity:1;padding:50px;color:black"><p>opacity 1</p></div>
+            </div>
+            
+            <div class="tagcolor">
+            <div style="background-color:#4CAF50;opacity:0.6;padding:50px;color:black"><p>opacity 0.6</p></div>
+            </div>
+            
+            <div class="tagcolor">
+            <div style="background-color:#4CAF50;opacity:0.3;padding:50px;color:black"><p>opacity 0.3</p></div>
+            </div>
+            
+            <div class="tagcolor">
+            <div style="background-color:#4CAF50;opacity:0.1;padding:50px;color:black"><p>opacity 0.1</p></div>
+            </div>
+        </div>
+
+        
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">h1 &#123;</span><br>
+              <span class="tagcolor">background-color:</span>
+              <span class="tagcolor">green;</span><br>
+              <span class="tagcolor">opacity:</span>
+              <span class="tagcolor">0.3;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background_opacity">Try it!</a><br>
+          </div>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>When using the <span class="attributecolor">opacity</span> property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Transparency using RGBA</h2><br>
+          <p class="intro">If you do not want to apply opacity to child elements, like in our example above, use <strong>RGBA</strong> color values. The following example sets the opacity for the background color and not the text:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="w3-cell-row">
+            <div class="tagcolor">
+            <div style="background:rgb(76, 175, 80);padding:50px;color:black"><p>100% opacity</p></div>
+            </div>
+            
+            <div class="tagcolor">
+            <div style="background:rgba(76, 175, 80,0.6);padding:50px;color:black"><p>60% opacity</p></div>
+            </div>
+            
+            <div class="tagcolor">
+            <div style="background:rgba(76, 175, 80,0.3);padding:50px;color:black"><p>30% opacity</p></div>
+            </div>
+            
+            <div class="tagcolor">
+            <div style="background:rgba(76, 175, 80,0.1);padding:50px;color:black"><p>10% opacity</p></div>
+            </div>
+        </div>
+        </div><br>
+
+        <div class="wrap-column1">
+          <p class="intro">You learned from our CSS Colors Chapter, that you can use RGB as a color value. In addition to RGB, you can use an RGB color value with an <strong>alpha</strong> channel (RGB <strong>A</strong> ) - which specifies the opacity for a color.</p><br>
+          <p class="intro">An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p><br>
+          <p class="intro"><strong>Tip: </strong> You will learn more about RGBA Colors in our CSS Colors Chapter.</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">h1 &#123;</span><br>
+              <span class="tagcolor">background:</span>
+              <span class="tagcolor">rgba(0, 128, 0, 0.3);</span><br>
+              <span class="tagcolor" style="color:gray">/* Green background with 30% opacity */</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background_opacity2">Try it!</a>
+          </div>
+        </div><br>
+
+        <div class="w-example">
+        <div class="wrap-column1">
+          <p class="intro">The CSS Background Color Property</p><br>
+        </div><br>
+          <table class="ws-table-all notranslate">
+            <tbody>
+              <tr>
+                <th style="width:30%">Property</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>background-color</td>
+                <td>Sets the background color of an element</td>
+              </tr>
+            </tbody>
+            </table>
+        </div><br><br>
+
+        <div class="w-clear nextprev">
+<br>             <a class="w-left w-btn" href="csscolors.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cssborders.html">Next ❯</a>
+         </div>
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

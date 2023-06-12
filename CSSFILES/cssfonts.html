@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Fonts</span></h1>
+               <a class="w-left w-btn" href="csstext.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssicons.html">Next ❯</a>
+           </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <p class="intro">Choosing the right font for your website is important!</p><br>
+        </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <h2>Font Selection is Important</h2><br>
+          <p class="intro">Choosing the right font has a huge impact on how the readers experience a website.</p><br>
+          <p class="intro">The right font can create a strong identity for your brand.
+
+          </p><br>
+          <p class="intro">Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.</p><br>
+        </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <h2>Generic Font Families</h2><br>
+          <p class="intro">Generic Font Families</p><br>
+          <ul class="bullet-container">
+            <ol class="bullet">
+              <li><strong>Serif</strong> fonts have a small stroke at the edges of each letter. They create a sense of formality</li><br>
+              <li><strong>Sans-serif</strong> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</li><br>
+              <li><strong>Monospace</strong> fonts - here all the letters have the same fixed width. They create a mechanical look. </li><br>
+              <li><strong>Cursive</strong> fonts - here all the letters have the same fixed width. They create a mechanical look. </li><br>
+              <li><strong>Fantasy</strong> fonts are decorative/playful fonts.br</li><br>
+            </ol>
+            <br>
+          </ul>
+          <p class="intro">All the different font names belong to one of the generic font families.</p><br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Difference Between Serif and Sans-serif Fonts</h2><br>
+
+          <img alt="Serif vs. Sans-serif" src="https://www.w3schools.com/css/serif.gif" width="398" height="142" style="max-width:100%;height:auto">
+        </div>
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>On computer screens, sans-serif fonts are considered easier to read than serif fonts.</p><br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Some Font Examples</h2><br>
+        </div>
+
+        <table class="w-table">
+          <tr>
+          <th style="width:20%">Generic Font Family</th>
+          <th style="width:30%">Examples of Font Names</th>
+          </tr>
+          <tr>
+          <td>Serif</td>
+          <td><span style="font-size:150%;font-family:'Times New Roman',serif">Times New Roman</span><br>
+          <span style="font-size:150%;font-family:Georgia,serif">Georgia</span><br>
+          <span style="font-size:150%;font-family:Garamond,serif">Garamond</span><br>
+          </td>
+          </tr>
+          <tr>
+          <td>Sans-serif</td>
+          <td><span style="font-size:150%;font-family:Arial,sans-serif">Arial</span><br>
+          <span style="font-size:150%;font-family:Verdana,sans-serif">Verdana</span><br>
+          <span style="font-size:150%;font-family:Helvetica,sans-serif">Helvetica</span><br>
+          </td>
+          </tr>
+          <tr>
+          <td>Monospace</td>
+          <td><span style="font-size:150%;font-family:'Courier New',monospace">Courier New</span><br>
+          <span style="font-size:150%;font-family:'Lucida Console',monospace">Lucida Console</span><br>
+          <span style="font-size:150%;font-family:Monaco,monospace">Monaco</span>
+          </td>
+          </tr>
+          <tr>
+          <td>Cursive</td>
+          <td><span style="font-size:150%;font-family:'Brush Script MT',cursive">Brush Script MT</span><br>
+          <span style="font-size:150%;font-family:'Lucida Handwriting',cursive">Lucida Handwriting</span><br>
+          </td>
+          </tr>
+          <tr>
+          <td>Fantasy</td>
+          <td><span style="font-size:150%;font-family:Copperplate,fantasy">Copperplate</span><br>
+          <span style="font-size:150%;font-family:Papyrus,fantasy">Papyrus</span>
+          </td>
+          </tr>
+        </table><br><br>
+
+        <div class="wrap-column1">
+          <h2>The CSS font-family Property</h2><br>
+          <p class="intro">In CSS, we use the <span class="attributecolor">font-family</span> property to specify the font of a text.</p><br>
+        </div>
+
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".</p><br>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Tip: </strong>The <span class="attributecolor">font-family</span> property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma. Read more about fallback fonts in the next chapter.</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">Specify some different fonts for three paragraphs:</p><br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">.p1 &#123;</span><br>
+              <span class="tagcolor">font-family: "Times New Roman", Times, serif;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">.p2 &#123;</span><br>
+              <span class="tagcolor"> font-family: Arial, Helvetica, sans-serif;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">.p3 &#123;</span><br>
+              <span class="tagcolor">font-family: "Lucida Console", "Courier New", monospace;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+              <br>
+            </span>
+          </div>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font-family"> Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="csstext.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cssicons.html">Next ❯</a>
+         </div>
+
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

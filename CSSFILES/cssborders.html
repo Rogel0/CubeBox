@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Border</span></h1>
+               <a class="w-left w-btn" href="cssbackgrounds.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssmargins.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <p class="intro">The CSS border properties allow you to specify the style, width, and color of an element's border.</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="tagcolor">
+            <p>I have borders on all sides.</p>
+            </div>
+            <br>
+            <div class="tagcolor">
+            <p>I have a red bottom border.</p>
+            </div>
+            <br>
+            <div class="tagcolor">
+            <p>I have rounded borders.</p>
+            </div>
+            <br>
+            <div class="tagcolor">
+            <p>I have a blue left border.</p>
+            </div>
+        </div>
+        <div class="wrap-column1">
+          <h2>CSS Border Style</h2><br>
+          <p class="intro">The <span class="attributecolor">border-style</span> property specifies what kind of border to display.</p><br>
+          <p class="intro">The following values are allowed:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet"><span class="attributecolor">dotted</span> - Defines a dotted border</li><br>
+            <li class="bullet"><span class="attributecolor">dashed</span> - Defines a dashed border</li><br>
+            <li class="bullet"><span class="attributecolor">solid</span> - Defines a solid border</li><br>
+            <li class="bullet"><span class="attributecolor">double</span> - Defines a double border</li><br>
+            <li class="bullet"><span class="attributecolor">groove</span> - Defines a 3D grooved border. The effect depends on the border-color value</li><br>
+
+            <li class="bullet"><span class="attributecolor">ridge</span> - Defines a 3D ridged border. The effect depends on the border-color value</li><br>
+            <li class="bullet"><span class="attributecolor">inset</span> - Defines a 3D inset border. The effect depends on the border-color value</li><br>
+            <li class="bullet"><span class="attributecolor">outset</span> - Defines a 3D outset border. The effect depends on the border-color value</li><br>
+            <li class="bullet"><span class="attributecolor">none</span> - Defines no border</li><br>
+            <li class="bullet"><span class="attributecolor">hidden</span> - Defines a hidden border</li><br>
+          </ul>
+          <p class="intro">The <span class="attributecolor">border-style</span> property can have from one to four values (for the top border, right border, bottom border, and the left border).</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="wrap-column1">
+            <p class="intro"></p>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">p.dotted {border-style: dotted;}</span><br><br>
+              <span class="tagcolor">p.dashed {border-style: dashed;}</span><br><br>
+              <span class="tagcolor">p.solid {border-style: solid;}</span><br><br>
+              <span class="tagcolor">p.double {border-style: double;}</span><br><br>
+
+              <span class="tagcolor">p.groove {border-style: groove;}</span><br><br>
+              <span class="tagcolor">p.ridge {border-style: ridge;}</span><br><br>
+              <span class="tagcolor">p.inset {border-style: inset;}</span><br><br>
+              <span class="tagcolor">p.outset {border-style: outset;}</span><br><br>
+              <span class="tagcolor">p.none {border-style: none;}</span><br><br>
+              <span class="tagcolor">p.hidden {border-style: hidden;}</span><br><br>
+              <span class="tagcolor">p.mix {border-style: dotted dashed solid double;}</span><br><br>
+            </span>
+          </div><br><br> 
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro"><strong>Results:</strong></p><br>
+          <p class="intro" style="border-style: dotted;padding:2px 4px;">A dotted border.</p><br>
+          <p class="intro" style="border-style: dashed;padding:2px 4px;">A dashed border.</p><br>
+          <p class="intro" style="border-style: solid;padding:2px 4px;">A solid border.</p><br>
+          <p class="intro" style="border-style: double;padding:2px 4px;">A double border.</p><br>
+          <p class="intro" style="border-style: groove;padding:2px 4px;">A groove border. The effect depends on the border-color value.</p><br>
+          <p class="intro" style="border-style: ridge;padding:2px 4px;">A ridge border. The effect depends on the border-color value.</p><br>
+          <p class="intro" style="border-style: inset;padding:2px 4px;">An inset border. The effect depends on the border-color value.</p><br>
+          <p class="intro" style="border-style: outset;padding:2px 4px;">An outset border. The effect depends on the border-color value.</p><br>
+          <p class="intro" style="border-style: none;padding:2px 4px;">No border.</p><br>
+          <p class="intro" style="border-style: hidden;padding:2px 4px;">A hidden border.</p><br>
+          <p class="intro" style="border-style: dotted dashed solid double;padding:2px 4px;">A mixed border.</p>          <br>
+        </div><br>
+        
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>None of the OTHER CSS border properties (which you will learn more about in the next chapters) will have ANY effect unless the <span class="attributecolor">border-style</span> property is set!</p><br>
+        </div><br><br>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cssbackgrounds.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cssmargins.html">Next ❯</a>
+         </div>
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

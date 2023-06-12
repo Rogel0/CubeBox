@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Box Model</span></h1>
+               <a class="w-left w-btn" href="cssheightorwidth.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssoutline.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <p class="intro">All HTML elements can be considered as boxes.
+
+          </p><br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>The CSS Box Model</h2><br>
+          <p class="intro">In CSS, the term "box model" is used when talking about design and layout.</p><br>
+          <p class="intro">The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p><br>
+        </div>
+        <div class="w-example">
+          <div class="margin">
+            <div class="border w-theme">
+              <div class="padding">
+                <div class="content"></div>
+               </div>
+            </div>
+          </div>
+          </div>
+
+        <div class="wrap-column1">
+          <p class="intro">Explanation of the different parts:
+          </p><br>
+          <ul class="bullet-container">
+            <li class="bullet"><strong>Content</strong> - The content of the box, where text and images appear</li><br>
+            <li class="bullet"><strong>Padding</strong> - Clears an area around the content. The padding is transparent</li><br>
+            <li class="bullet"><strong>Border</strong> - A border that goes around the padding and content</li><br>
+            <li class="bullet"><strong>Margin</strong> - Clears an area outside the border. The margin is transparent</li><br>
+          </ul>
+          <p class="intro">The box model allows us to add a border around elements, and to define space between elements. </p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <div class="wrap-column1">
+            <p class="intro">Demonstration of the box model:</p><br>
+
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">div &#123</span><br>
+              <span class="tagcolor">width: 300px;</span><br>
+              <span class="tagcolor">border: 15px solid green;</span><br>
+              <span class="tagcolor">padding: 50px;</span><br>
+              <span class="tagcolor">margin: 20px;</span><br>
+              <span class="tagcolor">&#125</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel">Try it!</a>
+          </div><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Width and Height of an Element</h2><br>
+          <p class="intro">In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.
+
+          </p><br>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Important: </strong>When you set the width and height properties of an element with CSS, you just set the width and height of the <strong>content area</strong>. To calculate the full size of an element, you must also add padding, borders and margins.</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <div class="wrap-column1">
+            <p class="intro">This &lt;div&gt; element will have a total width of 350px: </p><br>
+
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">div &#123</span><br>
+              <span class="tagcolor">width: 320px;</span><br>
+              <span class="tagcolor">padding: 10px;</span><br>
+              <span class="tagcolor">border: 5px solid gray;</span><br>
+              <span class="tagcolor">margin: 0;</span><br>
+              <span class="tagcolor">&#125</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel_width">Try it!</a>
+          </div><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">Here is the calculation:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="w-code w-theme" style="border-width:1px;border-style:solid;margin:70px;padding:5px;color:rgb(0, 0, 0);background-color:rgb(193, 184, 184);">
+            320px (width)<br><br>
+            + 20px (left + right padding)<br><br>
+            + 10px (left + right border)<br><br>
+            + 0px (left + right margin)<br><br>
+            <strong>= 350px
+            </strong>
+          </div><br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">The total width of an element should be calculated like this:</p><br>
+          <p class="intro">Total element width = width + left padding + right padding + left border + right border + left margin + right margin</p><br>
+          <p class="intro">The total height of an element should be calculated like this:</p><br>
+          <p class="intro">Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p><br>
+        </div><br><br><br>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cssheightorwidth.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cssoutline.html">Next ❯</a>
+         </div>
+
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

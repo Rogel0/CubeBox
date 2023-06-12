@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Layout - width and max-width</span></h1>
+               <a class="w-left w-btn" href="cssdisplay.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssposition.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Using width, max-width and margin: auto;</h2>
+          <br>
+          <p class="intro">As mentioned in the previous chapter; a block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+          <br>
+          <p class="intro">Setting the <span class="attributecolor">width</span> of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:</p>
+          <br>
+          <div class="w3-theme-border" style="border-width:3px;border-style:solid;width:500px; margin: auto;">
+            This &lt;div&gt; element has a width of 500px, and margin set to auto.</div>
+            <br>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>The problem with the <span class="attributecolor">&lt;div&gt;</span> above occurs when the browser window is smaller than the width of the element. The browser then adds a horizontal scrollbar to the page.</p>
+          <Br></Br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">Using <span class="attributecolor">max-width</span> instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:</p>
+          <br>
+          <div class="w3-theme-border" style="border-width:3px;border-style:solid; max-width:500px; margin: auto;">
+            This &lt;div&gt; element has a max-width of 500px, and margin set to auto.</div>
+            <br>
+        </div>
+        <div class="w-note">
+          <p class="intro"><strong>Tip: </strong>Resize the browser window to less than 500px wide, to see the difference between the two divs!</p>
+          <Br></Br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">Here is an example of the two divs above:</p>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor"> div.ex1 &#123;</span><br>
+              <span class="tagcolor"> width: 500px;</span><br>
+              <span class="tagcolor"> margin: auto;</span><br>
+              <span class="tagcolor">border: 3px solid #73AD21;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor"> div.ex2 &#123;</span><br>
+              <span class="tagcolor">max-width: 500px;</span><br>
+              <span class="tagcolor"> margin: auto;</span><br>
+              <span class="tagcolor">border: 3px solid #73AD21;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_max-width">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cssdisplay.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cssposition.html">Next ❯</a>
+         </div><br>
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

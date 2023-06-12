@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">How to add  <span class="color-h1">CSS</span></h1>
+               <a class="w-left w-btn" href="cssselectors.html">❮ Previous</a>
+               <a class="w-right w-btn" href="csscomments.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <p class="intro">When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+
+          </p><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Three Ways to Insert CSS</h2><br>
+          <p class="intro">There are three ways of inserting a style sheet:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet">External CSS</li><br>
+            <li class="bullet">Internal CSS</li><br>
+            <li class="bullet">Inline CSS</li><br>
+          </ul>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>External CSS</h2><br>
+          <p class="intro">With an external style sheet, you can change the look of an entire website by changing just one file!</p><br>
+          <p class="intro">Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.</p><br>
+        </div>
+
+        <div class="wrap-column1">
+            <div class="w-example">
+              <h3 class="example">Example</h3><br>
+              <div class="wrap-column1">
+                <p class="intro">External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page:</p><br>
+              </div>
+              <div class="w-code">
+                <span class="tagnamecolor">
+                  <span class="tagcolor">&lt; !DOCTYPE</span> 
+                     
+                  <span class="tagcolor "> html</span>
+                  <span class="tagcolor">&gt;</span>
+                
+                  <br> 
+                  <span class="tagnamecolor">
+                  <span class="tagcolor">&lt;  html</span> 
+                  
+                  <span class="tagcolor">&gt;</span>
+                  <br>
+                  </span>
+                  <br>
+        
+                  <span class="tagnamecolor">
+                  <br>
+                  <span class="tagcolor">&lt;head&gt;</span><br>
+                  <span class="tagcolor">&lt;link rel="stylesheet" href="mystyle.css"&gt;</span><br>
+                  <span class="tagcolor">&lt;/head&gt;</span>
+                  
+                  <br>
+                  <span class="tagcolor">&lt;body</span> 
+                  
+                  <span class="tagcolor">&gt;</span>
+                  <br>
+              
+                  <span class="tagcolor">&lt;h1</span>
+                  
+                  <span class="tagcolor">&gt; This is a Heading</span>
+                 
+                  <span class="tagcolor">&lt;/h1</span>
+                  
+                  <span class="tagcolor">&gt;</span>
+                  <br>
+                  <span class="tagcolor">&lt; p</span>
+                 
+                  <span class="tagcolor">&gt;  This is a paragraph</span>
+                 
+                  <span class="tagcolor">&lt; /p</span>
+                 
+                  <span class="tagcolor">&gt;</span>
+                  <br>
+                  <br>
+                  <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;/body</span>
+                    
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                    <span class="tagcolor">&lt;/html</span>
+                    
+                    <span class="tagcolor">&gt;</span>
+          
+                  </span>
+        
+                </span>
+        
+        
+              </div>
+              <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_external">Try it!</a>
+              </div><br><br><br><br>
+            </div>
+
+            <div class="wrap-column1">
+              <p class="intro">An external style sheet can be written in any text editor, and must be saved with a .css extension.</p><br>
+              <p class="intro">The external .css file should not contain any HTML tags.</p><br>
+              <p class="intro">Here is how the "mystyle.css" file looks:</p><br>
+            </div>
+
+            <div class="w-example">
+              <div class="example">"mystyle.css"</div>
+              <div class="w-code">
+                <span class="tsgnamecolor">
+                  <span class="tagcolor">body &#123</span><br>
+                  <span class="tagcolor">background-color: lightblue;</span><br>
+                  <span class="tagcolor">&#125</span><br><br>
+                  <span class="tagcolor">h1 &#123</span><br>
+                  <span class="tagcolor">color: navy;</span><br>
+                  <span class="tagcolor">margin -left: 20px;</span><br>
+                  <span class="tagcolor">&#125</span><br>
+                  </span>
+              </div><br><br><br><br>
+            </div>
+
+            <div class="w-note">
+              <p class="intro"><strong>Note: </strong> Do not add a space between the property value (20) and the unit (px):</p><br>
+              <p class="intro">Incorrect (space): <span class="attributecolor">margin-left: 20 px;</span> </p><br>
+              <p class="intro">Correct (no space): <span class="attributecolor">margin-left: 20px;</span> </p><br>
+            </div>
+
+            <div class="wrap-column1">
+              <h2>Internal CSS</h2><br>
+              <p class="intro">An internal style sheet may be used if one single HTML page has a unique style.</p><br>
+              <p class="intro">The internal style is defined inside the &lt;style&gt; element, inside the head section.</p><br>
+            </div>
+
+            <div class="wrap-column1">
+            <div class="w-example">
+              <h3 class="example">Example</h3>
+              <div class="wrap-column1">
+                <p class="intro">Internal styles are defined within the  &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:</p>
+              </div>
+              <div class="w-code">
+                <span class="tagnamecolor">
+                  <span class="tagcolor">&lt; !DOCTYPE</span> 
+                     
+                  <span class="tagcolor "> html</span>
+                  <span class="tagcolor">&gt;</span>
+                
+                  <br> 
+                  <span class="tagnamecolor">
+                  <span class="tagcolor">&lt;  html</span> 
+                  
+                  <span class="tagcolor">&gt;</span>
+                  <br>
+                  </span>
+                  <br>
+        
+                  <span class="tagnamecolor">
+                  <br>
+                  <span class="tagcolor">&lt;head&gt;</span><br>
+
+                  <span class="tagcolor">&lt;style&gt;</span><br>
+                  <span class="tagcolor">body &#123</span><br>
+                  <span class="tagcolor">background-color: lightblue;</span><br>
+                  <span class="tagcolor">&#125</span><br><br>
+                  <span class="tagcolor">h1 &#123</span><br>
+                  <span class="tagcolor">color: maroon;</span><br>
+                  <span class="tagcolor">margin-left: 40px;</span><br>
+                  <span class="tagcolor">&#125</span><br>                
+                  <span class="tagcolor">&lt;/style&gt;</span><br>
+                  <span class="tagcolor">&lt;/head&gt;</span>
+                  
+                  <br>
+                  <span class="tagcolor">&lt;body</span> 
+                  
+                  <span class="tagcolor">&gt;</span>
+                  <br>
+              
+                  <span class="tagcolor">&lt;h1</span>
+                  
+                  <span class="tagcolor">&gt; This is a Heading</span>
+                 
+                  <span class="tagcolor">&lt;/h1</span>
+                  
+                  <span class="tagcolor">&gt;</span>
+                  <br>
+                  <span class="tagcolor">&lt; p</span>
+                 
+                  <span class="tagcolor">&gt;  This is a paragraph</span>
+                 
+                  <span class="tagcolor">&lt; /p</span>
+                 
+                  <span class="tagcolor">&gt;</span>
+                  <br>
+                  <br>
+                  <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;/body</span>
+                    
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                    <span class="tagcolor">&lt;/html</span>
+                    
+                    <span class="tagcolor">&gt;</span>
+          
+                  </span>
+        
+                </span>
+        
+        
+              </div>
+              <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_internal">Try it!</a>
+              </div><br><br><br><br>
+            </div>
+
+            <div class="wrap-column1">
+              <h2>Inline CSS</h2><br>
+              <p class="intro">An inline style may be used to apply a unique style for a single element.</p><br>
+              <p class="intro">To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p><br>
+            </div>
+
+            <div class="wrap-column1">
+              <div class="w-example">
+                <h3 class="example">Example</h3>
+                <div class="wrap-column1">
+                  <p class="intro">Internal styles are defined within the  &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:</p>
+                </div>
+                <div class="w-code">
+                  <span class="tagnamecolor">
+                    <span class="tagcolor">&lt; !DOCTYPE</span> 
+                       
+                    <span class="tagcolor "> html</span>
+                    <span class="tagcolor">&gt;</span>
+                  
+                    <br> 
+                    <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;  html</span> 
+                    
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                    </span>
+                    <br>
+          
+                    
+                    <span class="tagcolor">&lt;body</span> 
+                    
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                
+                    <span class="tagcolor">&lt;h1 style="color: blue; text-align:center;"</span>
+                    
+                    <span class="tagcolor">&gt; This is a Heading</span>
+                   
+                    <span class="tagcolor">&lt;/h1</span>
+                    
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                    <span class="tagcolor">&lt; p style="color: red"</span>
+                   
+                    <span class="tagcolor">&gt;  This is a paragraph</span>
+                   
+                    <span class="tagcolor">&lt; /p</span>
+                   
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                    <br>
+                    <span class="tagnamecolor">
+                      <span class="tagcolor">&lt;/body</span>
+                      
+                      <span class="tagcolor">&gt;</span>
+                      <br>
+                      <span class="tagcolor">&lt;/html</span>
+                      
+                      <span class="tagcolor">&gt;</span>
+            
+                    </span>
+          
+                  </span>
+          
+          
+                </div>
+                <div class="w-clear nextprev">
+                  <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_inline">Try it!</a>
+                </div><br><br><br><br>
+              </div>
+              <div class="w-note">
+                <p class="intro"><strong>Tip: </strong>An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</p><br>
+              </div>
+              <hr>
+              <div class="wrap-column1">
+                <h2>Multiple Style Sheets</h2><br>
+                <p class="intro">If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. </p><br>
+              </div>
+              <div class="w-example">
+                <div class="wrap-column1">
+                  <p class="intro">Assume that an <strong>external style sheet</strong> has the following style for the &lt; h1 &gt; element:</p><br>
+                  <div class="w-code">
+                    <span class="tagnamecolor">
+                      <span class="tagcolor">h1 &#123</span><br>
+                      <span class="tagcolor">color:</span>
+                      <span class="tagcolor">navy;</span><br>
+                      <span class="tagcolor">&#125</span><br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-example">
+                <div class="wrap-column1">
+                  <p class="intro">Then, assume that an <strong>internal style sheet</strong> also has the following style for the&lt; h1 &gt; element:</p><br>
+                  <div class="w-code">
+                    <span class="tagnamecolor">
+                      <span class="tagcolor">h1 &#123</span><br>
+                      <span class="tagcolor">color:</span>
+                      <span class="tagcolor">orange;</span><br>
+                      <span class="tagcolor">&#125</span><br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-example">
+                <div class="example">Example </div><br>
+                <div class="wrap-column1">
+                  <p class="intro">If the internal style is defined <strong>after</strong> the link to the external style sheet, the &lt; h1 &gt; element will be "orange":</p><br>
+                  <div class="w-code">
+                    <span class="tagnamecolor">
+                      <span class="tagcolor">&lt;head &gt;</span> <br>
+                      <span class="tagcolor">&lt;link rel="stylesheet" type="text/css" href="mystyle.css" &gt;</span> <br>
+                      <span class="tagcolor">&lt; style &gt;</span> <br>
+                      <span class="tagcolor">h1 &#123</span><br>
+                      <span class="tagcolor">color:</span>
+                      <span class="tagcolor">orange;</span><br>
+                      <span class="tagcolor">&#125</span><br> <br>
+                      <span class="tagcolor">&lt;/style &gt;</span> <br>
+                      <span class="tagcolor">&lt;/head &gt;</span> <br>
+                    </span>
+                  </div>
+                </div>
+                <div class="w-clear nextprev">
+                  <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_multiple">Try it!</a>
+                </div><br><br><br>
+              </div>
+
+              <div class="w-example">
+                <div class="example">Example </div><br>
+                <div class="wrap-column1">
+                  <p class="intro">However, if the internal style is defined <strong>before</strong> the link to the external style sheet, the  &lt; h1 &gt; element will be "navy":</p><br>
+                  <div class="w-code">
+                    <span class="tagnamecolor">
+                      <span class="tagcolor">&lt;head &gt;</span> <br>
+                      <span class="tagcolor">&lt; style &gt;</span> <br>
+                      <span class="tagcolor">h1 &#123</span><br>
+                      <span class="tagcolor">color:</span>
+                      <span class="tagcolor">orange;</span><br>
+                      <span class="tagcolor">&#125</span><br> <br>
+                      <span class="tagcolor">&lt;/style &gt;</span> <br>
+                      <span class="tagcolor">&lt;link rel="stylesheet" type="text/css" href="mystyle.css" &gt;</span> <br>
+                      <span class="tagcolor">&lt;/head &gt;</span> <br>
+                    </span>
+                  </div>
+                </div>
+                <div class="w-clear nextprev">
+                  <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_multiple2">Try it!</a>
+                </div><br><br><br>
+              </div>
+
+              <div class="wrap-colunm1">
+                <h2>Cascading Order</h2><br>
+                <p class="intro">What style will be used when there is more than one style specified for an HTML element?</p><br>
+                <p class="intro">All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:</p><br>
+                <ol class="bullet-container">
+                  <li class="bullet">Inline style (inside an HTML element)</li><br>
+                  <li class="bullet">External and internal style sheets (in the head section)</li><br>
+                  <li class="bullet">Browser default</li><br>
+                </ol>
+                <p class="intro">So, an inline style has the highest priority, and will override external and internal styles and browser defaults.</p><br>
+              </div>
+
+              <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_cascade">Try it!</a>
+              </div><br><br><br><br>
+
+              <div class="w-clear nextprev">
+                   <a class="w-left w-btn" href="cssselectors.html">❮ Previous</a>
+                   <a class="w-right w-btn" href="csscomments.html">Next ❯</a>
+               </div>
+
+
+              
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+
+<script src="../source/burger.js"></script>
+</html>

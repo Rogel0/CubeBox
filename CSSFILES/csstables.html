@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<style>
+  .green {
+    background-color: rgb(49, 117, 49);
+    color: #ffff;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .fullwidthtable {
+    width: 100%;
+  }
+
+  .fullwidthtable{
+    border: 1px solid;
+  }
+  .under tr th {
+    text-decoration: none;
+    background-color: none;
+    border: 1px solid;
+
+  }
+
+  .onlytableborder {
+    border-collapse: collapse;
+    border: 1px solid;
+  }
+</style>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Tables</span></h1>
+               <a class="w-left w-btn" href="csslists.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssdisplay.html">Next ❯</a>
+           </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <p class="intro">The look of an HTML table can be greatly improved with CSS:</p>
+          <br>
+        </div>
+        <hr>
+        <table id="customers" class="w-table">
+         <tbody>
+          <tr>
+            <th class="green">Company</th>
+            <th class="green">Contact</th>
+            <th class="green">Country</th>
+            </tr>
+            <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            </tr>
+            <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+            </tr>
+            <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            </tr>
+            <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+            </tr>
+            <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+            </tr>
+            <tr>
+            <td>Königlich Essen</td>
+            <td>Philip Cramer</td>
+            <td>Germany</td>
+            </tr>
+            <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+            </tr>
+            <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+            </tr>
+         </tbody>
+          </table>
+          <br>
+        <div class="wrap-column1">
+          <h2>Table Borders</h2>
+          <br>
+          <p class="intro">To specify table <span class="attributecolor">borders</span> in CSS, use the border property.</p>
+          <br>
+          <p class="intro">The example below specifies a solid border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements:</p>
+          <br>
+        </div>
+        <table class="w-table fullwidthtable">
+          <tbody>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              </tr>
+              <tr>
+              <td>Peter</td>
+              <td>Griffin</td>
+              </tr>
+              <tr>
+              <td>Lois</td>
+              <td>Griffin</td>
+              </tr>
+          </tbody>
+        </table><br><br><br>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">table, th, td &#123;</span><br>
+              <span class="tagcolor">border: 1px solid;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border">Try it!</a>
+          </div><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Full-Width Table</h2>
+          <br>
+          <p class="intro">The table above might seem small in some cases. If you need a table that should span the entire screen (full-width), add <span class="attributecolor">width: 100%</span> to the &lt;table&gt; element:</p>
+          <br>
+        </div>
+        <table class="w- table fullwidthtable">
+          <tbody>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+            </tr>
+            <tr>
+              <td>Peter</td>
+              <td>Griffin</td>
+            </tr>
+            <tr>
+              <td>Lois</td>
+              <td>Griffin</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">table &#123;</span><br>
+              <span class="tagcolor">width: 100%;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div> <br>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fullwidth">Try it!</a>
+          </div><br><br>
+        </div>
+
+        <div class="w-note">
+          <h2>Double Borders</h2><br>
+          <p class="intro">Notice that the table in the examples above have double borders. This is because both the table and the &lt;th&gt; and &lt;td&gt; elements have separate borders.</p>
+          <br>
+
+          <p class="intro">To remove double borders, take a look at the example below.</p>
+          <br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Collapse Table Borders</h2>
+          <br>
+          <p class="intro">The <span class="tagnamecolor">border-collapse</span> property sets whether the table borders should be collapsed into a single border:</p>
+          <br>
+        </div>
+
+        <table class="w- table">
+          <tbody class="under">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+            </tr>
+            <tr>
+              <td>Peter</td>
+              <td>Griffin</td>
+            </tr>
+            <tr>
+              <td>Lois</td>
+              <td>Griffin</td>
+            </tr>
+          </tbody>
+        </table><br><br>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">table &#123;</span><br>
+              <span class="tagcolor">border-collapse: collapse;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div> <br>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border-collapse">Try it!</a>
+          </div><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">If you only want a border around the table, only specify the <span class="attributecolor">border</span> property for &lt;table&gt;:</p>
+          <br>
+        </div>
+
+        <table class="onlytableborder">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+          </tr>
+          <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+          </tr>
+          <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+          </tr>
+        </table>
+
+        <div class="w-example">
+          <div class="example">Example</div><br>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">table &#123;</span><br>
+              <span class="tagcolor">border: 1px solid;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div> <br>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border2">Try it!</a>
+          </div><br><br>
+        </div>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="csslists.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cssdisplay.html">Next ❯</a>
+         </div><br>
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

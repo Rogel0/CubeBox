@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CSS/csshome.html">CSS</a></li>
+          <li><a href="../C++/chome.html">C++</a></li>
+          <li><a href="../JAVASCRIPTFILES/jshome.html">JAVASCRIPT</a></li>
+          <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Colors</span></h1>
+               <a class="w-left w-btn" href="csscomments.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssbackgrounds.html">Next ❯</a>
+           </div>
+        <hr>
+        <div>
+			<p class="intro">Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p><br>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2> CSS Color Names</h2><br>
+			<p class="intro">In CSS, a color can be specified by using a predefined color name:</p><br>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="#">
+				<span class="tagnamecolor" style="color:rgb(255, 255, 255)", style="padding:8px 16px!important;" style="left:float" style="width:100%">
+					<h1 class="tagcolor" style="background-color:Tomato;">Tomato</h1>
+					<h1 class="tagcolor" style="background-color:Orange;">Orange</h1>
+					<h1 class="tagcolor" style="background-color:DodgerBlue;">DodgerBlue</h1>
+					<h1 class="tagcolor" style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+					<h1 class="tagcolor" style="background-color:Gray;">Gray</h1>
+					<h1 class="tagcolor" style="background-color:SlateBlue;">SlateBlue</h1>
+					<h1 class="tagcolor" style="background-color:Violet;">Violet</h1>
+					<h1 class="tagcolor" style="background-color:LightGray;">LightGray</h1>
+				</span>
+			</div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_names">Try it!</a>
+            </div><br><br>
+		</div>
+		<div class="wrap-column1">
+			<h2>CSS Background Color</h2><br>
+			<p class="intro">You can set the background color for HTML elements:</p><br>
+			<br>
+		</div>
+		<div class="wrap-column1">
+			<div class="">
+				<span class="tagnamecolor">
+					<span class="tagcolor" style="color:white" ><h1 style="background-color:DodgerBlue;">Hello World</h1></span>
+					<br><br>
+					<span class="tagcolor"  style="color:white">					<p style="background-color:Tomato;" >
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+						</p><br><br></span>
+				</span>
+			</div>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt; h1 style="background-color:DodgerBlue;" &gt;</span>
+					<span class="tagcolor">Hello World</span>
+					<span class="tagcolor">&lt; /h1 &gt;</span><br>
+					<span class="tagcolor">&lt; p style="background-color:Tomato;"  &gt;</span>
+					<span class="tagcolor">Lorem ipsum</span>
+					<span class="tagcolor">&lt; /p &gt;  </span><br>
+				</span>
+			</div>
+
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_background">Try it!</a>
+            </div><br><br>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>CSS Text Color</h2><br>
+			<p class="intro">You can set the color of text:</p><br>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor"></span><br>
+					<h1 style="color:Tomato;">Hello World</h1>
+					<span class="tagcolor"></span><br>
+					<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<span class="tagcolor"></span><br><br>
+					<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<span class="tagcolor"></span><br>
+				</span>
+			</div>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt; h1 style="color:tomato;" &gt;</span>
+					<span class="tagcolor">Hello World</span>
+					<span class="tagcolor">&lt; /h1 &gt;</span><br>
+					<span class="tagcolor">&lt; p style="color:dodgerblue;"  &gt;</span>
+					<span class="tagcolor">Lorem ipsum</span>
+					<span class="tagcolor">&lt; /p &gt;  </span><br>
+                    <span class="tagcolor">&lt; p style="color:MediumSeaGreen;"  &gt;</span>
+					<span class="tagcolor">Ut wisi enim..</span>
+					<span class="tagcolor">&lt; /p &gt;  </span><br>
+				</span>
+			</div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_text">Try it!</a>
+            </div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>CSS Border Color</h2>
+			<p class="intro">You can set the color of borders:</p>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor" style="color:rgb(0, 0, 0)">
+					<span class="tagcolor"></span><br>
+					<h1 style="border: 2px solid Tomato;">Hello World</h1>
+					<span class="tagcolor"></span><br>
+					<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+					<span class="tagcolor"></span><br>
+					<h1 style="border: 2px solid Violet;">Hello World</h1>
+					<span class="tagcolor"></span><br>
+				</span>
+			</div>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt; h1 style="border:2px solid Tomato;" &gt;</span>
+					<span class="tagcolor">Hello World</span><br><br>
+
+                    <span class="tagcolor">&lt; h1 style="border:2px solid DodgerBlue;" &gt;</span>
+					<span class="tagcolor">Hello World</span><br><br>
+
+                    <span class="tagcolor">&lt; h1 style="border:2px solid Violet;" &gt;</span>
+					<span class="tagcolor">Hello World</span><br><br>
+				</span>
+			</div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_border">Try it!</a>
+            </div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>CSS Color Values</h2><br>
+			<p class="intro">In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p><br>
+			<br>
+			<p class="intro">Same as color name "Tomato":</p><br>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor" style="color:white">
+					<span class="tagcolor"></span><br>
+					<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+					<span class="tagcolor"></span><br>
+					<h1 style="background-color:#ff6347;">#ff6347</h1>
+					<span class="tagcolor"></span><br>
+					<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+					<span class="tagcolor"></span><br>
+				</span>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="intro">Same as color name "Tomato", but 50% transparent:</p><br>
+			<br>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<span class="tagnamecolor" style="color:white">
+					<span class="tagcolor"></span><br>
+					<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+					<span class="tagcolor"></span><br>
+					<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+					<span class="tagcolor"></span><br>
+				</span>
+			</div>
+		</div>
+		<div class="w-example">
+			<div class="example">Example</div>
+			<div class="w-code">
+				<span class="tagnamecolor">
+					<span class="tagcolor">&lt; h1 style="background-color:rgb(255, 99, 71);"  &gt;</span>
+                    <span class="tagcolor">...</span>
+                    <span class="tagcolor">&lt; /h1 &gt;</span><br><br>
+
+                    <span class="tagcolor">&lt; h1 style="background-color:#ff6347;"  &gt;</span>
+                    <span class="tagcolor">...</span>
+                    <span class="tagcolor">&lt; /h1 &gt;</span><br><br>
+
+                    <span class="tagcolor">&lt; style="background-color:hsl(9, 100%, 64%);"  &gt;</span>
+                    <span class="tagcolor">...</span>
+                    <span class="tagcolor">&lt; /h1 &gt;</span><br><br>
+
+                    
+                    <span class="tagcolor">&lt; style="background-color:rgba(255, 99, 71, 0.5);"  &gt;</span>
+                    <span class="tagcolor">...</span>
+                    <span class="tagcolor">&lt; /h1 &gt;</span><br><br>
+
+                    
+                    <span class="tagcolor">&lt; style="background-color:hsla(9, 100%, 64%, 0.5);"  &gt;</span>
+                    <span class="tagcolor">...</span>
+                    <span class="tagcolor">&lt; /h1 &gt;</span><br><br>
+				</span>
+			</div>
+
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_values">Try it!</a>
+            </div><br><br><br>
+		</div>
+		<div class="w-clear nextprev">
+			   <a class="w-left w-btn" href="csscomments.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="cssbackgrounds.html">Next ❯</a>
+		</div><br>
+
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<style> 
+  #panel, .flip {
+     font-size: 16px;
+      padding: 10px;
+      text-align: center;
+      background-color: #04AA6D;
+      color: white;
+      border: solid 1px #a6d8a8;
+      margin: auto;
+      cursor:pointer;
+  }
+  
+  #panel {
+      display: none;
+      cursor:auto;
+  }
+  .test .w3-row-padding>.w3-col {
+      padding: 0 8px;
+      margin: 6px;
+  }
+  </style>
+
+<script>
+  function removeElement() {
+      document.getElementById("imgbox1").style.display = "none";
+  }
+  
+  function changeVisibility() {
+      document.getElementById("imgbox2").style.visibility = "hidden";
+  }
+  
+  function resetElement() {
+      document.getElementById("imgbox1").style.display = "block";
+      document.getElementById("imgbox2").style.visibility = "visible";
+  }
+  </script>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Display</span></h1>
+               <a class="w-left w-btn" href="csstables.html">❮ Previous</a>
+               <a class="w-right w-btn" href="cssmax-width.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="wrap-column1">
+          <p class="intro">The <span class="attributecolor">display</span> property is the most important CSS property for controlling layout.</p>
+          <br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>The display Property</h2>
+          <br>
+          <p class="intro">The <span class="attributecolor">display</span> property specifies if/how an element is displayed.</p>
+          <br>
+          <p class="intro">Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is <span class="attributecolor">block</span> or <span class="attributecolor">inline</span>.</p>
+          <br>
+          <p class="flip" onclick="myShowFunction()">Click to show panel</p>
+          <div id="panel">
+            <p>This panel contains a &lt;div&gt; element, which is hidden by default (<code class="w3-codespan w3-light-grey" style="color:crimson!important">display: none</code>).</p>
+            <p>It is styled with CSS, and we use JavaScript to show it (change it to (<code class="w3-codespan w3-light-grey" style="color:crimson!important">display: block</code>).</p>
+          </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Block-level Elements</h2>
+          <br>
+          <p class="intro">A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+          <br>
+          <div class="w3-theme-border" style="border-width:3px;border-style:solid;">he &lt;div&gt; element is a block-level element.</div>
+          <p class="intro">Examples of block-level elements:</p>
+          <br>
+          <ul class="bullet-container">
+            <li class="bullet">&lt;div&gt;</li>
+            <li class="bullet">&lt;h1&gt; - &lt;h6&gt;</li>
+            <li class="bullet">&lt;p&gt;</li>
+            <li class="bullet">&lt;form&gt;</li>
+            <li class="bullet">&lt;header&gt;</li>
+            <li class="bullet">&lt;footer&gt;</li>
+            <li class="bullet">&lt;section&gt;</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="wrap-container">
+          <h2>Inline Elements</h2>
+          <br>
+          <p class="intro">An inline element does not start on a new line and only takes up as much width as necessary.</p>
+          <br>
+          <p class="intro">This is <span class="w3-theme-border" style="border-width:3px;border-style:solid;">an inline &lt;span&gt; element 
+            inside</span> a paragraph.</p>
+          <br>
+          <p class="intro">Examples of inline elements:</p>
+          <br>
+          <ul class="bullet-container">
+            <li class="bullet">&lt;span&gt;</li>
+            <li class="bullet">&lt;a&gt;</li>
+            <li class="bullet">&lt;img&gt;</li>
+            </ul>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Display: none;</h2>
+          <br>
+          <p class="intro"><span class="attributecolor">display: none;</span> is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.</p>
+          <br>
+          <p class="intro">The <span class="attributecolor">&lt;script&gt;</span> element uses <span class="attributecolor">display: none;</span> as default. </p>
+          <br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Override The Default Display Value</h2>
+          <br>
+          <p class="intro">As mentioned, every element has a default display value. However, you can override this.</p>
+          <br>
+          <p class="intro">Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.</p>
+          <br>
+          <p class="intro">A common example is making inline &lt;li&gt; elements for horizontal menus:</p>
+          <br>
+        </div>
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">li &#123;</span>
+              <br>
+              <span class="tagcolor">display: inline;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_display_inline_list">Try it!</a>
+          </div>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>Setting the display property of an element only changes <strong>how the element is displayed</strong>, NOT what kind of element it is. So, an inline element with <span class="attributecolor">display: block;</span> is not allowed to have other block elements inside it.</p>
+          <br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">The following example displays <span> elements as block elements:</p>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">span &#123;</span>
+              <br>
+              <span class="tagcolor">display: block;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_display_block">Try it!</a>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">The following example displays <a> elements as block elements:</p>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">a &#123;</span>
+              <br>
+              <span class="tagcolor">display: block;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_display_block_a">Try it!</a>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Hide an Element - display:none or visibility:hidden?</h2>
+          <div class="w3-content test" style="max-width:800px">
+            <div class="w3-row-padding w3-center" style="margin:0 -16px">
+            <div class="w3-col w3-border" id="imgbox1" style="width:30%;"><p style="word-wrap: break-word;"><code class="w3-codespan">display:none</code></p>
+              <img src="https://www.w3schools.com/css/img_5terre.jpg" style="width:100%" alt="Italy">
+              <p><button class="ws-btn w3-block" onclick="removeElement()">Remove</button></p>
+            </div>
+            <div class="w3-col w3-border" style="width:30%;" id="imgbox2"><p style="word-wrap: break-word;"><code class="w3-codespan">visibility:hidden</code></p>
+              <img src="https://www.w3schools.com/css/img_forest.jpg" style="width:100%"  alt="Forest">
+              <p><button class="ws-btn w3-block" onclick="changeVisibility()">Hide</button></p>
+            </div>
+            <div class="w3-col w3-border" style="width:30%;"><p>Reset</p>
+              <img src="https://www.w3schools.com/css/img_lights.jpg" style="width:100%"  alt="Lights">
+              <p><button class="ws-btn w3-block" onclick="resetElement()">Reset All</button></p>
+            </div>
+            </div>
+            </div>
+          <p class="intro">Hiding an element can be done by setting the <span class="attributecolor">display</span> property to <span class="attributecolor">none</span>. The element will be hidden, and the page will be displayed as if the element is not there:</p>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">h1.hidden &#123;</span>
+              <br>
+              <span class="tagcolor">display: none;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_display_none">Try it!</a>
+          </div>
+        </div>
+        <div class="wrap-column1">
+          <p class="intro"><span class="attributecolor">visibility:hidden;</span>also hides an element.</p><br>
+          <p class="intro">However, the element will still take up the same space as before. The element will be hidden, but still affect the layout:</p><br>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">h1.hidden &#123;</span>
+              <br>
+              <span class="tagcolor">visibility: none;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_display_none">Try it!</a>
+          </div>
+        </div><br><br><br>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="csstables.html">❮ Previous</a>
+             <a class="w-right w-btn" href="cssmax-width.html">Next ❯</a>
+         </div><br>
+
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

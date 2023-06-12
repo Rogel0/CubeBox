@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<style>
+  .btn {
+    display:inline-block;
+    background-color:#f44336;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size:16px;
+    margin-left:20px;
+    opacity:0.9;
+  }
+  .btn:hover{
+    background-color: #de0f00;
+    color: #ffffff;
+  }
+  .button:hover{
+    background-color:#04AA6D;
+    color: #ffffff;
+    text-decoration: none;
+  }
+ .txtlink{
+ color: green;
+ text-decoration:none;
+ margin-left:20px;
+ font-size:16px;
+}
+.txtlink:hover{
+  text-decoration: underline;
+}
+
+.txtlink2 {
+  color: rgb(0, 0, 0);
+}
+.txtlink2:hover{
+  color: green;
+}
+.button{
+  border: 2px solid #04AA6D;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:20px;
+  color:#000000
+}
+.tagcolor1 {
+  color: gray;
+}
+
+@media only screen and (max-width: 547px) {
+  .btn {
+    margin:0 !important;
+  }
+  .textlink2 {
+    margin:0 !important;
+  }
+}
+@media only screen and (max-width: 381px) {
+  .button {
+    margin:0 !important;
+  }
+  .txtlink {
+    margin:0 !important;
+  }
+}
+@media only screen and (max-width: 337px) {
+  .button {
+    margin:10px 0!important;
+  }
+}
+
+</style>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">Links</span></h1>
+               <a class="w-left w-btn" href="cssicons.html">❮ Previous</a>
+               <a class="w-right w-btn" href="csslists.html">Next ❯</a>
+           </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <p class="intro">With CSS, links can be styled in many different ways.</p><br>
+        </div>
+        <hr>
+
+        <div class="w-example">
+          <a href="javascript:void(0)" class="txtlink2">Text Link</a>
+          <a href="javascript:void(0)" class="txtlink" >Text Link</a>
+          <a href="javascript:void(0)" class="button button1" >Link Button</a> 
+          <a href="javascript:void(0)" class="btn">Link Button</a>
+        </div>
+        <hr>
+
+
+        <div class="wrap-column1">
+          <h2>Styling Links</h2><br>
+          <p class="intro">Links can be styled with any CSS property (e.g. <span class="attributecolor">color</span>, <span class="attributecolor">font-family</span>, <span class="attributecolor">background</span>, etc.).</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">a &#123;</span><br>
+              <span class="tagcolor">color: hotpink;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div><br>
+          <div class="w-clear">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_all">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">In addition, links can be styled differently depending on what <strong>state </strong>they are in.</p><br>
+          <p class="intro">The four links states are:</p><br>
+          <ul class="bullet-contaianer">
+            <li class="bullet"><span class="attributecolor">a:link</span> - a normal, unvisited link</li><br>
+            <li class="bullet"><span class="attributecolor">a:visited</span> - a link the user has visited</li><br>
+            <li class="bullet"><span class="attributecolor">a:hover</span> - a link when the user mouses over it</li><br>
+            <li class="bullet"><span class="attributecolor">a:active</span> - a link the moment it is clicked</li><br>
+          </ul><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor1">/* unvisited link */</span><br>
+              <span class="tagcolor">a:link &#123;</span><br>
+              <span class="tagcolor">color: red;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor1">/* visited link */</span><br>
+              <span class="tagcolor">a:visited &#123;</span><br>
+              <span class="tagcolor">color: green;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              
+              <span class="tagcolor1">/* hover link */</span><br>
+              <span class="tagcolor">a:hover &#123;</span><br>
+              <span class="tagcolor">color: hotpink;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              
+              <span class="tagcolor1">/* selected link */</span><br>
+              <span class="tagcolor">a:active &#123;</span><br>
+              <span class="tagcolor">color: blue;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">When setting the style for several link states, there are some order rules:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet">a:hover MUST come after a:link and a:visited</li><br>
+            <li class="bullet">a:active MUST come after a:hover
+            </li><br>
+          </ul>
+        </div>
+
+        <div class="wrap-column1">
+          <h2></h2><br>
+          <p class="intro">The <span class="attributecolor">text-decoration</span>a:active MUST come after a:hover
+          </p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor1">/* unvisited link */</span><br>
+              <span class="tagcolor">a:link &#123;</span><br>
+              <span class="tagcolor">text-decoration: none;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor1">/* visited link */</span><br>
+              <span class="tagcolor">a:visited &#123;</span><br>
+              <span class="tagcolor">text-decoration: none;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              
+              <span class="tagcolor1">/* hover link */</span><br>
+              <span class="tagcolor">a:hover &#123;</span><br>
+              <span class="tagcolor">text-decoration: underline;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              
+              <span class="tagcolor1">/* selected link */</span><br>
+              <span class="tagcolor">a:active &#123;</span><br>
+              <span class="tagcolor">text-decoration: underline;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_decoration">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Background Color</h2><br>
+          <p class="intro">The <span class="attributecolor">background-color</span> property can be used to specify a background color for links:</p>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor1">/* unvisited link */</span><br>
+              <span class="tagcolor">a:link &#123;</span><br>
+              <span class="tagcolor">background-color: yellow;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor1">/* visited link */</span><br>
+              <span class="tagcolor">a:visited &#123;</span><br>
+              <span class="tagcolor">background-color: cyan</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              
+              <span class="tagcolor1">/* hover link */</span><br>
+              <span class="tagcolor">a:hover &#123;</span><br>
+              <span class="tagcolor">background-color: lightgreen;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              
+              <span class="tagcolor1">/* selected link */</span><br>
+              <span class="tagcolor">a:active &#123;</span><br>
+              <span class="tagcolor">background-color: hotpink;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_background">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>Link Buttons</h2><br>
+          <p class="intro">This example demonstrates a more advanced example where we combine several CSS properties to display links as boxes/buttons:</p>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor1">/* unvisited link */</span><br>
+              <span class="tagcolor">a:link &#123;</span><br>
+              <span class="tagcolor">background-color: yellow;</span><br>
+              <span class="tagcolor">color: white;</span><br>
+              <span class="tagcolor">padding: 14px 25px;</span><br>
+              <span class="tagcolor">text-align: center;</span><br>
+              <span class="tagcolor">text-decoration: none;</span><br>
+              <span class="tagcolor">display: inline-block;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor1">/* selected link */</span><br>
+              <span class="tagcolor">a:hover, a:active &#123;</span><br>
+              <span class="tagcolor">background-color: red;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced">Try it!</a>
+          </div><br><br><br>
+        </div>
+        <div class="wrap-column1">
+          <h2>More Examples</h2>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">This example demonstrates how to add other styles to hyperlinks:</p>
+            <br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">a.one:link &#123;</span>
+              <span class="tagcolor">color:#ff0000;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.one:visited &#123;</span>
+              <span class="tagcolor">color:#0000ff;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.one:hover &#123;</span>
+              <span class="tagcolor">color:#ffcc00;</span>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">a.two:link &#123;</span>
+              <span class="tagcolor">color:#ff0000;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.two:visited &#123;</span>
+              <span class="tagcolor">color:#0000ff;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.two:hover &#123;</span>
+              <span class="tagcolor">font-size:150%</span>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">a.three:link &#123;</span>
+              <span class="tagcolor">color:#ff0000;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.three:visited &#123;</span>
+              <span class="tagcolor">color:#0000ff;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.three:hover &#123;</span>
+              <span class="tagcolor">background:#66ff66;</span>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">a.four:link &#123;</span>
+              <span class="tagcolor">color:#ff0000;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.four:visited &#123;</span>
+              <span class="tagcolor">color:#0000ff;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.four:hover &#123;</span>
+              <span class="tagcolor">font-family:monospace;</span>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">a.five:link &#123;</span>
+              <span class="tagcolor">color:#ff0000; text-decoration: none;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.five:visited &#123;</span>
+              <span class="tagcolor">color:#0000ff;text-decoration: none;</span>
+              <span class="tagcolor">&#125;</span><br>
+              <span class="tagcolor">a.five:hover &#123;</span>
+              <span class="tagcolor">text-decoration: none;</span>
+              <span class="tagcolor">&#125;</span><br><br><br>
+
+
+              
+              
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link2">Try it!</a>
+          </div>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="wrap-column1">
+            <p class="intro">Another example of how to create link boxes/buttons:</p>
+            <br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor"></span><br>
+            </span>
+          </div>
+        </div>
+
+        
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor1">/* unvisited link */</span><br>
+              <span class="tagcolor">a:link, a:visited  &#123;</span><br>
+              <span class="tagcolor">background-color: white;</span><br>
+              <span class="tagcolor">border:2px solid green;</span><br>
+              <span class="tagcolor">color: black;</span><br>
+              <span class="tagcolor">padding: 14px 25px;</span><br>
+              <span class="tagcolor">text-align: center;</span><br>
+              <span class="tagcolor">text-decoration: none;</span><br>
+              <span class="tagcolor">display: inline-block;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor1">/* selected link */</span><br>
+              <span class="tagcolor">a:hover, a:active &#123;</span><br>
+              <span class="tagcolor">background-color: red;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced2">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example"></div>
+          <div class="wrap-column1">
+            <p class="intro">This example demonstrates the different types of cursors (can be useful for links):</p>
+            <br>
+          </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">&lt; span style="cursor: auto" &gt;auto</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: crosshair" &gt;crosshair</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: default" &gt;default</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: " e-resize&gt;e-resize</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: "help &gt;help</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: " move&gt;move</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: " n-resize&gt;n-resize</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: "ne-resize &gt;ne-resize</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: "nw-resize&gt;nw-resize</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: " pointer&gt;pointer</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: "progress &gt;progress</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: "s-size &gt;s-size</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: "se-resize &gt;se-resize</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: "sw-resize &gt;sw-resize</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: " text&gt;text</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: " w-resize&gt;w-resize</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+              <span class="tagcolor">&lt; span style="cursor: "wait &gt;wait</span>
+              <span class="tagcolor">&lt;/span&gt; &lt;br&gt;</span><br>
+            </span>
+          </div>
+
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_cursor">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="cssicons.html">❮ Previous</a>
+             <a class="w-right w-btn" href="csslists.html">Next ❯</a>
+        </div>
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>

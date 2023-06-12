@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<style>
+  ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+.list2 {
+  background: #3399ff;
+  padding: 20px;
+}
+
+.list li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+.list2 li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+
+.underline {
+  text-decoration: none;
+  
+  
+}
+
+.underline a {
+  text-decoration: underline;
+  color:#000000
+  
+}
+
+.underline a:hover{
+  color:green;
+  
+}
+</style>
+
+<header>
+	
+</header>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+          <a href="#">Cube Code</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">PYTHON</a></li>
+        </ul>
+      </div>
+    
+      <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="w-clear nextprev">
+            <h1 class="first-title">CSS <span class="color-h1">List</span></h1>
+               <a class="w-left w-btn" href="csslinks.html">❮ Previous</a>
+               <a class="w-right w-btn" href="csstables.html">Next ❯</a>
+           </div>
+        <hr>
+        <div class="w-example">
+          <div class="bullet-container">
+          <h2>Unordered Lists:</h2>
+        <ul class="list2" style="list-style:circle">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ul>
+        <ul class="list2" style="list-style:square">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ul>
+          </div>
+          <div class="bullet-container">
+          <h2>Ordered Lists:</h2>  
+        <ol class="list" style="list-style:decimal">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ol>
+        <ol class="list" style="list-style:upper-roman">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ol>
+          </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>HTML Lists and CSS List Properties</h2>
+          <br>
+          <p class="intro">In HTML, there are two main types of lists:</p>
+          <br>
+          <ul class="bullet-container">
+            <li class="bullet">unordered lists (&lt;ul&gt;) - the list items are marked with bullets</li>
+            <br>
+            <li class="bullet">ordered lists (&lt;ol&gt;) - the list items are marked with numbers or letters</li>
+            <br>
+          </ul>
+          <p class="intro">The CSS list properties allow you to:</p>
+          <br>
+          <ul class="bullet-container">
+            <li class="bullet">Set different list item markers for ordered lists</li>
+            <br>
+            <li class="bullet">Set different list item markers for unordered lists</li>
+            <br>
+            <li class="bullet">Set an image as the list item marker</li>
+            <br>
+            <li class="bullet">Set an image as the list item marker</li>
+            <br>
+          </ul>
+        </div>
+        
+        <div class="wrap-column1">
+          <h2>Different List Item Markers</h2>
+          <br>
+          <p class="intro">The <span class="attributecolor">list-style-type</span> property specifies the type of list item marker.</p>
+          <br>
+          <p class="intro">The following example shows some of the available list item markers:</p>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">ul.a &#123;</span><br>
+              <span class="tagcolor">list-style-type: circle;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">ul.a &#123;</span><br>
+              <span class="tagcolor">list-style-type: square;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+              <span class="tagcolor">ol.a &#123;</span><br>
+              <span class="tagcolor">list-style-type: upper-roman;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+
+
+              <span class="tagcolor">ol.a &#123;</span><br>
+              <span class="tagcolor">list-style-type: lower-alpha;</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_ex">Try it!</a>
+          </div>
+        </div>
+
+        <div class="w-note">
+          <p class="intro"><strong>Note: </strong>Some of the values are for unordered lists, and some for ordered lists.</p>
+          <br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>An Image as The List Item Marker</h2>
+          <br>
+          <p class="intro">The <span class="attributecolor">list-style-image</span> property specifies an image as the list item marker:</p>
+          <br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example </div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">ul &#123;</span><br>
+              <span class="tagcolor">list-style-image: url('sqpurple.gif');</span><br>
+              <span class="tagcolor">&#125;</span><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-image">Try it!</a>
+          </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Position The List Item Markers</h2>
+          <br>
+          <p class="intro">The <span class="attributecolor">list-style-position</span> property specifies the position of the list-item markers (bullet points).</p>
+          <br>
+          <p class="intro">&quot;list-style-position: outside;&quot; means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default:</p>
+          <br>
+
+
+          <ul class="bullet-container" style="list-style-position:outside;width:25%;">
+          <li style="border:1px solid #000000;">Coffee - A brewed drink prepared from roasted coffee beans...</li>
+          <li class="bullet" style="border:1px solid #000000;border-top:0;">Tea</li>
+          <li class="bullet" style="border:1px solid #000000;border-top:0;">Coca-cola</li>
+          </ul>
+          <p class="bullet">&quot;list-style-position: inside;&quot; means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start:</p><br>
+          <ul class="bullet-container" style="list-style-position:inside;width:25%;">
+          <li class="bullet" style="border:1px solid #000000;">Coffee - A brewed drink prepared from roasted coffee beans...</li>
+          <li class="bullet" style="border:1px solid #000000;border-top:0;">Tea</li>
+          <li class="bullet" style="border:1px solid #000000;border-top:0;">Coca-cola</li>
+          </ul>
+        </div><br><br><br>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">ul.a &#123;</span><br>
+              <span class="tagcolor">list-style-position: outside;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">ul.b &#123;</span><br>
+              <span class="tagcolor">list-style-position: inside;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-position">Try it!</a>
+          </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Remove Default Settings</h2>
+          <br>
+          <p class="intro">The <span class="attributecolor">list-style-type:none</span> property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add <span class="attributecolor">margin:0</span> and <span class="attributecolor">padding:0</span> to &lt;ul&gt; or &lt;ol&gt;:</p>
+          <br>
+        </div>
+
+        
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">ul &#123;</span><br>
+              <span class="tagcolor">list-style-type: none;</span><br>
+              <span class="tagcolor">margin: 0;</span><br>
+              <span class="tagcolor">padding: 0;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style_none">Try it!</a>
+          </div>
+        </div>
+        <hr>
+
+        <div class="wrap-column1">
+          <h2>List - Shorthand property</h2>
+          <br>
+          <p class="intro">The <span class="attributecolor">list-style</span> property is a shorthand property. It is used to set all the list properties in one declaration:</p>
+          <br>
+        </div>
+
+        
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">ul.a &#123;</span><br>
+              <span class="tagcolor">list-style:square inside url("sqpurple.gif"); ;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+            </span>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style">Try it!</a>
+          </div>
+        </div>
+
+        <div class="wrap-column1">
+          <p class="intro">When using the shorthand property, the order of the property values are:</p><br>
+          <ul class="bullet-container">
+            <li class="bullet"><span class="attributecolor">list-style-type </span> (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)</li>
+            <br>
+            <li class="bullet"><span class="attributecolor">list-style-position</span> (specifies whether the list-item markers should appear inside or outside the content flow)</li>
+            <br>
+            <li class="bullet"><span class="attributecolor">list-style-image</span> (specifies an image as the list item marker)</li>
+            <br>
+          </ul>
+          <p class="intro">If one of the property values above is missing, the default value for the missing property will be inserted, if any.</p><br>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+          <h2>Styling List With Colors</h2>
+          <br>
+          <p class="intro">We can also style lists with colors, to make them look a little more interesting.</p><br>
+          <p class="intro">Anything added to the &lt;ol&gt; or &lt;ul&gt; tag, affects the entire list, while properties added to the &lt;li&gt; tag will affect the individual list items:</p><br>
+        </div>
+
+        <div class="w-example">
+          <div class="example">Example</div>
+          <div class="w-code">
+            <span class="tagnamecolor">
+              <span class="tagcolor">ol &#123;</span><br>
+              <span class="tagcolor">background:#ff9999;</span><br>
+              <span class="tagcolor">padding: 20px;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">ul &#123;</span><br>
+              <span class="tagcolor">background:#3399ff;</span><br>
+              <span class="tagcolor">padding: 20px;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">ol li &#123;</span><br>
+              <span class="tagcolor">background:#ffe5e5;</span><br>
+              <span class="tagcolor">color: darkred;</span><br>
+              <span class="tagcolor">padding: 20px;</span><br>
+              <span class="tagcolor">margin-left: 35px;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+
+              <span class="tagcolor">ul li &#123;</span><br>
+              <span class="tagcolor">background:#cce5ff;</span><br>
+              <span class="tagcolor">color: darkblue;</span><br>
+              <span class="tagcolor">margint: 5px;</span><br>
+              <span class="tagcolor">&#125;</span><br><br>
+              
+            </span>
+          </div>
+          <p class="intro">Result:</p><br>
+          <div class="bullet-container">
+          <ol id="ex4">
+            <li>Coffee</li><br>
+            <li>Tea</li><br>
+            <li>Coca Cola</li><br>
+          </ol>
+          <ul id="ex5">
+            <li>Coffee</li><br>
+            <li>Tea</li><br>
+            <li>Coca Cola</li><br>
+          </ul>
+          </div>
+          <div class="w-clear nextprev">
+            <a class="w-btn w-try" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style_colors">Try it!</a>
+          </div><br><br><br>
+        </div>
+
+        <div class="wrap-column1">
+          <h2>More Examples</h2>
+          <br>
+          <p class="intro underline"><a class="w-btn" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-red-border">Customized list with a red left border</a> </p>
+
+          <p class="intro">This example demonstrates how to create a list with a red left border.</p>
+          <br>
+
+          <p class="intro underline"><a class="w-btn" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-border">Full-width bordered list</a> </p>
+
+          <p class="intro">This example demonstrates how to create a bordered list without bullets.</p>
+          <br>
+
+          <p class="intro underline"><a class="w-btn" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_all">All the different list-item markers for lists</a> </p>
+
+          <p class="intro">This example demonstrates all the different list-item markers in CSS.</p>
+          <br>
+
+        </div>
+
+        <div class="w-clear nextprev">
+             <a class="w-left w-btn" href="csslinks.html">❮ Previous</a>
+             <a class="w-right w-btn" href="csstables.html">Next ❯</a>
+         </div><br>
+
+
+        
+    </div>
+</body>
+<footer>
+	
+</footer>
+<script src="../source/burger.js"></script>
+</html>
