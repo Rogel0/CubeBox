@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../JAVAFILES/javahome.html">JAVA</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+   
+	<d class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">JavaScript <span class="color-h1">Variables</span></h1>
+			   <a class="w-left w-btn" href="javascriptcomments.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="javascriptlet.html">Next ❯</a>
+		</div>
+        <hr>
+        <div class="wrap-column1">
+            <p class="intro">
+                In this first example, <span class="attributecolor-bg">x</span>, <span class="attributecolor-bg">y</span>
+                and <span class="attributecolor-bg">z</span> are undeclared variables.
+            </p>
+            <br>
+            <p class="intro">
+                They are automatically declared when first used:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                x = <span class="tagnamecolor">5</span>;
+                <br>
+                y = <span class="tagnamecolor">6</span>;
+                <br>
+                z = x + y;
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <h2>Note</h2>
+                <br>
+                <p>It is considered good programming practice to always declare variables before use.</p>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <p class="intro">From the examples you can guess:</p>
+            <br>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet">
+                        x stores the value 5
+                    </li>
+                    <li class="bullet">y stores the value 6</li>
+                    <li class="bullet">z stores the value 11</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+               <span class="tagcolor">var</span> x = <span class="tagnamecolor">5</span>;
+                <br>
+                <span class="tagcolor">var</span> y = <span class="tagnamecolor">6</span>;
+                <br>
+                <span class="tagcolor">var</span> z = x + y;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <h2>Note</h2>
+                <br>
+                <p>The <span class="attributecolor-bg">var</span> keyword was used in all JavaScript
+                   code from 1995 to 2015.
+                </p>
+                <br>
+                <p>The <span class="attributecolor-bg">let</span> and <span class="attributecolor-bg">const</span> keywords
+                   were added to JavaScript in 2015.
+                </p>
+                <br>
+                <p>
+                    The <span class="attributecolor-bg">var</span> keyword should only be used in code written
+                    for older browsers.
+                </p>
+            </div>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example using let</h3>
+            <div class="w-code">
+                <span class="tagcolor">let</span> x = <span class="tagnamecolor">5</span>;
+                <br>
+                <span class="tagcolor">let</span> y = <span class="tagnamecolor">6</span>;
+                <br>
+                <span class="tagcolor">let</span> z = x + y;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example using const</h3>
+            <div class="w-code">
+                <span class="tagcolor">const</span> x = <span class="tagnamecolor">5</span>;
+                <br>
+                <span class="tagcolor">const</span> y = <span class="tagnamecolor">6</span>;
+                <br>
+                <span class="tagcolor">const</span> z = x + y;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Mixed Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">var</span> x = <span class="tagnamecolor">5</span>;
+                <br>
+                <span class="tagcolor">const</span> y = <span class="tagnamecolor">6</span>;
+                <br>
+                <span class="tagcolor">let</span> z = x + y;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                The two variables <span class="attributecolor-bg">price1</span> and <span class="attributecolor-bg">price2</span> are
+                declared with the <span class="attributecolor-bg">const</span> keyword.
+            </p>
+            <br>
+            <p class="intro">These are constant values and cannot be changed.</p>
+            <br>
+            <p>The variable <span class="attributecolor-bg">total</span> is declared with the <span class="attributecolor-bg">let</span>
+              keyword.
+            </p>
+            <br>
+            <p>The value <span class="attributecolor-bg">total</span> can be changed.</p>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <h2>When to Use var, let, or const?</h2>
+                <br>
+                <p>1. Always declare variables.</p>
+                <br>
+                <p>2. Always use <span class="attributecolor-bg">const</span> if the value should not be changed</p>
+                <br>
+                <p>3.Only use <span class="attributecolor-bg">let</span> if you can't use<span class="attributecolor-bg">const</span></p>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Just Like Algebra</h2>
+            <br>
+            <p class="intro">Just like in algebra, variables hold values:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <span class="tagcolor">let</span> x = <span class="tagnamecolor">5</span>;
+                <br>
+                <span class="tagcolor">let</span> y = <span class="tagnamecolor">6</span>;
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Just like in algebra, variables are used in expressions:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <span class="tagcolor">let</span> z = x + y;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                From the example above, you can guess that the total is calculated to be 11.
+            </p>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <h2>Note</h2>
+                <br>
+                <p>Variables are containers for storing values.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Identifiers</h2>
+            <br>
+            <p class="intro">All JavaScript <strong>variables</strong> must be <strong>identified</strong> with <strong>unique names</strong>.</p>
+            <br>
+            <p class="intro">This unique names are called <strong>identifiers</strong></p>
+            <br>
+            <p class="intro">Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+            <br>
+            <p class="intro">The general rules for constructing names for variables (unique identifiers) are:</p>
+            <br>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet">
+                        Names can contain letters, digits, underscores, and dollar signs.
+                    </li>
+                    <li class="bullet">
+                        Names must begin with a letter.
+                    </li>
+                    <li class="bullet">
+                        Names can also begin with $ and _ (but we will not use it in this tutorial).
+                    </li>
+                    <li class="bullet">
+                        Names are case sensitive (y and Y are different variables).
+                    </li>
+                    <li class="bullet">
+                        Reserved words (like JavaScript keywords) cannot be used as names.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <h2>Note</h2>
+                <br>
+                <p>JavaScript identifiers are case-sensitive.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>The Assignment Operator</h2>
+            <br>
+            <p class="intro">
+                In JavaScript, the equal sign ( <span class="attributecolor-bg">=</span> ) is an "assignment"
+                operator, not an "equal to" operator.
+            </p>
+            <br>
+            <p class="intro">
+                This is different from algebra. The following does not make sense in algebra:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                x = x  = <span class="tagnamecolor">5</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                In JavaScript, the following statement is legal and assigns the value 5 to x:
+            </p>
+            <br>
+            <p class="intro">
+                (It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)
+            </p>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <h2>Note</h2>
+                <br>
+                <p>The "equal to" operator is written like <span class="attributecolor-bg">==</span> in JavaScript.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Data Types</h2>
+            <br>
+            <p class="intro">
+                JavaScript variables can hold numbers like 100 and text values like "John Doe".
+            </p>
+            <br>
+            <p class="intro">
+                In programming, text values are called text strings.
+            </p>
+            <br>
+            <p class="intro">
+                JavaScript can handle many types of data, but for now, just think of numbers and strings.
+            </p>
+            <br>
+            <p class="intro">
+                Strings are written inside double or single quotes. Numbers are written without quotes.
+            </p>
+            <br>
+            <p class="intro">
+                If you put a number in quotes, it will be treated as a text string.
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">const</span> pi = <span class="tagnamecolor">3.14</span>;
+                <br>
+                <span class="tagcolor">let</span> person = <span class="tagnamecolor">"John Doe"</span>;
+                <br>
+                <span class="tagcolor">let</span> answer = <span class="tagnamecolor">'Yes I am!'</span>;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Declaring a JavaScript Variable</h2>
+            <br>
+            <p class="intro">
+                Creating a variable in JavaScript is called "declaring" a variable.
+            </p>
+            <br>
+            <p class="intro">
+                You declare a JavaScript variable with the <span class="attributecolor-bg">var</span> or the <span class="attributecolor-bg">let</span> keyword:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <span class="tagcolor">var</span> carName;
+            </div>
+            <br>
+            or
+            <br>
+            <div class="w-code">
+                <span class="tagcolor">let</span> carName;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                After the declaration, the variable has no value (technically it is <span class="attributecolor-bg">undefined</span>).
+            </p>
+            <br>
+            <p class="intro">
+                To <strong>assign</strong> a value to the variable, use the equal sign:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                carName = <span class="tagnamecolor">"Volvo"</span>;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                You can also assign a value to the variable when you declare it.
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <span class="tagcolor">let</span>
+                carName = <span class="tagnamecolor">"Volvo"</span>;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                In the example below, we create a variable called <span class="attributecolor-bg">carName</span>
+                and assign the value "Volvo" to it.
+            </p>
+            <br>
+            <p class="intro">
+                Then we "output" the value inside an HTML paragraph with id="demo"
+            </p>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+    <div class="w-clear nextprev">
+        <a class="w-left w-btn" href="javascriptcomments.html">❮ Previous</a>
+		<a class="w-right w-btn" href="javascriptlet.html">Next ❯</a>
+    </div>
+   </div>
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

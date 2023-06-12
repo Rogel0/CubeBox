@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../JAVAFILES/javahome.html">JAVA</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+   
+	<d class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">JavaScript <span class="color-h1">Comments</span></h1>
+			   <a class="w-left w-btn" href="javascriptsyntax.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="javascriptvariables.html">Next ❯</a>
+		</div>
+        <hr>
+        <div class="wrap-column1">
+            <p class="intro">
+                JavaScript comments can be used to explain Javascript code, and to make it more readable.
+            </p>
+            <br>
+            <p class="intro">
+                JavaScript comments can also be used to prevent execution, when testing alternative code.
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Single Line Comments</h2>
+            <br>
+            <p class="intro">
+                Single line comments start with <span class="attributecolor-bg">//</span>.
+            </p>
+            <br>
+            <p class="intro">
+                Any text between <span class="attributecolor-bg">//</span> and the end of the line will be ignored by JavaScript (will not be executed).
+            </p>
+            <br>
+            <p class="intro">
+                This example uses a single-line comment before each code line:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="comment">// Change heading:</span>
+                <br>
+                document.getElementById(<span class="tagnamecolor">"myH"</span>).innerHTML = <span class="tagnamecolor">"My First Page"</span>;
+                <br>
+                <br>
+                <br>
+                <span class="comment">// Change paragraph:</span>
+                <br>
+                document.getElementById(<span class="tagnamecolor">"myP"</span>).innerHTML = <span class="tagnamecolor">"My first paragraph."</span>;
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                This example users a single line comment at the end of each line to explain the code:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">let</span>
+                x =
+                <span class="tagnamecolor">5</span>;
+                <span class="comment"> &nbsp;&nbsp;&nbsp;&nbsp;// Declare x, give it the value of 5</span>
+                <br>
+                <span class="tagcolor">let</span>
+                y =
+                <span class="tagnamecolor">6</span>;
+                <span class="comment"> &nbsp;&nbsp;&nbsp;&nbsp;// Declare y, give it the value of 6</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Multi-line Comments</h2>
+            <br>
+            <p class="intro">
+                Multi-line comments start with <span class="attributecolor-bg">/*</span>
+                and end with <span class="attributecolor-bg">*/</span>
+            </p>
+            <br>
+            <p class="intro">
+                Any text between <span class="attributecolor-bg">/*</span> and <span class="attributecolor-bg">*/</span> will be ignored by JavaScript.
+            </p>
+            <br>
+            <p class="intro">
+                This example uses a multi-line comment (a comment block) to explain the code:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="comment">
+                    /*
+                    <br>
+                    The code below will change
+                    <br>
+                    the heading with id = "myH"
+                    <br>
+                    and the paragraph with id = "myP"
+                    <br>
+                    in my web page:
+                    <br>
+                    */
+                </span>
+                <br>
+                document.getElementById(<span class="tagnamecolor">"myH"</span>).innerHTML = <span class="tagnamecolor">"My First Page"</span>;
+                <br>
+                document.getElementById(<span class="tagnamecolor">"myP"</span>).innerHTML = <span class="tagnamecolor">"My first paragraph."</span>;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p>It is most common to use single line comments. Block comments are often for formal documentation.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Using Comments to Prevent Execution</h2>
+            <br>
+            <p class="intro">
+                Using comments to prevent execution of code is 
+                suitable for code testing.
+            </p>
+            <br>
+            <p class="intro">
+                Adding <span class="attributecolor-bg">//</span> in front of a code
+                line changes the code lines from an executable line to a comment.
+            </p>
+            <br>
+            <p class="intro">
+                This example uses // to prevent execution of one of th code lines:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                document.getElementById(<span class="tagnamecolor">"myH"</span>).innerHTML = <span class="tagnamecolor">"My First Page"</span>;
+                <br>
+                <span class="comment">// document.getElementById("myP").innerHTML = "My first paragraph."</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">This example uses a comment block to prevent execution of multiple lines:</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="comment">
+                    /*
+                    <br>
+                    document.getElementById("myH").innerHTML = "My First Page";
+                    <br>
+                    document.getElementById("myP").innerHTML = "My first paragraph.";
+                    <br>
+                    */
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+    <div class="w-clear nextprev">
+        <a class="w-left w-btn" href="javascriptsyntax.html">❮ Previous</a>
+		<a class="w-right w-btn" href="javascriptvariables.html">Next ❯</a>
+    </div>
+   </div>
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../JAVAFILES/javahome.html">JAVA</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Javascript <span class="color-h1">Introduction</span></h1>
+			   <a class="w-left w-btn" href="javascripthome.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="javascriptwhereto.html">Next ❯</a>
+		   </div>
+		<div>
+        <hr>
+		<div class="wrap-column1">
+            <div class="w-note">
+                <p>
+                    This page contains examples of what JavaScript can do.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <h2>JavaScript Can Change HTML Content</h2>
+            <br>
+            <p class="intro">
+                One of many JavaScript HTML methods is <span class="attributecolor-bg">getElementById()</span>.
+            </p>
+            <br>
+            <p class="intro">
+                The example below "finds' an HTML element (with id="demo"),
+                and changes the element content (innerHTML) to "Hello JavaScript":
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="delimiter">
+                    document.getElementById(
+                        <span class="tagnamecolor">"demo"</span>
+                    ).innerHTML = <span class="tagnamecolor">"Hello JavaScript"</span>;
+                </span>
+            </div>
+                <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+			   </div>
+        </div>
+        </div>
+		<div class="wrap-column1">
+			<div class="w-note">
+			<p>JavaScript accepts both double and single quotes:</p>
+			</div>
+		</div>
+		<br>
+		<div class="w-example">
+			<h3 class="example">Example</h3>
+			<div class="w-code">
+				<span class="delimiter">
+					document.getElementById(
+						<span class="tagnamecolor">"demo"</span>
+					).innerHTML = <span class="tagnamecolor">"Hello JavaScript"</span>;
+				</span>
+			</div>
+				<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+			   </div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Can Change HTML Attribute Values</h2>
+			<br>
+			<p class="intro">
+				In this example JavaScript changes the value of the src (source) attribute of an image:
+			</p>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Can Change HTML Styles (CSS)</h2>
+			<br>
+			<p class="intro">
+				Changing the style of an HTML element, is a variant of changing an HTML attribute:
+			</p>
+		</div>
+		<div class="w-example">
+			<h3 class="example">Example</h3>
+			<div class="w-code">
+				<span class="delimiter">
+					document.getElementById(
+						<span class="tagnamecolor">"demo"</span>
+					).style.fontSize = <span class="tagnamecolor">"35px"</span>;
+				</span>
+			</div>
+				<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+			   </div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Can Hide HTML Elements</h2>
+			<br>
+			<p class="intro">
+				Hiding HTML elements can be done by changing the display style:
+			</p>
+		</div>
+		<div class="w-example">
+			<h3 class="example">Example</h3>
+			<div class="w-code">
+				<span class="delimiter">
+					document.getElementById(
+						<span class="tagnamecolor">"demo"</span>
+					).style.display = <span class="tagnamecolor">"none"</span>;
+				</span>
+			</div>
+				<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+			   </div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Can Show HTML Elements</h2>
+			<br>
+			<p class="intro">
+				Showing hidden HTML elements can also be done by changing the display style:
+			</p>
+		</div>
+		<div class="w-example">
+			<h3 class="example">Example</h3>
+			<div class="w-code">
+				<span class="delimiter">
+					document.getElementById(
+						<span class="tagnamecolor">"demo"</span>
+					).style.display = <span class="tagnamecolor">"block"</span>;
+				</span>
+			</div>
+				<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/python">Try it!</a>
+			   </div>
+		</div>
+
+		<div class="wrap-column1">
+			<div class="w-note">
+				<h2>Did You Know?</h2>
+				<br>
+				<br>
+				<p>JavaScript and Java are completely different languages, both in concept and design.</p>
+				<br>
+				<p>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.</p>
+				<br>
+				<p>ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.</p>
+			</div>
+		</div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="javascripthome.html">❮ Previous</a>
+			<a class="w-right w-btn" href="javascriptwhereto.html">Next ❯</a>
+	    </div>
+
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

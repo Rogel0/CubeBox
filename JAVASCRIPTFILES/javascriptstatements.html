@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../JAVAFILES/javahome.html">JAVA</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<d class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">JavaScript <span class="color-h1">Statements</span></h1>
+			   <a class="w-left w-btn" href="javascriptoutput.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="javascriptsyntax.html">Next ❯</a>
+		</div>
+        <hr>
+		<div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <div class="delimiter">
+                    <span class="tagcolor">let</span>
+                    x, y, z;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Statement 1
+                    <br>
+                    x = <span class="tagnamecolor">5</span>; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Statement 2
+                    <br>
+                    y = <span class="tagnamecolor">6</span>; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Statement 3
+                    <br>
+                    z = x + y; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Statement 4
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Programs</h2>
+			<br>
+			<p class="intro">A <strong>computer program</strong> is a list of "instructions" to
+			    be "executed" by a computer.
+			</p>
+			<br>
+			<p class="intro">
+               In a programming language, these programming instruction are called <strong>statements</strong>.
+			</p>
+			<br>
+			<p class="intro">
+				A <strong>JavaScript program</strong> is a list of programming <strong>statements</strong>.
+			</p>
+		</div>
+		<br>
+		<div class="wrap-column1">
+			<div class="w-note">
+				<p>In HTML, JavaScript programs are executed by the web browser.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Statements</h2>
+			<br>
+			<p class="intro">
+				JavaScript statements are composed of:
+			</p>
+			<br>
+			<p class="intro">
+				Values, Operators, Expressions, Keywords, and Comments.
+			</p>
+			<br>
+			<p class="intro">
+				This statement tells the browser to write "Hello Dolly."
+				inside an HTML element with id="demo":
+			</p>
+		</div>
+		<div class="w-example">
+			<h3 class="example">Example</h3>
+			<div class="w-code">
+				<div class="delimiter">
+					<span class="tagcolor">document</span>.getElementById(<span class="tagnamecolor">"demo"</span>).innerHTML = <span class="tagnamecolor">"Hello Dolly."</span>;
+				</div>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+		</div>
+		<br>
+		<div class="wrap-column1">
+			<p class="intro">
+				Most JavaScript programs contain many JavaScript statements.
+			</p>
+			<br>
+			<p class="intro">
+				The statements are executed, one by one, in the same order as they are written.
+			</p>
+		</div>
+		<br>
+		<div class="wrap-column1">
+			<div class="w-note">
+				<p>JavaScript programs (and JavaScript statements) are often called JavaScript code.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>Semicolons</h2>
+			<br>
+			<p class="intro">
+				Semicolons separate JavaScript statements.
+			</p>
+			<br>
+			<p class="intro">
+				Add a semicolon at the end of each executable statement:
+			</p>
+		</div>
+		<div class="w-example">
+			<h3 class="example">Example</h3>
+			<div class="w-code">
+				<div class="delimiter">
+					<span class="tagcolor">let</span> a, b, c; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Declare 3 variables
+					<br>
+					a = <span class="tagnamecolor">5</span>; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Assign the value 5 to a
+					<br>
+					b = <span class="tagnamecolor">6</span>; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Assign the value 6 to b
+					<br>
+					c = a + b; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Assign the sum of a and b to c
+				</div>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="intro">When separated by semicolons, multiple statements on one line are allowed:</p>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<div class="delimiter">
+					a = <span class="tagnamecolor">5</span>; b = <span class="tagnamecolor">6</span>; c = a + b;
+				</div>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+		</div>
+		<br>
+		<div class="wrap-column1">
+			<div class="w-note">
+				<p>On the web, you might see examples without semicolons.</p>
+				<br>
+				<p class="intro">Ending statements with semicolon is not required, but highly recommended.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript White Space</h2>
+			<br>
+			<p class="intro">
+				JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+			</p>
+			<br>
+			<p class="intro">
+				The following lines are equivalent:
+			</p>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<div class="delimiter">
+					let person = <span class="tagnamecolor">"Hege"</span>; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 5 spaces
+					<br>
+					let person = <span class="tagnamecolor">"Hege"</span>; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 1 tab
+				</div>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+		</div>
+		<div class="wrap-column1">
+			<p class="intro">A good practice is to put spaces around operators (=+-*/):</p>
+		</div>
+		<div class="w-example">
+			<div class="w-code">
+				<div class="delimiter">
+					let x = y + z;
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Line Length and Line Breaks</h2>
+			<br>
+			<p class="intro">
+				For best readability, programmers often like to avoid code lines longer than 80 characters.
+			</p>
+			<br>
+			<p class="intro">If a JavaScript statement does not fit on one line, the best place to break it is after an operator:</p>
+		</div>
+		<div class="w-example">
+			<h3 class="example">Example</h3>
+			<div class="w-code">
+				<div class="delimiter">
+					document.getElementById(<span class="tagnamecolor">"demo"</span>).innerHTML = <span class="tagnamecolor">"Hello Dolly."</span>;
+				</div>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Code Blocks</h2>
+			<br>
+			<p class="intro">JavacScript statements can be grouped together in code blocks, inside curly brackets {...}.</p>
+			<br>
+			<p class="intro">
+				The purpose of code blocks is to define statements to be executed together.
+			</p>
+			<br>
+			<p class="intro">
+				One place you will find statements grouped together in blocks, is in JavaScript functions:
+			</p>
+		</div>
+		<div class="w-example">
+			<h3 class="example">Example</h3>
+			<div class="w-code">
+				<div class="delimiter">
+					function myFunction() {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(<span class="tagnamecolor">"demo"</span>).innerHTML = <span class="tagnamecolor">"Hello Dolly."</span>;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(<span class="tagnamecolor">"myDIV"</span>).innerHTML = <span class="tagnamecolor">"How are you?"</span>;<br>
+					}
+				</div>
+			</div>
+			<div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+		</div>
+		<br>
+		<div class="wrap-column1">
+			<div class="w-note">
+				<p>In this tutorial we use 2 spaces of indentation for code blocks.</p>
+				<p>You will learn more about functions later in this tutorial.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="wrap-column1">
+			<h2>JavaScript Keywords</h2>
+			<br>
+			<p class="intro">
+				JavaScript statements often start with a <strong>keyword</strong>
+				to identify the JavaScript action to be performed.
+			</p>
+			<br>
+			<p class="intro">
+				Our Reserved Words Reference lists all JavaScript keywords.
+			</p>
+			<br>
+			<p class="intro">
+				Here is a list of some of the keywords you will learn about in this tutorial:
+			</p>
+		</div>
+		<table class="w-table">
+			<tbody>
+				<tr>
+					<th>Keyword</th>
+					<th>Desription</th>
+				</tr>
+				<tr>
+					<td>var</td>
+					<td>Declares a block variable</td>
+				</tr>
+				<tr>
+					<td>let</td>
+					<td>Declares a block constant</td>
+				</tr>
+				<tr>
+					<td>const</td>
+					<td>Declares a block constant</td>
+				</tr>
+				<tr>
+					<td>if ... else</td>
+					<td>Marks a block of statements to be executed, depending on a condition</td>
+				</tr>
+				<tr>
+					<td>switch</td>
+					<td>Marks a block of statements to be executed, depending on different cases</td>
+				</tr>
+				<tr>
+					<td>for</td>
+					<td>Marks a block of statements to be executed, as long as a condition is true</td>
+				</tr>
+				<tr>
+					<td>while</td>
+					<td>Marks a block of statements to be executed, as long as a condition is true</td>
+				</tr>
+				<tr>
+					<td>break</td>
+					<td>Exits a switch or a loop</td>
+				</tr>
+				<tr>
+					<td>continue</td>
+					<td>Exits a switch or a loop</td>
+				</tr>
+				<tr>
+					<td>return</td>
+					<td>Returns from a function</td>
+				</tr>
+				<tr>
+					<td>function</td>
+					<td>Declares a function</td>
+				</tr>
+				
+			</tbody>
+		</table>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+    <div class="w-clear nextprev">
+        <a class="w-left w-btn" href="javascriptoutput.html">❮ Previous</a>
+		<a class="w-right w-btn" href="javascriptsyntax.html">Next ❯</a>
+    </div>
+   </div>
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

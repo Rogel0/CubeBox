@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../JAVAFILES/javahome.html">JAVA</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+   
+	<d class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">JavaScript <span class="color-h1">Let</span></h1>
+			   <a class="w-left w-btn" href="javascriptvariables.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="javascriptconst.html">Next ❯</a>
+		</div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Cannot be Redeclared</h2>
+            <br>
+            <p class="intro">
+                Variables defined with <span class="attributecolor-bg">let</span> <strong>can not be redeclared</strong>
+            </p>
+            <br>
+            <p class="intro">
+                You can not accidentally redeclare a variable declared with <span class="attributecolor-bg">let</span>
+            </p>
+        </div>
+        <div class="w-example">
+            <p>With <span class="attributecolor-bg">let</span> you can <strong>not</strong> do this:</p>
+            <div class="w-code">
+                <span class="tagcolor">let</span>
+                x = <span class="tagnamecolor">"John Doe"</span>;
+                <br>
+                <br>
+                <span class="tagcolor">let</span>
+                x = <span class="tagnamecolor">0</span>;
+            </div>
+        </div>
+        <div class="w-example">
+            <p>With <span class="attributecolor-bg">var</span> you can:</p>
+            <div class="w-code">
+                <span class="tagcolor">var</span>
+                x = <span class="tagnamecolor">"John Doe"</span>;
+                <br>
+                <br>
+                <span class="tagcolor">var</span>
+                x = <span class="tagnamecolor">0</span>;
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Block Scope</h2>
+            <br>
+            <p class="intro">Before ES6 (2015), JavaScript had <strong>Global Scope</strong> and <strong>Function Scope</strong>.</p>
+            <br>
+            <p class="intro">
+                ES6 introduced two important new JavaScript keywords: <span class="attributecolor-bg">let</span> and <span class="attributecolor-bg">const</span>.
+            </p>
+            <br>
+            <p class="intro">
+                These two keywords provide <strong>Block Scope</strong> in JavaScript.
+            </p>
+            <br>
+            <p class="intro">
+                Variables declared inside a {} block cannot be accessed from outside the block:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                {
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span class="tagcolor">let</span> x = <span class="tagnamecolor">2</span>;
+                    <br>
+                }
+                <br>
+                <span class="comment">// x can NOT be used here</span>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Variables declared with the <span class="attributecolor-bg">var</span> keyword can NOT
+                have block scope.
+            </p>
+            <br>
+            <p class="intro">
+                Variables declared inside a {} block can be accessed from outside the block.
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                {
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span class="tagcolor">var</span> x = <span class="tagnamecolor">2</span>;
+                    <br>
+                }
+                <br>
+                <span class="comment">// x CAN be used here</span>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Redeclaring Variables</h2>
+            <br>
+            <p class="intro">
+                Redeclaring a variable using the <span class="attributecolor-bg">var</span> keyword can impose problems.
+            </p>
+            <br>
+            <p class="intro">
+                Redeclaring a variable inside a block will also redeclare the variable outside the block:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">var</span> x = <span class="tagnamecolor">10</span>;
+                <br>
+                <br>
+                <span class="comment">// Here x is 10</span>
+                <br>
+                <br>
+                {
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span class="tagcolor">var</span> x = <span class="tagnamecolor">2</span>;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span class="comment">// Here x is 2</span>
+                    <br>
+                }
+                <br>
+                <br>
+                <span class="comment">// Here x is 2</span>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Redeclaring a variable using the <span class="attributecolor-bg">let</span> keyword can solve this problem.
+            </p>
+            <br>
+            <p class="intro">
+                Redeclaring a variable inside a block will not redeclare the variable outside the block:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">let</span> x = <span class="tagnamecolor">10</span>;
+                <br>
+                <br>
+                <span class="comment">// Here x is 10</span>
+                <br>
+                <br>
+                {
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span class="tagcolor">let</span> x = <span class="tagnamecolor">2</span>;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span class="comment">// Here x is 2</span>
+                    <br>
+                }
+                <br>
+                <br>
+                <span class="comment">// Here x is 10</span>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+    <div class="w-clear nextprev">
+        <a class="w-left w-btn" href="javascriptvariables.html">❮ Previous</a>
+		<a class="w-right w-btn" href="javascriptconst.html">Next ❯</a>
+    </div>
+   </div>
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

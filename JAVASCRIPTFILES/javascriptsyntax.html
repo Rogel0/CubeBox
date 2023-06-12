@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../JAVAFILES/javahome.html">JAVA</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+   
+	<d class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">JavaScript <span class="color-h1">Syntax</span></h1>
+			   <a class="w-left w-btn" href="javascriptstatements.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="javascriptcomments.html">Next ❯</a>
+		</div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Values</h2>
+            <br>
+            <p class="intro">
+                The JavaScript syntax defines two types of values:
+            </p>
+            <br>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet">Fixed values</li>
+                    <li class="bullet">Variable values</li>
+                </ul>
+            </div>
+            <br>
+            <p class="intro">Fixed values are called <strong>Literals</strong>.</p>
+            <br>
+            <p class="intro">Variable values are called <strong>Variables</strong>.</p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Literals</h2>
+            <br>
+            <p class="intro">The two most important syntax rules for fixed values are:</p>
+            <br>
+            <p class="intro">1. <strong>Numbers</strong> are written with or without decimals:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <div class="w-border w-html">
+                    <span class="tagnamecolor">10.50</span>
+                    <br>
+                    <br>
+                    <span class="tagnamecolor">1001</span>
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">2. <strong>Strings</strong> are text, written within double or single quotes:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <div class="w-border w-html">
+                    <span class="tagnamecolor">"John Doe"</span>
+                    <br>
+                    <br>
+                    <span class="tagnamecolor">'John Doe'</span>
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Variables</h2>
+            <br>
+            <p class="intro">In a programming language, <strong>variables</strong> are used to 
+                <strong>store</strong> data values.
+            </p>
+            <br>
+            <p class="intro">
+                JavaScript uses the <span class="attributecolor-bg">var</span>, <span class="attributecolor-bg">let</span> and <span class="attributecolor-bg">const</span> keyword to <strong>declare</strong> variables.
+            </p>
+            <br>
+            <p class="intro">An <strong>equal sign</strong> is used to <strong>assign values</strong> to variables.</p>
+            <br>
+            <p class="intro">
+                In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <div class="w-border w-html">
+                    <span class="tagcolor">let</span>
+                    x;
+                    <br>
+                    x = <span class="tagnamecolor">6</span>;
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Operators</h2>
+            <br>
+            <p class="intro">JavaScript uses <strong>arithmetic operators</strong>
+              (<span class="attributecolor-bg">+</span>
+              <span class="attributecolor-bg">-</span>
+              <span class="attributecolor-bg">*</span>
+              <span class="attributecolor-bg">/</span>)
+              to <strong>compute</strong> values:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <div class="w-border w-html">
+                    ( <span class="tagnamecolor">5</span>
+                    +
+                    <span class="tagnamecolor">6</span>)
+                    *
+                    <span class="tagnamecolor">10</span>
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intr">
+                JavaScript uses an <strong>assignment operator</strong>
+                ( <span class="attributecolor-bg">=</span> ) to <strong>assign</strong>
+                values to variables:
+            </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <div class="w-border w-html">
+                    <span class="tagcolor">let</span>
+                    x, y;
+                    <br>
+                    x = <span class="tagnamecolor">5</span>;
+                    <br>
+                    y = <span class="tagnamecolor">6</span>;
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Expressions</h2>
+            <br>
+            <p class="intro">
+                An expression is a combination of values, variables,
+                and operators, which computes to a value.
+            </p>
+            <br>
+            <p class="intro">
+                The computation is called an evaluation.
+            </p>
+            <br>
+            <p class="intro">For example, 5 * 10 evaluates to 50:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <div class="w-border w-html">
+                    ( <span class="tagnamecolor">5</span>
+                    *
+                    <span class="tagnamecolor">10</span> )
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">Expressions can also contain variable values:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <div class="w-border w-html">
+                    x * <span class="tagnamecolor">10</span>
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">The values can be of various types, such as numbers and strings.</p>
+            <br>
+            <p class="intro">For example, "John" + " " + "Doe", evaluates to "John Doe":</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <div class="w-border w-html">
+                    "John" + " " + "Doe"
+                </div>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Keywords</h2>
+            <br>
+            <p class="intro">JavaScript keywords are used to identify actions to be performed.</p>
+            <br>
+            <p class="intro">The <span class="attributecolor-bg">var</span> keyword tells the browser to create variables:</p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                    <span class="tagcolor">var</span>
+                    x, y;
+                    <br>
+                    x = <span class="tagnamecolor">5</span>;
+                    <br>
+                    y = <span class="tagnamecolor">6</span>;
+                    <br>
+                    z = x + y;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p>
+                    In these examples, using <span class="attributecolor-bg">var</span> or <span class="attributecolor-bg">let</span>
+                    will produce the same result.
+                </p>
+                <br>
+                <p>You will learn more about <span class="attributecolor-bg">var</span> and <span class="attributecolor-bg">let</span>
+                   later in this tutorial.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Comments</h2>
+            <br>
+            <p class="intro">
+                Not all JavaScript statements are "executed"
+            </p>
+            <br>
+            <p class="intro">
+                Code after double slashes <span class="attributecolor-bg">//</span> or between <span class="attributecolor-bg">/*</span>
+                and <span class="attributecolor-bg">*/</span> is treated as a <strong>comment</strong>.
+            </p>
+            <br>
+            <p class="intro">Comments are ignored, and will not be executed: </p>
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                    <span class="tagcolor">//</span> x = myFunction(4, 3); <span class="tagcolor">//</span> This line will NOT be executed
+                    <br>
+                    <br>
+                    <span class="tagcolor">/*</span> y = 3.14; <span class="tagcolor">*/</span> 
+                    <span class="tagcolor">//</span> This line will NOT be executed
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p>You will learn more about comments ins a later chapter.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Identifiers / Names</h2>
+            <br>
+            <p class="intro">Identifiers are JavaScript names.</p>
+            <br>
+            <p class="intro">Identifiers are used to name variables and keywords, and functions.</p>
+            <br>
+            <p class="intro">The rules for legal names are the same in most programming languages.</p>
+            <br>
+            <p class="intro">A JavaScript name must begin with</p>
+            <br>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet">A letter</li>
+                    <li class="bullet">An underscore (_)</li>
+                    <li class="bullet">A dollar sign ($)</li>
+                </ul>
+            </div>
+            <br>
+            <p class="intro">Subsequent characters can be letters, digits, underscores, or dollar signs.</p>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p>Numbers are not allowed as the first character in names.</p>
+                <br>
+                <p>This way JavaScript can easily distinguish identifiers from numbers.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript is Case Sensitive</h2>
+            <br>
+            <p class="intro">All JavaScript identifiers are <strong>case sensitive</strong>.</p>
+            <br>
+            <p class="intro">The variables <span class="attributecolor-bg">lastName</span> and <span class="attributecolor-bg">lastname</span>,
+                are two different variables:
+        </div>
+        <div class="w-example">
+            <div class="w-code">
+                <span class="tagcolor">let</span>
+                lastname, lastName;
+                <br>
+                lastName = <span class="tagnamecolor">"Doe"</span>;
+                lastname = <span class="tagnamecolor">"Peterson"</span>;
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+            </div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">JavaScript does not interpret <strong>LET</strong> or <strong>Let</strong>
+             as the keyword <strong>let</strong>
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript and Camel Case</h2>
+            <br>
+            <p class="intro">Historically, programmers have used different ways of joining multiple words into one variable name:</p>
+            <br>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet">Hyphens:</li>
+                    <li class="bullet">first-name, last-name, master-card, inter-city.</li>
+                    <li class="bullet">Underscore:</li>
+                    <li class="bullet">first_name, last_name, master_card, inter_city.</li>
+                    <li class="bullet">Upper Camel Case (Pascal Case):</li>
+                    <li class="bullet">FirstName, LastName, MasterCard, InterCity.</li>
+                    <li class="bullet">Lower Camel Case:</li>
+                    <li class="bullet">JavaScript, firstName, lastName, masterCard, interCity.</li>
+                </ul>
+            </div>
+            <br>
+            <p class="intro">When using multiple words in JavaScript, <strong>camelCase</strong> is typically used.</p>
+            <br>
+            <p class="intro">CamelCase is often used in JavaScript variable names.</p>
+            <br>
+            <p class="intro">In camelCase, the first letter of the first word is lowercase, and the first letter of each subsequent word is capitalized.</p>
+            <br>
+            <p class="intro">Examples:</p>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+    <div class="w-clear nextprev">
+        <a class="w-left w-btn" href="javascriptstatements.html">❮ Previous</a>
+		<a class="w-right w-btn" href="javascriptcomments.html">Next ❯</a>
+    </div>
+   </div>
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../JAVAFILES/javahome.html">JAVA</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">Javascript <span class="color-h1">Where To</span></h1>
+			   <a class="w-left w-btn" href="javascriptintro.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="javascriptoutput.html">Next ❯</a>
+		   </div>
+		<div>
+        <hr>
+		<div class="wrap-column1">
+            <h2>The &lt;script&gt; Tag</h2>
+            <br>
+            <p>
+                In HTML, JavaScript code is inserted between <span class="attributecolor-bg">&lt;script&gt;</span> and <span class="attributecolor-bg">&lt;/script&gt;</span> tags.
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    script
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                    <span class="cssdelimiter">
+                        document.getElementById(
+                            <span class="tagnamecolor">"demo"</span>
+                        ).innerHTML = "
+                          <span class="tagnamecolor">My First JavaScript</span>
+                        ";
+                    </span>
+                    <br>
+                    <span class="tagcolor">&lt;</span>
+                    /script
+                    <span class="tagcolor">&gt;</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <br>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p>
+                    Old JavaScript examples may use a type attribute: &lt;script type="text/javascript"&gt;.
+                        The type attribute is not required. JavaScript is the default scripting language in HTML.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript Functions and Events</h2>
+            <br>
+            <p class="intro">
+                A JavaScript <span class="attributecolor-bg">function</span> is a block of JavaScript code, that can be executed when "called" for.
+            </p>
+            <br>
+            <p class="intro">
+                For example, a function can be called when an <strong>event</strong> occurs, like when the user clicks a button.
+            </p>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p>
+                    You will learn much more about functions and events in later chapters.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript in &lt;head&gt; or &lt;body&gt;</h2>
+            <br>
+            <p class="intro">
+                You can place any number of scripts in an HTML document.
+            </p>
+            <br>
+            <p class="intro">
+                Scripts can be placed in the <span class="attributecolor-bg">&lt;body&gt;</span>, or in the <span class="attributecolor-bg">&lt;head&gt;</span> section of an HTML page, or in both.
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>JavaScript in &lt;head&gt;</h2>
+            <br>
+            <p class="intro">
+                In this example, a JavaScript function is placed in the <span class="attributecolor-bg">&lt;head&gt;</span> section of an HTML page.
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span> 
+                       !DOCTYPE
+                    <span class="attributecolor"> html</span>
+                    <span class="tagcolor">&gt;</span>
+                </span>
+                 <br>
+                <span class="tagnamecolor">
+                    <span class="tagcolor" >&lt;</span>
+                    <span>html</span>
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                    <span class="tagnamecolor">
+                        <span class="tagcolor">&lt;</span>
+                        script
+                        <span class="tagcolor">&gt;</span>
+                        <br>
+                        <span class="cssdelimiter">
+                            document.getElementById(
+                                <span class="tagnamecolor">"demo"</span>
+                            ).innerHTML = "
+                              <span class="tagnamecolor">My First JavaScript</span>
+                            ";
+                        </span>
+                        <br>
+                        <span class="tagcolor">&lt;</span>
+                        /script
+                        <span class="tagcolor">&gt;</span>
+                    </span>
+                    <span class="tagcolor" >&lt;</span>
+                    <span>body</span>
+                    <span class="tagcolor">&gt;</span>
+                </span>
+                <br>
+                <br>
+                <span class="tagnamecolor">
+                    <span class="tagcolor">&lt;</span>
+                    h1
+                    <span class="tagcolor">&gt;</span>
+                    My First Heading
+                    <span class="tagcolor">&lt;/</span>
+                    h1
+                    <span class="tagcolor">&gt;</span>
+                    <br>
+                    <span class="tagcolor">&lt;</span>
+                    p
+                    <span class="tagcolor" >&gt;</span>
+                    My first paragraph.
+                    <span class="tagcolor">&lt;/</span>
+                    p
+                    <span class="tagcolor">&gt;</span>
+    
+    
+                </span>
+                <br>
+                <br>
+                <span class="tagnamecolor" >
+                    <span class="tagcolor" >&lt;/</span>
+                    <span>html</span>
+                    <span class="tagcolor" >&gt;</span>
+                    <br>
+                    <span class="tagcolor" >&lt;/</span>
+                    <span>body</span>
+                    <span class="tagcolor" >&gt;</span>
+                </span>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="javascriptintro.html">❮ Previous</a>
+			<a class="w-right w-btn" href="javascriptoutput.html">Next ❯</a>
+	    </div>
+      
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

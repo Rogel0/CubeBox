@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../JAVAFILES/javahome.html">JAVA</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+   
+	<d class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">JavaScript <span class="color-h1">Const</span></h1>
+			   <a class="w-left w-btn" href="javascriptlet.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="javascriptoperators.html">Next ❯</a>
+		</div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Cannot be Reassigned</h2>
+            <br>
+            <p class="intro">A <span class="attributecolor-bg">const</span> variable be reassigned:</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">const</span>
+                PI = <span class="tagnamecolor">3.141592653589793</span>
+                <br>
+                PI = <span class="tagnamecolor">3.14</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// This will give an error</span>
+                <br>
+                PI = PI + <span class="tagnamecolor">10</span>;
+                &nbsp;&nbsp;&nbsp;<span class="comment">// This will also give an error</span>
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Must be Assigned</h2>
+            <br>
+            <p class="intro">
+                JavaScript <span class="attributecolor-bg">const</span> variable must be assigned a
+                value when they are declared:
+            </p>
+        </div>
+        <div class="w-example">
+            <p>Correct</p>
+            <div class="w-code">
+                <span class="tagcolor">const</span>
+                PI =
+                <span class="tagnamecolor">3.141592653589793</span>;
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <h2>When to use JavaScript const?</h2>
+                <br>
+                <p><strong>Always declare a variable with</strong> <span class="attributecolor-bg">const</span> <strong>when
+                    you know that the value should not be changed.
+                </strong></p>
+                <br>
+                <p>Use <span class="attributecolor-bg">const</span> when you declare:</p>
+                <br>
+                <div class="bullet-container">
+                    <ul>
+                        <li class="bullet">A new Array</li>
+                        <li class="bullet">A new Object</li>
+                        <li class="bullet">A new Function</li>
+                        <li class="bullet">A new RegExp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Constant Objects and Arrays</h2>
+            <br>
+            <p class="intro">
+                The keyword <span class="attributecolor">const</span> is a little misleading.
+            </p>
+            <br>
+            <p class="intro">
+                It does <strong>NOT</strong> define a constant value. It defines a constant reference to a value.
+            </p>
+            <br>
+            <p class="intro">
+                Because of this you can NOT:
+            </p>
+            <br>
+            <div class="bullet-container">
+                <ul>
+                    <li class="bullet">Reassign a constant value</li>
+                    <li class="bullet">Reassign a constant array</li>
+                    <li class="bullet">Reassign a constant object</li>
+                </ul>
+                <br>
+                <p class="intro">But you CAN:</p>
+                <br>
+                <ul>
+                    <li class="bullet">Change the elements of constant array</li>
+                    <li class="bullet">Change the properties of constant object</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Constant Arrays</h2>
+            <br>
+            <p class="intro">You can change the elements of a constant array:</p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">const</span>
+                cars = [<span class="tagnamecolor">"Saab"</span>, <span class="tagnamecolor">"Volvo"</span>,
+                <span class="tagnamecolor">"BMW"</span>];
+                <br>
+                cars[<span class="tagnamecolor">0</span>] = <span class="tagnamecolor">"Toyota"</span>;
+                <br>
+                cars[<span class="tagnamecolor">1</span>] = <span class="tagnamecolor">"Audi"</span>;
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/javascript">Try it!</a>
+			</div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+    <div class="w-clear nextprev">
+        <a class="w-left w-btn" href="javascriptlet.html">❮ Previous</a>
+		<a class="w-right w-btn" href="javascriptoperators.html">Next ❯</a>
+    </div>
+   </div>
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>
