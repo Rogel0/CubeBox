@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>C#</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../CSHARPFILES/csharphome.html">C#</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">C# <span class="color-h1">Get Started</span></h1>
+               <a class="w-left w-btn" href="csharpintro.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="csharpgetsyntax.html">Next ❯</a>
+		</div>
+        <hr>
+		<div class="wrap-column1">
+            <h2>C# IDE</h2>
+            <br>
+            <p class="intro">
+                The easiest way to get started with C#, is to use an IDE.
+            </p>
+            <br>
+            <p class="intro">
+                An IDE (Integrated Development Environment) is used to edit and compile code.
+            </p>
+            <br>
+            <p class="intro">
+                In our tutorial, we will use Visual Studio Community, which is free to download from  
+                <br>
+                <a href="https://visualstudio.microsoft.com/vs/community/">https://visualstudio.microsoft.com/vs/community/</a>
+            </p>
+            <br>
+            <p class="intro">
+                Applications written in C# use the .NET Framework, so it makes sense to use Visual Studio, as the program, the framework, and the language, are all created by Microsoft.
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>C# Install</h2>
+            <br>
+            <p class="intro">
+                Once the Visual Studio Installer is downloaded and installed,
+                choose the .Net workload and click on the <strong>Modify/Install</strong>
+                button:
+            </p>
+            <br>
+            <img src="https://www.w3schools.com/cs/Workload.png" alt="" class="w-image">
+            <br>
+            <br>
+            <p class="intro">
+                After the installation is complete, click on the <strong>Launch</strong>
+                button to get started with Visual Studio.
+            </p>
+            <br>
+            <p class="intro">
+                On the start window, choose <strong>Create a new project</strong>:
+            </p>
+            <br>
+            <img src="https://www.w3schools.com/cs/Newproject.png" alt="" class="w-image">
+            <br>
+            <br>
+            <p class="intro">
+                Then click on the "Install more tools and features" button:
+            </p>
+            <br>
+            <img src="https://www.w3schools.com/cs/Newproject2.png" alt="" class="w-image">
+            <br>
+            <br>
+            <p class="intro">
+                Choose "Console App (.NET Core)" from the list and click
+                and click on the Next button:
+            </p>
+            <br>
+            <img src="https://www.w3schools.com/cs/Consoleapp.png" alt="" class="w-image">
+            <br>
+            <br>
+            <p class="intro">
+                Enter a name for your project, and click on the Create button:
+            </p>
+            <br>
+            <img src="https://www.w3schools.com/cs/saveas.png" alt="" class="w-image">
+            <br>
+            <br>
+            <p class="intro">
+                Visual Studio will automatically generate some code for your project:
+            </p>
+            <br>
+            <img src="https://www.w3schools.com/cs/Program.png" alt="" class="w-image">
+            <br>
+            <br>
+            <p class="intro">
+                The code should look something like this:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Program.cs</h3>
+            <div class="w-code">
+                <span class="tagcolor">using</span> System;
+                <br>
+                <br>
+                <br>
+                <span class="tagcolor">namespace</span> HelloWorld
+                <br>
+                {
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tagcolor">class</span> Program
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tagcolor">static</span> <span class="tagcolor">void</span> Main(<span class="tagcolor">string</span>[] args)
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tagcolor">Console</span>.WriteLine(<span class="stringcolor">"Hello World!"</span>);
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}
+                <br>
+                &nbsp;&nbsp;}
+                <br>
+               }
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/c#">Try it!</a>
+			</div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code.
+            </p>
+            <br>
+            <p class="intro">
+                Run the program by pressing the <strong>F5</strong> button
+                on your keyboard (or click on "<strong>Debug</strong>" -> <strong>"Start Debugging"</strong>).
+                This will compile and execute your code. The result will look something to this:
+            </p>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="csharpintro.html">❮ Previous</a>
+			<a class="w-right w-btn" href="csharpsyntax.html">Next ❯</a>
+	    </div>
+      
+	</>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

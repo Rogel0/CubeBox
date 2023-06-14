@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>C#</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../CSHARPFILES/csharphome.html">C#</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">C# <span class="color-h1">Comments</span></h1>
+               <a class="w-left w-btn" href="csharpoutput.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="csharpvariables.html">Next ❯</a>
+		</div>
+        <hr>
+		<div class="wrap-column1">
+            <h2>C# Comments</h2>
+            <br>
+            <p class="intro">
+                Comments can be used to explain C# code, and to make it more readable. It can also be used to prevent execution when testing alternative code.
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Single-line Comments</h2>
+            <br>
+            <p class="intro">
+                Single-line comments start with two forward slashes ( <span class="attributecolor-bg">/ /</span> ).
+            </p>
+            <br>
+            <p class="intro">
+                Any text between <span class="attributecolor-bg">/ /</span> and the end of the line is ignored by C# (will not be executed).
+            </p>
+            <br>
+            <p class="intro">
+                This example uses a single-line comment before a line of code:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">// This is a comment</span>
+                <br>
+                Console.<span class="tagnamecolor">WriteLine</span>(<span class="comment">"Hello World!"</span>);
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/c#">Try it!</a>
+			</div>
+        </div>
+        <div class="wrap-column1">
+            <p class="intro">
+                This example uses a single-line comment at the end of a line of code:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                Console.<span class="tagnamecolor">WriteLine</span>(<span class="comment">"Hello World"</span>); &nbsp;&nbsp;<span class="comment">// This is comment</span>
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/c#">Try it!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>C# Multi-line Comments</h2>
+            <br>
+            <p class="intro">
+                Multi-line comments start with <span class="attributecolor-bg">/*</span> and ends
+                with <span class="attributecolor-bg">*/</span>.
+            </p>
+            <br>
+            <p class="intro">
+                Any text between <span class="attributecolor">/*</span> and <span class="attributecolor-bg">*/</span> will be ignored by C#.
+            </p>
+            <br>
+            <p class="intro">
+                This example uses a multi-line comment (a comment block) to explain the code:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Example</h3>
+            <div class="w-code">
+                <span class="tagcolor">/* The code below will print the words Hello World
+                to the screen, and it is amazing */</span>
+                <br>
+                Console.<span class="tagnamecolor">WriteLine</span>(<span class="comment">"Hello World!"</span>);
+            </div>
+            <div class="w-clear nextprev">
+                <a class="w-btn w-try" href="https://onecompiler.com/c#">Try it!</a>
+            </div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="csharpoutput.html">❮ Previous</a>
+			<a class="w-right w-btn" href="csharpvariables.html">Next ❯</a>
+	    </div>
+      
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

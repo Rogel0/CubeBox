@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>C#</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../CSHARPFILES/csharphome.html">C#</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">C# <span class="color-h1">Variables</span></h1>
+               <a class="w-left w-btn" href="csharpcomments.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="csharpdatatypes.html">Next ❯</a>
+		</div>
+        <hr>
+		<div class="wrap-column1">
+            <h2>C# Variables</h2>
+            <br>
+            <p class="intro">
+                Variables are containers for storing data values.
+            </p>
+            <br>
+            <p class="intro">
+                In C#, there are different <strong>types</strong> of variables
+                (defined with different keywords), for example:
+                <br>
+                <br>
+                <div class="bullet-container">
+                    <ul>
+                        <li class="bullet">
+                            <span class="attributecolor-bg">int</span> - stores integers (whole numbers),
+                            without decimals, such as 123 or -123
+                        </li>
+                        <li class="bullet">
+                            <span class="attributecolor-bg">double</span> - stores floating point numbers,
+                            with decimals, such as 19.99 or -19.99
+                        </li>
+                        <li class="bullet">
+                            <span class="attributecolor-bg">char</span> - stores single characters,
+                            such as 'a' or 'B'. Char values are surrounded by single quotes
+                        </li>
+                        <li class="bullet">
+                            <span class="attributecolor-bg">string</span> - stores text, such as "Hello World".
+                            String values are surrounded by double quotes
+                        </li>
+                        <li class="bullet">
+                            <span class="attributecolor-bg">bool</span> - stores values with two states:
+                            true or false
+                        </li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+        <hr>
+        <div class="wrap-column1">
+            <h2>Declaring (Creating) Variables</h2>
+            <br>
+            <p class="intro">
+                To create a variable, you must specify the type
+                and assign it a value:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Syntax</h3>
+            <div class="w-code">
+                    <span class="attributecolor">type</span> <span class="maincolor">variableName</span> = <span class="stringcolor">value</span>;
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <p class="intro">
+                Where type is one of C#'s types (such as int or string),
+                and variableName is the name of the variable (such as x or name).
+                The equal sign is used to assign values to the variable.
+            </p>
+            <br>
+            <p class="intro">
+                To create a variable that should store a number, look at the following example:
+            </p>
+        </div>
+        <div class="w-example">
+           <h3 class="example">Example</h3>
+           <br>
+           <p>Create a varaible called <strong>name</strong> of type
+             <span class="tagnamecolor">string</span> and assign it the value <strong>"John"</strong>:
+          </p>
+          <div class="w-code">
+            <span class="attributecolor">string</span> <span class="maincolor">name</span>
+            = <span class="stringcolor">"John"</span>;
+            <br>
+            Console.<span class="tagnamecolor">WriteLine</span>(name)
+          </div>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="csharpoutput.html">❮ Previous</a>
+			<a class="w-right w-btn" href="csharpvariables.html">Next ❯</a>
+	    </div>
+      
+	</div>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>

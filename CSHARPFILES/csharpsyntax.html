@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>C#</title>
+	<link rel="stylesheet" type="text/css" href="../style/style1.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="logo">
+		  <a href="#">Cube Code</a>
+		</div>
+		<ul class="menu">
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="../CSSFILES/csshome.html">CSS</a></li>
+		  <li><a href="../CSHARPFILES/csharphome.html">C#</a></li>
+		  <li><a href="../JAVASCRIPTFILES/javascripthome.html">JAVASCRIPT</a></li>
+		  <li><a href="../PYTHON/pythonhome.html">PYTHON</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="toggle-btn" onclick="toggleSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+    </div>
+
+	<div class="main-container">
+		<div class="w-clear nextprev">
+			<h1 class="first-title">C# <span class="color-h1">Syntax</span></h1>
+               <a class="w-left w-btn" href="csharpgetstarted.html">❮ Previous</a>
+			   <a class="w-right w-btn" href="csharpoutput.html">Next ❯</a>
+		</div>
+        <hr>
+		<div class="wrap-column1">
+            <h2>C# Syntax</h2>
+            <br>
+            <p class="intro">
+                In the previous chapter, we created a C# file called Program.cs, and we used the following code to print "Hello World" to the screen:
+            </p>
+        </div>
+        <div class="w-example">
+            <h3 class="example">Program.cs</h3>
+            <div class="w-code">
+                <span class="tagcolor">using</span> System;
+                <br>
+                <br>
+                <br>
+                <span class="tagcolor">namespace</span> HelloWorld
+                <br>
+                {
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tagcolor">class</span> Program
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tagcolor">static</span> <span class="tagcolor">void</span> Main(<span class="tagcolor">string</span>[] args)
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tagcolor">Console</span>.WriteLine(<span class="stringcolor">"Hello World!"</span>);
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}
+                <br>
+                &nbsp;&nbsp;}
+                <br>
+               }
+            </div>
+            <div class="w-clear nextprev">
+				<a class="w-btn w-try" href="https://onecompiler.com/c#">Try it!</a>
+			</div>
+        </div>
+        <div class="wrap-column1">
+            <h2>Example explained</h2>
+            <br>
+            <p class="intro">
+                <strong>Line 1:</strong> <span class="attributecolor-bg">using System</span> means that we can
+                use classes from the <span class="attributecolor-bg">System</span> namespace.
+            </p>
+            <br>
+            <p class="intro">
+               <strong>Line 2:</strong> A blank line. C# ignores white space.
+               However, multiple lines makes the code more readable.
+            </p>
+            <br>
+            <p class="intro">
+                <strong>Line 3:</strong> <span class="attributecolor-bg">namespace</span> is a used to
+                organize your code, and it is a container for classes and other namespaces.
+            </p>
+            <br>
+            <p class="intro">
+                <strong>Line 4:</strong> The curly braces <span class="attributecolor-bg">{ }</span> marks the
+                beginning and the end of a block of code.
+            </p>
+            <br>
+            <p class="intro">
+                <strong>Line 5:</strong> <span class="attributecolor-bg">class</span>
+                is a container for data and methods, which brings functionality to your program.
+                Every line of code that runs in C# must be inside a class.
+                In our example, we named the class Program.
+            </p>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <div class="w-note">
+                <p>
+                    Don't worry if you don't understand how <span class="attributecolor-bg">using System</span>,
+                    <span class="attributecolor-bg">namespace</span>, and <span class="attributecolor-bg">class</span> works.
+                    Just think of it as something that (almost) always appears in your program,
+                    and that you will learn more about them in a later chapter.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="wrap-column1">
+            <p class="intro">
+                <strong>Line 6:</strong> <span class="attributecolor-bg">static void Main(string[] args)</span>
+                is the beginning of a method. Methods are used to perform certain actions, and they are also known as functions.
+                <br>
+                <br>
+                <strong>Line 7, 8, 9, 10, 11, 12, 13:</strong> The curly braces <span class="attributecolor-bg">{ }</span>
+                marks the beginning and the end of a block of code.
+                <br>
+                <br>
+                <strong>Line 8:</strong> <span class="attributecolor-bg">Console.WriteLine("Hello World!");</span>
+                tells the computer to print the text <span class="stringcolor">Hello World!</span> to the screen.
+                <br>
+                <br>
+                <strong>Line 9:</strong> <span class="attributecolor-bg">}</span> marks the end of the Main method.
+                <br>
+                <br>
+                <strong>Line 10:</strong> <span class="attributecolor-bg">}</span> marks the end of the Program class.
+                <br>
+                <br>
+                <strong>Line 11:</strong> <span class="attributecolor-bg">}</span> marks the end of the namespace.
+                <br>
+                <br>
+                <strong>Line 12:</strong> <span class="attributecolor-bg">}</span> marks the end of the Program class.
+            </p>
+        </div>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="w-clear nextprev">
+			<a class="w-left w-btn" href="csharpgetstarted.html">❮ Previous</a>
+			<a class="w-right w-btn" href="csharpoutput.html">Next ❯</a>
+	    </div>
+      
+	</>
+	
+
+
+
+<script src="../source/burger.js"></script>
+</body>
+</html>
